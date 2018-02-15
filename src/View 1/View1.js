@@ -6,13 +6,13 @@ class View1 extends Component {
   render() {
     return (
       <div className="View1">
-        <div>
-          Left Side
-          <Clock />
-        </div>
-        <div>
-          Right Side
-          <Clock />
+        <div className="row">
+          <div className="w-50">
+            <Clock />
+          </div>
+          <div className="w-50">
+            test
+          </div>
         </div>
       </div>
     );
