@@ -1,0 +1,32 @@
+.PrayerTimes {
+    font-size: 2em;
+    text-align: right;
+    margin: 0px auto;
+}
+
+.PrayerTimes th {
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+.PrayerTimes td,  .PrayerTimes th {
+    margin: 100px;
+}
+
+.PrayerTimes th:first-child {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.PrayerTimes .mithl-text {
+    font-size: 0.5em;
+    max-width: 50px;
+}
+
+.PrayerTimes td {
+    min-width: 100px;
+}
+
+.PrayerTimes td:last-child {
+    font-weight: bolder;
+}
