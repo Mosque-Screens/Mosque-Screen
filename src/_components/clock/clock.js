@@ -5,13 +5,16 @@ import './clock.css';
 class Clock extends Component {
     constructor(props) {
         super(props);
-        this.state = { seconds: 0 };
+        this.state = { time: this.getTime() };
+    }
+
+    getTime() {
+        return moment().format('h:mm A');
     }
 
     tick() {
-        var time = moment().format('h:mm A');
         this.setState(() => ({
-            time: time
+            time: this.getTime()
         }));
     }
 
