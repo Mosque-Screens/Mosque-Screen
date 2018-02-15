@@ -28,8 +28,10 @@ class Clock extends Component {
 
     render() {
         return (
-            <div className="Clock">
-                {this.state.time}
+            <div className="ClockWrapper">
+                <div className="Clock">
+                    {this.state.time}
+                </div>
             </div>
         );
     }
