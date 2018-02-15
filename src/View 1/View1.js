@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './View1.css';
+import Clock from '../_components/clock/clock';
 
-class App extends Component {
+class View1 extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="View1">
+        <div>
+          Left Side
+          <Clock />
+        </div>
+        <div>
+          Right Side
+          <Clock />
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+export default View1;
