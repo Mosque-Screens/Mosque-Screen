@@ -3,38 +3,36 @@ import moment from 'moment';
 import './clock.css';
 
 class Clock extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { time: this.getTime() };
-    }
+  constructor(props) {
+    super(props);
+    this.state = { time: this.getTime() };
+  }
 
-    getTime() {
-        return moment().format('h:mm A');
-    }
+  getTime() {
+    return moment().format('h:mm:ss A');
+  }
 
-    tick() {
-        this.setState(() => ({
-            time: this.getTime()
-        }));
-    }
+  tick() {
+    this.setState(() => ({
+      time: this.getTime()
+    }));
+  }
 
-    componentDidMount() {
-        this.interval = setInterval(() => this.tick(), 1000);
-    }
+  componentDidMount() {
+    this.interval = setInterval(() => this.tick(), 1000);
+  }
 
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
 
-    render() {
-        return (
-            <div className="ClockWrapper">
-                <div className="Clock">
-                    {this.state.time}
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="ClockWrapper">
+        <div className="Clock">{this.state.time}</div>
+      </div>
+    );
+  }
 }
 
 export default Clock;
