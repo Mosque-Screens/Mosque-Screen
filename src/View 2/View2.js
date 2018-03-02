@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './View1.css';
+import './View2.css';
 import Logo from '../_components/logo/logo';
 import Clock from '../_components/clock/clock';
 import PrayerTimes from '../_components/prayer-times/prayer-times';
 import Date from '../_components/date/date';
 import BuilderNumber from '../_components/build-number/build-number';
 
-class View1 extends Component {
+class View2 extends Component {
   render() {
     return (
-      <div className="View1">
+      <div className="View2">
         <Logo />
         <div className="row">
           <div className="w-50">
@@ -19,7 +19,7 @@ class View1 extends Component {
             <div className="row">
               <Date />
             </div>
-            <h1>View 1</h1>
+            <h1>View 2</h1>
           </div>
           <div className="w-50">
             <PrayerTimes />
@@ -31,4 +31,4 @@ class View1 extends Component {
   }
 }
 
-export default View1;
+export default View2;
