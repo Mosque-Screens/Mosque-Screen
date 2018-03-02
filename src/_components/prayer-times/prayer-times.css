@@ -1,32 +1,34 @@
 .PrayerTimes {
-    font-size: 2em;
-    text-align: right;
-    margin: 0px auto;
+  font-size: 2em;
+  text-align: right;
+  margin: 0px auto;
+  color: white;
 }
 
 .PrayerTimes th {
-    font-weight: bolder;
-    font-size: 0.8em;
+  font-weight: bolder;
+  font-size: 0.8em;
 }
 
-.PrayerTimes td,  .PrayerTimes th {
-    margin: 100px;
+.PrayerTimes td,
+.PrayerTimes th {
+  margin: 100px;
 }
 
 .PrayerTimes th:first-child {
-    font-size: 1.2em;
-    text-align: left;
+  font-size: 1.2em;
+  text-align: left;
 }
 
 .PrayerTimes .mithl-text {
-    font-size: 0.5em;
-    max-width: 50px;
+  font-size: 0.5em;
+  max-width: 50px;
 }
 
 .PrayerTimes td {
-    min-width: 100px;
+  min-width: 100px;
 }
 
 .PrayerTimes td:last-child {
-    font-weight: bolder;
+  font-weight: bolder;
 }

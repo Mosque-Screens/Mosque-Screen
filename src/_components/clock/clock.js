@@ -9,7 +9,7 @@ class Clock extends Component {
   }
 
   getTime() {
-    return moment().format('h:mm:ss A');
+    return moment().format('h:mm A');
   }
 
   tick() {

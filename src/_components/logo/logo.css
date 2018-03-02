@@ -1,0 +1,10 @@
+.LogoWrapper {
+}
+
+.LogoWrapper img {
+  width: 150px;
+  display: block;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
