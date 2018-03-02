@@ -13,8 +13,12 @@ class View1 extends Component {
         <Logo />
         <div className="row">
           <div className="w-50">
-            <Clock />
-            <Date />
+            <div className="row">
+              <Clock />
+            </div>
+            <div className="row">
+              <Date />
+            </div>
           </div>
           <div className="w-50">
             <PrayerTimes />
