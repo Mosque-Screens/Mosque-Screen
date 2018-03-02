@@ -6,7 +6,7 @@ import PrayerTimes from '../_components/prayer-times/prayer-times';
 import Date from '../_components/date/date';
 import BuilderNumber from '../_components/build-number/build-number';
 
-class View2 extends Component {
+class View1 extends Component {
   render() {
     return (
       <div className="View1">
@@ -31,4 +31,4 @@ class View2 extends Component {
   }
 }
 
-export default View2;
+export default View1;
