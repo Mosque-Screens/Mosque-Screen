@@ -3,6 +3,7 @@ import './View1.css';
 import Logo from '../_components/logo/logo';
 import Clock from '../_components/clock/clock';
 import PrayerTimes from '../_components/prayer-times/prayer-times';
+import Date from '../_components/date/date';
 import BuilderNumber from '../_components/build-number/build-number';
 
 class View1 extends Component {
@@ -12,7 +13,12 @@ class View1 extends Component {
         <Logo />
         <div className="row">
           <div className="w-50">
-            <Clock />
+            <div className="row">
+              <Clock />
+            </div>
+            <div className="row">
+              <Date />
+            </div>
           </div>
           <div className="w-50">
             <PrayerTimes />
