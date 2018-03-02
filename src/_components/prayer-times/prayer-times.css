@@ -1,18 +1,19 @@
 .PrayerTimes {
   font-size: 2em;
   text-align: right;
-  margin: 0px auto;
   color: white;
+  transform: translateX(100%);
+  margin-right: 20px;
 }
 
 .PrayerTimes th {
   font-weight: bolder;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .PrayerTimes td,
 .PrayerTimes th {
-  margin: 100px;
+  margin: 150px;
 }
 
 .PrayerTimes th:first-child {
