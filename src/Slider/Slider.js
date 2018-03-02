@@ -8,17 +8,17 @@ class Slider extends Component {
     super(props);
     this.state = {
       currentSlide: <View1 />,
-      slides: [<View1 />, <View2 />]
+      slides: [<View1 />, <View2 />],
+      currentPosition: 0
     };
   }
 
-  getNextSlide() {
-    return <View2 />;
-  }
-
   next() {
+    var newSlidePosition = this.state.currentPosition + 1;
+    if (newSlidePosition >= this.state.slides.length) newSlidePosition = 0;
     this.setState(() => ({
-      currentSlide: this.getNextSlide()
+      currentSlide: this.state.slides[newSlidePosition],
+      currentPosition: newSlidePosition
     }));
   }
 
