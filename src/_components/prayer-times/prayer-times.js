@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 import './prayer-times.css';
+import data from './assets/elm-prayer-times-2018.json';
 
 class PrayerTimes extends Component {
   constructor(props) {
@@ -10,21 +12,8 @@ class PrayerTimes extends Component {
   }
 
   getPrayerTimes() {
-    return {
-      Date: '17/01/2018',
-      'Fajr Begins': '6:18',
-      'Fajr Jama‘ah': '6:48',
-      Sunrise: '7:55',
-      'Zuhr Begins': '12:16',
-      'Zuhr Jama‘ah': '12:45',
-      'Asr Mithl 1': '2:04',
-      'Asr Mithl 2': '2:37',
-      'Asr Jama‘ah': '3:00',
-      'Maghrib Begins': '4:27',
-      'Maghrib Jama‘ah': '4:32',
-      'Isha Begins': '6:04',
-      'Isha Jama‘ah': '7:15'
-    };
+    var date = moment().format('DD/MM/YYYY');
+    return data[date];
   }
 
   render() {
