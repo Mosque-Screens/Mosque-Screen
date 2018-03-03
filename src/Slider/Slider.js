@@ -23,7 +23,7 @@ class Slider extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.next(), 5000);
+    this.interval = setInterval(() => this.next(), 8000);
   }
 
   componentWillUnmount() {
