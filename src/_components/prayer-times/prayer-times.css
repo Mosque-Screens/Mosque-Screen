@@ -2,7 +2,7 @@
   font-size: 2em;
   text-align: right;
   color: white;
-  transform: translateX(100%);
+  float: right;
   margin-right: 20px;
 }
 

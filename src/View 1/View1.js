@@ -10,9 +10,11 @@ class View1 extends Component {
   render() {
     return (
       <div className="View1">
-        <Logo />
         <div className="row">
-          <div className="w-50">
+          <Logo />
+        </div>
+        <div className="row">
+          <div className="col-12 col-md-6">
             <div className="row">
               <Clock />
             </div>
@@ -21,7 +23,7 @@ class View1 extends Component {
             </div>
             <h1>View 1</h1>
           </div>
-          <div className="w-50">
+          <div className="col-12 col-md-6">
             <PrayerTimes />
           </div>
         </div>
