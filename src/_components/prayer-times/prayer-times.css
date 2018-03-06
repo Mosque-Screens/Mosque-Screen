@@ -1,3 +1,7 @@
+.PrayerTimesWrapper {
+  width: 100%;
+}
+
 .PrayerTimes {
   font-size: 2em;
   text-align: right;
