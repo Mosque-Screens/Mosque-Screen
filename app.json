@@ -1,0 +1,7 @@
+{
+  "name": "Charity Information Screen",
+  "description": "An information screen built for charities.",
+  "repository": "https://github.com/teamCAAP/Charity-Information-Screen",
+  "logo": "https://pbs.twimg.com/profile_images/961758302261665798/BEDU-uIs_400x400.jpg",
+  "keywords": ["charity", "information", "screen", "elm", "reactjs"]
+}
