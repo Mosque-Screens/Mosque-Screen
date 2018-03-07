@@ -1,10 +1,14 @@
 # Charity Informatin Screen
 
+# One click deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamCAAP/Charity-Information-Screen)
 
-## Screenshots of Prototype
+## Screenshots of prototype
 
-TBC
+![Slide1](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-01.jpg "Slide 1")
+![Slide2](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-02.jpg "Slide 2")
+![Slide3](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-03.jpg "Slide 3")
+![Slide4](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-04.jpg "Slide 4")
 
 ## Folder Structure
 
