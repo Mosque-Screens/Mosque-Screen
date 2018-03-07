@@ -3,6 +3,7 @@
 # dev environment files
 package-lock.json
 .idea
+.vscode
 
 # dependencies
 /node_modules
