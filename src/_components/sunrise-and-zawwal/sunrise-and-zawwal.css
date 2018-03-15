@@ -1,0 +1,15 @@
+.SunriseAndZawwalWrapper {
+  width: 100%;
+}
+
+.SunriseAndZawwalTable {
+  float: right;
+}
+
+.SunriseAndZawwalTable td {
+  min-width: 100px;
+}
+
+.SunriseAndZawwalTable th, .SunriseAndZawwalTable td {
+  text-align: right;
+}

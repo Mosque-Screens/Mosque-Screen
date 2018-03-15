@@ -5,6 +5,7 @@ import Clock from '../_components/clock/clock';
 import PrayerTimes from '../_components/prayer-times/prayer-times';
 import Date from '../_components/date/date';
 import BuilderNumber from '../_components/build-number/build-number';
+import SunriseAndZawwal from '../_components/sunrise-and-zawwal/sunrise-and-zawwal';
 
 class View1 extends Component {
   render() {
@@ -24,8 +25,14 @@ class View1 extends Component {
             <h1>View 1</h1>
           </div>
           <div className="col-12 col-md-6">
-            <PrayerTimes />
+              <div className="row">
+                  <PrayerTimes />
+              </div>
+              <div className="row">
+                  <SunriseAndZawwal/>
+              </div>
           </div>
+
         </div>
         <BuilderNumber />
       </div>
