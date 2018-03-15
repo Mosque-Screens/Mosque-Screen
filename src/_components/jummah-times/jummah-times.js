@@ -31,7 +31,7 @@ class JummahTimes extends Component {
             <tr>
               <th />
               <th>Khutbah</th>
-              <th>Jama'ah</th>
+              <th>Jama‘ah</th>
             </tr>
           </thead>
           <tr>
