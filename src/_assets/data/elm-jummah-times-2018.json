@@ -1,0 +1,10 @@
+{
+  "winter": {
+    "khutbah": "12:30",
+    "jama'ah": "1:00"
+  },
+  "summer": {
+    "khutbah": "1:15",
+    "jama'ah": "1:45"
+  }
+}
