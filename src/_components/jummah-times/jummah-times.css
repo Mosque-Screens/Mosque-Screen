@@ -1,0 +1,16 @@
+.JummahTimesWrapper {
+  width: 100%;
+}
+
+.JummahTimesTable {
+  float: right;
+}
+
+.JummahTimesTable td {
+  min-width: 100px;
+}
+
+.JummahTimesTable th,
+.JummahTimesTable td {
+  text-align: right;
+}
