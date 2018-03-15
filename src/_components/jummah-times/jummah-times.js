@@ -3,7 +3,7 @@ import './jummah-times.css';
 import data from '../../_assets/data/elm-jummah-times-2018';
 import moment from 'moment/moment';
 
-class SunriseAndZawwal extends Component {
+class JummahTimes extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,4 +45,4 @@ class SunriseAndZawwal extends Component {
   }
 }
 
-export default SunriseAndZawwal;
+export default JummahTimes;

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import JummahtTimes from './jummah-times';
+import JummahTimes from './jummah-times';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
