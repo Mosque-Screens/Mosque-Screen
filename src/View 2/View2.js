@@ -10,7 +10,7 @@ import JummahTimes from '../_components/jummah-times/jummah-times';
 class View2 extends Component {
   render() {
     return (
-      <div className="View1">
+      <div className="View2">
         <div className="row">
           <Logo />
         </div>

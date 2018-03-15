@@ -1,5 +1,7 @@
 .SunriseAndZawwalWrapper {
+  margin-top: 30px;
   width: 100%;
+  font-size: 2em;
 }
 
 .SunriseAndZawwalTable {
@@ -7,9 +9,10 @@
 }
 
 .SunriseAndZawwalTable td {
-  min-width: 100px;
+  min-width: 150px;
 }
 
-.SunriseAndZawwalTable th, .SunriseAndZawwalTable td {
+.SunriseAndZawwalTable th,
+.SunriseAndZawwalTable td {
   text-align: right;
 }
