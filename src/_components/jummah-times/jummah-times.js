@@ -12,15 +12,23 @@ class JummahTimes extends Component {
   }
 
   getDST() {
-    return moment().isDST();
+    return this.getNextFriday().isDST();
+  }
+
+  getNextFriday() {
+    const dayINeed = 5;
+
+    if (moment().isoWeekday() <= dayINeed) {
+      return moment().isoWeekday(dayINeed);
+    } else {
+      return moment()
+        .add(1, 'weeks')
+        .isoWeekday(dayINeed);
+    }
   }
 
   getJummahTimes() {
-    if (this.getDST()) {
-      return data['summer'];
-    } else {
-      return data['winter'];
-    }
+    return this.getDST() ? data['summer'] : data['winter'];
   }
 
   render() {
