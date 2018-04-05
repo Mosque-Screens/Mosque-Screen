@@ -6,6 +6,7 @@ import PrayerTimes from '../_components/prayer-times/prayer-times';
 import Date from '../_components/date/date';
 import BuilderNumber from '../_components/build-number/build-number';
 import JummahTimes from '../_components/jummah-times/jummah-times';
+import AdditionalMessage from '../_components/additional-message/additional-message';
 
 class View2 extends Component {
   render() {
@@ -22,7 +23,15 @@ class View2 extends Component {
             <div className="row">
               <Date />
             </div>
-            <h1>View 2</h1>
+            <div className="row">
+              <AdditionalMessage
+                message="
+                <p><i>You can donate by</i></p>
+                <p><i>contactless</i></p>
+                <p><i>cards and phones</i></p>
+              "
+              />
+            </div>
           </div>
           <div className="col-12 col-md-6">
             <div className="row">

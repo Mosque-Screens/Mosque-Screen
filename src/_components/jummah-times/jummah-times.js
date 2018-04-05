@@ -42,11 +42,13 @@ class JummahTimes extends Component {
               <th>Jama‘ah</th>
             </tr>
           </thead>
-          <tr>
-            <td>Jumu‘ah</td>
-            <td>{this.state.jummahTimes['khutbah']}</td>
-            <td>{this.state.jummahTimes["jama'ah"]}</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Jumu‘ah</td>
+              <td>{this.state.jummahTimes['khutbah']}</td>
+              <td>{this.state.jummahTimes["jama'ah"]}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );
