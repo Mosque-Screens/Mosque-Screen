@@ -1,0 +1,31 @@
+.NextJamahTimeWrapper {
+  width: 100%;
+}
+
+.NextJamahTime {
+  font-size: 3.2em;
+  text-align: center;
+  color: white;
+  float: right;
+  margin-right: 20px;
+  margin-top: 130px;
+}
+
+.NextJamahTime td,
+.NextJamahTime th {
+  margin: 150px;
+}
+
+.NextJamahTime th:first-child {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.NextJamahTime td {
+  min-width: 100px;
+}
+
+.NextJamahTime td:last-child {
+  font-weight: bolder;
+}

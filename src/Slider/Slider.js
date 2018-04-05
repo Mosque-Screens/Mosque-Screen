@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './Slider.css';
 import View1 from '../View 1/View1';
 import View2 from '../View 2/View2';
+import View3 from '../View 3/View3';
 
 class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentSlide: <View1 />,
-      slides: [<View1 />, <View2 />],
+      slides: [<View1 />, <View2 />, <View3 />],
       currentPosition: 0
     };
   }
