@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import View1 from './Slider';
+import Slider from './Slider';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
