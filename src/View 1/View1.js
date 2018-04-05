@@ -24,7 +24,13 @@ class View1 extends Component {
               <Date />
             </div>
             <div className="row">
-              <AdditionalMessage message="<strong>test</strong>" />
+              <AdditionalMessage
+                message="
+                <p class='top'><i>You can donate by texting</i></p>
+                <p class='middle'>ELMT12 &pound;5 to 70070</p>
+                <p class='bottom'><i>or &pound;1, &pound;2, &pound;3, &pound;4 or &pound;10</i></p>
+              "
+              />
             </div>
           </div>
           <div className="col-12 col-md-6">

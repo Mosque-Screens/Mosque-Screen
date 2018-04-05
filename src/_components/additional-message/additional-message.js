@@ -4,11 +4,16 @@ import './additional-message.css';
 class AdditionalMessage extends Component {
   constructor(props) {
     super(props);
-    this.state = { message: props.message };
+    this.state = { message: { __html: props.message } };
   }
 
   render() {
-    return <div className="AdditionalMessageWrapper">{this.state.message}</div>;
+    return (
+      <div
+        className="AdditionalMessageWrapper"
+        dangerouslySetInnerHTML={this.state.message}
+      />
+    );
   }
 }
 
