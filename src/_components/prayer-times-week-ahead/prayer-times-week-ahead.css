@@ -4,8 +4,15 @@
 
 .PrayerTimesWeekAhead {
   color: white;
+  margin: 0 auto;
 }
 
 .PrayerTimesWeekAhead thead tr th {
   font-size: 2em;
+}
+
+.PrayerTimesWeekAhead td {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 15px 5px;
 }
