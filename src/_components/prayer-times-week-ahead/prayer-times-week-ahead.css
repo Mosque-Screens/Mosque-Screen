@@ -17,6 +17,10 @@
   padding: 5px 15px 5px;
 }
 
+.PrayerTimesWeekAhead th:first-child {
+  text-align: right;
+}
+
 .PrayerTimesWeekAhead td:first-child {
   text-align: right;
 }
