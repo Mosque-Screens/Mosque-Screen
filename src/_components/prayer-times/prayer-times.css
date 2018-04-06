@@ -3,10 +3,10 @@
 }
 
 .PrayerTimes {
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: right;
   color: white;
-  float: right;
+  margin-left: 150px;
 }
 
 .PrayerTimes th {
@@ -31,8 +31,8 @@
 }
 
 .PrayerTimes .mithl-text {
-  font-size: 0.6em;
-  max-width: 50px;
+  font-size: 0.5em;
+  max-width: 100px;
 }
 
 .PrayerTimes td {

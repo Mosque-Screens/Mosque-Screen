@@ -6,6 +6,7 @@
 
 .SunriseAndZawwalTable {
   float: right;
+  padding-right: 25px;
 }
 
 .SunriseAndZawwalTable td {
@@ -15,5 +16,5 @@
 .SunriseAndZawwalTable th,
 .SunriseAndZawwalTable td {
   text-align: right;
-  padding-left: 50px;
+  padding-left: 75px;
 }

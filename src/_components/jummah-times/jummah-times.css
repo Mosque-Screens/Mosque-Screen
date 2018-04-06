@@ -5,6 +5,7 @@
 
 .JummahTimesTable {
   float: right;
+  padding-right: 25px;
 }
 
 .JummahTimesTable td {
@@ -14,5 +15,5 @@
 .JummahTimesTable th,
 .JummahTimesTable td {
   text-align: right;
-  padding-left: 50px;
+  padding-left: 75px;
 }
