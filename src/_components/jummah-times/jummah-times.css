@@ -1,6 +1,6 @@
 .JummahTimesWrapper {
   width: 100%;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .JummahTimesTable {
@@ -14,4 +14,5 @@
 .JummahTimesTable th,
 .JummahTimesTable td {
   text-align: right;
+  padding-left: 50px;
 }
