@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import View2 from './View4';
+import View4 from './View4';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

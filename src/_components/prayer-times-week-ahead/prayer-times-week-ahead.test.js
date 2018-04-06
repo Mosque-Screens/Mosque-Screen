@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PrayerTimes from './PrayerTimesWeekAhead';
+import PrayerTimesWeekAhead from './prayer-times-week-ahead';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
