@@ -6,7 +6,9 @@
   font-size: 3.5em;
   text-align: right;
   color: white;
-  margin-left: 150px;
+  margin-left: 60px;
+  padding-top: 75px;
+  width: 850px;
 }
 
 .PrayerTimes th {
@@ -22,7 +24,7 @@
 .PrayerTimes td,
 .PrayerTimes th {
   margin: 150px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .PrayerTimes th:first-child {
