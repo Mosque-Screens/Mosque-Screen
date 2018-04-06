@@ -1,0 +1,11 @@
+.PrayerTimesWeekAheadWrapper {
+  width: 100%;
+}
+
+.PrayerTimesWeekAhead {
+  color: white;
+}
+
+.PrayerTimesWeekAhead thead tr th {
+  font-size: 2em;
+}
