@@ -3,12 +3,12 @@
 }
 
 .NextJamahTime {
-  font-size: 3.2em;
+  font-size: 4em;
   text-align: center;
   color: white;
-  float: right;
-  margin-right: 20px;
-  margin-top: 130px;
+  margin: 0 auto;
+  margin-top: 25vh;
+  padding-left: 50px;
 }
 
 .NextJamahTime td,
@@ -17,13 +17,12 @@
 }
 
 .NextJamahTime th:first-child {
-  font-size: 1.2em;
-  text-align: center;
   font-weight: lighter;
 }
 
 .NextJamahTime td {
   min-width: 100px;
+  font-size: 1.6em;
 }
 
 .NextJamahTime td:last-child {

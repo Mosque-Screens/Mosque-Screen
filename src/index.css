@@ -1,6 +1,7 @@
 body {
   max-width: 100%;
-  padding: 50px;
+  padding: 10px;
+  padding-top: 0px;
   font-family: 'PT Sans', sans-serif;
   background: linear-gradient(to right, #52071e 50%, #380412 50%);
   color: #fff;
