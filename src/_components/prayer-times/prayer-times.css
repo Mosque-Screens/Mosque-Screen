@@ -45,3 +45,7 @@
 .PrayerTimes td:last-child {
   font-weight: bolder;
 }
+
+.PrayerTimes td:last-child.normal-text {
+  font-weight: normal;
+}
