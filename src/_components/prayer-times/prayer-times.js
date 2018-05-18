@@ -49,7 +49,9 @@ class PrayerTimes extends Component {
             </tr>
             <tr>
               <td className="mithl-text">mithl 2</td>
-              <td>{this.state.prayerTimes['Asr Mithl 2']}</td>
+              <td className="normal-text">
+                {this.state.prayerTimes['Asr Mithl 2']}
+              </td>
             </tr>
             <tr>
               <th>Maghrib</th>
