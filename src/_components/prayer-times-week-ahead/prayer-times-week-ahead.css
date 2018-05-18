@@ -12,9 +12,9 @@
 }
 
 .PrayerTimesWeekAhead td {
-  font-size: 2.2em;
+  font-size: 2.1em;
   text-align: center;
-  padding: 5px 15px 5px;
+  padding: 15px 16px 5px;
 }
 
 .PrayerTimesWeekAhead th:first-child {
