@@ -2,11 +2,11 @@
   "buildNumber": "v0.1",
   "slideTimeout": 8000,
   "blackOutPeriods": {
-    "Fajr": 10,
-    "Zuhr": 10,
-    "Asr": 10,
-    "Maghrib": 10,
-    "Isha": 10
+    "fajr": 10,
+    "zuhr": 10,
+    "asr": 10,
+    "maghrib": 10,
+    "isha": 10
   },
   "jummahTimes": {
     "winter": {
