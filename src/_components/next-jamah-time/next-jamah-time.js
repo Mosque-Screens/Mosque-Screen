@@ -11,8 +11,15 @@ class NextJamahTime extends Component {
     };
   }
 
-  getTodaysDate() {
+  getTodaysPrayerTime() {
     var date = moment().format('DD/MM/YYYY');
+    return data[date];
+  }
+
+  getTomorrowsPrayerTime() {
+    var date = moment()
+      .add(1, 'days')
+      .format('DD/MM/YYYY');
     return data[date];
   }
 
@@ -25,7 +32,8 @@ class NextJamahTime extends Component {
   }
 
   getNextJamahTime() {
-    var currentDate = this.getTodaysDate();
+    var currentDate = this.getTodaysPrayerTime();
+    var tomorrowsPrayerTime = this.getTomorrowsPrayerTime();
     var currentTime = this.getCurrentTime();
     if (this.stringToTime(`${currentDate['Fajr Jama‘ah']} AM`) > currentTime) {
       return {
@@ -63,6 +71,12 @@ class NextJamahTime extends Component {
         time: `${currentDate['Isha Jama‘ah']} PM`
       };
     }
+
+    // if none return the next day fajr
+    return {
+      name: 'Fajr',
+      time: `${tomorrowsPrayerTime['Fajr Jama‘ah']} AM`
+    };
   }
 
   render() {
