@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './jummah-times.css';
-import data from '../../_assets/data/elm-jummah-times-2018';
+import config from '../../config.json';
 import moment from 'moment/moment';
 
 class JummahTimes extends Component {
@@ -28,7 +28,9 @@ class JummahTimes extends Component {
   }
 
   getJummahTimes() {
-    return this.getDST() ? data['summer'] : data['winter'];
+    return this.getDST()
+      ? config['jummahTimes']['summer']
+      : config['jummahTimes']['winter'];
   }
 
   render() {

@@ -4,7 +4,7 @@ import Logo from '../_components/logo/logo';
 import Clock from '../_components/clock/clock';
 import PrayerTimes from '../_components/prayer-times/prayer-times';
 import Date from '../_components/date/date';
-import BuilderNumber from '../_components/build-number/build-number';
+import BuildNumber from '../_components/build-number/build-number';
 import SunriseAndZawwal from '../_components/sunrise-and-zawwal/sunrise-and-zawwal';
 import AdditionalMessage from '../_components/additional-message/additional-message';
 
@@ -42,7 +42,7 @@ class View1 extends Component {
             </div>
           </div>
         </div>
-        <BuilderNumber />
+        <BuildNumber />
       </div>
     );
   }

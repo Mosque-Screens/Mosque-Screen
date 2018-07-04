@@ -3,7 +3,7 @@ import './View3.css';
 import Logo from '../_components/logo/logo';
 import Clock from '../_components/clock/clock';
 import Date from '../_components/date/date';
-import BuilderNumber from '../_components/build-number/build-number';
+import BuildNumber from '../_components/build-number/build-number';
 import NextJamahTime from '../_components/next-jamah-time/next-jamah-time';
 import AdditionalMessage from '../_components/additional-message/additional-message';
 
@@ -38,7 +38,7 @@ class View3 extends Component {
             </div>
           </div>
         </div>
-        <BuilderNumber />
+        <BuildNumber />
       </div>
     );
   }

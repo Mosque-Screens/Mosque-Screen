@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './build-number.css';
+import config from '../../config.json';
 
-class BuilderNumber extends Component {
+class BuildNumber extends Component {
   constructor(props) {
     super(props);
-    this.state = { builderNumber: 'v.10' };
+    this.state = { buildNumber: config.buildNumber };
   }
   render() {
-    return <div className="BuildNumberWrapper">{this.state.builderNumber}</div>;
+    return <div className="BuildNumberWrapper">{this.state.buildNumber}</div>;
   }
 }
 
-export default BuilderNumber;
+export default BuildNumber;
