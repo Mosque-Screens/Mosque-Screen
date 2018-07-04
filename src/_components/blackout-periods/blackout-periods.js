@@ -55,7 +55,7 @@ class BlackoutPeriods extends Component {
           100
         )
     ) {
-      return this.state.blackOutSlide; 
+      return true; 
     } */
 
     if (
@@ -66,7 +66,7 @@ class BlackoutPeriods extends Component {
           durations.fajr
         )
     ) {
-      return this.state.blackOutSlide;
+      return true;
     } else if (
       currentTime >= this.stringToTime(todaysPrayerTime.zuhr) &&
       currentTime <=
