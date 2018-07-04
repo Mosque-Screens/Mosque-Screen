@@ -40,72 +40,33 @@ class BlackoutPeriods extends Component {
       .format('HH:mm');
   }
 
-  checkIfBlackoutPeriod() {
-    var durations = this.state.blackOutPeriods;
+  isBlackout(prayerName) {
     var todaysPrayerTime = this.getPrayerTimes();
+    var durations = this.state.blackOutPeriods;
     var currentTime = this.getCurrentTime();
 
-    // TESTING
-    /* var ___time = '15:27';
-    if (
-      currentTime >= this.stringToTime(___time) &&
-      currentTime <=
-        this.getBlackoutEndTime(
-          this.stringToTime(___time),
-          100
-        )
-    ) {
-      return true; 
-    } */
+    /* todaysPrayerTime[prayerName] = '15:27'; // for testing
+    durations[prayerName] = '100'; // for testing */
 
     if (
-      currentTime >= this.stringToTime(todaysPrayerTime.fajr) &&
+      currentTime >= this.stringToTime(todaysPrayerTime[prayerName]) &&
       currentTime <=
         this.getBlackoutEndTime(
-          this.stringToTime(todaysPrayerTime.fajr),
-          durations.fajr
+          this.stringToTime(todaysPrayerTime[prayerName]),
+          durations[prayerName]
         )
     ) {
       return true;
-    } else if (
-      currentTime >= this.stringToTime(todaysPrayerTime.zuhr) &&
-      currentTime <=
-        this.getBlackoutEndTime(
-          this.stringToTime(todaysPrayerTime.zuhr),
-          durations.zuhr
-        )
-    ) {
-      return true;
-    } else if (
-      currentTime >= this.stringToTime(todaysPrayerTime.asr) &&
-      currentTime <=
-        this.getBlackoutEndTime(
-          this.stringToTime(todaysPrayerTime.asr),
-          durations.asr
-        )
-    ) {
-      return true;
-    } else if (
-      currentTime >= this.stringToTime(todaysPrayerTime.maghrib) &&
-      currentTime <=
-        this.getBlackoutEndTime(
-          this.stringToTime(todaysPrayerTime.maghrib),
-          durations.maghrib
-        )
-    ) {
-      return true;
-    } else if (
-      currentTime >= this.stringToTime(todaysPrayerTime.isha) &&
-      currentTime <=
-        this.getBlackoutEndTime(
-          this.stringToTime(todaysPrayerTime.isha),
-          durations.isha
-        )
-    ) {
-      return true;
-    } else {
-      return false;
-    }
+    } else return false;
+  }
+
+  checkIfBlackoutPeriod() {
+    if (this.isBlackout('fajr')) return true;
+    else if (this.isBlackout('zuhr')) return true;
+    else if (this.isBlackout('asr')) return true;
+    else if (this.isBlackout('maghrib')) return true;
+    else if (this.isBlackout('isha')) return true;
+    else return false;
   }
 }
 
