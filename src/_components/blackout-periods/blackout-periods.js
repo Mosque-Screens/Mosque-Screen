@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import config from '../../config.json';
 import data from '../../_assets/data/elm-prayer-times-2018.json';
 import moment from 'moment/moment';
-import View3 from '../../View 3/View3';
+import View5 from '../../View 5/View5';
 
 class BlackoutPeriods extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      blackOutSlide: <View3 />,
+      blackOutSlide: <View5 />,
       blackOutPeriods: config.blackOutPeriods
     };
   }
@@ -45,6 +45,19 @@ class BlackoutPeriods extends Component {
     var todaysPrayerTime = this.getPrayerTimes();
     var currentTime = this.getCurrentTime();
 
+    // TESTING
+    /* var ___time = '15:27';
+    if (
+      currentTime >= this.stringToTime(___time) &&
+      currentTime <=
+        this.getBlackoutEndTime(
+          this.stringToTime(___time),
+          100
+        )
+    ) {
+      return this.state.blackOutSlide; 
+    } */
+
     if (
       currentTime >= this.stringToTime(todaysPrayerTime.fajr) &&
       currentTime <=
@@ -53,7 +66,6 @@ class BlackoutPeriods extends Component {
           durations.fajr
         )
     ) {
-      console.log('FAJR-BLACKOUT');
       return this.state.blackOutSlide;
     } else if (
       currentTime >= this.stringToTime(todaysPrayerTime.zuhr) &&
@@ -63,7 +75,6 @@ class BlackoutPeriods extends Component {
           durations.zuhr
         )
     ) {
-      console.log('ZUHR-BLACKOUT');
       return true;
     } else if (
       currentTime >= this.stringToTime(todaysPrayerTime.asr) &&
@@ -73,7 +84,6 @@ class BlackoutPeriods extends Component {
           durations.asr
         )
     ) {
-      console.log('ASR-BLACKOUT');
       return true;
     } else if (
       currentTime >= this.stringToTime(todaysPrayerTime.maghrib) &&
@@ -83,7 +93,6 @@ class BlackoutPeriods extends Component {
           durations.maghrib
         )
     ) {
-      console.log('maghrib-BLACKOUT');
       return true;
     } else if (
       currentTime >= this.stringToTime(todaysPrayerTime.isha) &&
@@ -93,7 +102,6 @@ class BlackoutPeriods extends Component {
           durations.isha
         )
     ) {
-      console.log('isha-BLACKOUT');
       return true;
     } else {
       return false;
