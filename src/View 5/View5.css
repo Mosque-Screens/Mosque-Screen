@@ -1,0 +1,19 @@
+.blackout-mobile-message {
+  font-size: 5em;
+  margin-top: 17vh;
+}
+
+.blackout-mobile-message i {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.blackout-clock .ClockWrapper {
+  background: none;
+  margin: 0px auto;
+}
+
+.blackout-clock .ClockWrapper .Clock {
+  color: white;
+  font-size: 10em;
+}
