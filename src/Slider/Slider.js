@@ -11,11 +11,20 @@ class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentSlide: <View1 />,
-      slides: [<View1 />, <View2 />, <View3 />, <View4 />],
+      currentSlide: this.getInitialSlide(),
+      slides: this.getSlides(),
       currentPosition: 0,
+      sliderMode: config.sliderMode || 'slider',
       slideTimeout: config.slideTimeout
     };
+  }
+
+  getInitialSlide() {
+    return <View1 />;
+  }
+
+  getSlides() {
+    return [<View1 />, <View2 />, <View3 />, <View4 />];
   }
 
   next() {
@@ -40,7 +49,9 @@ class Slider extends Component {
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.next(), this.state.slideTimeout);
+    if (this.state.sliderMode === 'slider') {
+      this.interval = setInterval(() => this.next(), this.state.slideTimeout);
+    }
   }
 
   componentWillUnmount() {

@@ -14,7 +14,7 @@ class Date extends Component {
   }
 
   getDate() {
-    return moment().format('MMMM Do YYYY');
+    return moment().format('D MMMM YYYY');
   }
 
   getDayOfTheWeek() {

@@ -1,5 +1,6 @@
 {
   "buildNumber": "v0.1",
+  "sliderMode": "slider",
   "slideTimeout": 8000,
   "blackOutPeriods": {
     "fajr": 10,
