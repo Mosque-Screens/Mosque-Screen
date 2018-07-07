@@ -2,6 +2,11 @@
   "buildNumber": "v0.1",
   "sliderMode": "slider",
   "slideTimeout": 8000,
+  "googleSlides": {
+    "url":
+      "https://docs.google.com/presentation/d/e/2PACX-1vSSB03g_s9gl75eiKZJPtfa2czRlBorDVFpYFbMOPqGEGD-06jxJP3wRRfNzeWCkGcKmE81U1OtvTkZ/embed?start=true&loop=false&delayms=8000",
+    "numberOfSlides": 5
+  },
   "blackOutPeriods": {
     "fajr": 10,
     "zuhr": 10,
