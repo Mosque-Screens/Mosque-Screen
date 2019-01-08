@@ -2,6 +2,8 @@
 
 ## Easy one click deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamCAAP/Charity-Information-Screen)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/teamCAAP/Charity-Information-Screen)
+
 
 ## Screenshots of prototype
 
