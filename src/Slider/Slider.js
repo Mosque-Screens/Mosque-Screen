@@ -52,16 +52,13 @@ class Slider extends Component {
     var isLastSlide = newSlidePosition >= this.state.slides.length;
 
     if (isLastSlide) {
-      this.setState(() => ({
-        currentPosition: 0
-      }));
-      //this.showGoogleSlides();
-    } else {
-      this.setState(() => ({
-        currentSlide: this.state.slides[newSlidePosition],
-        currentPosition: newSlidePosition
-      }));
+      newSlidePosition = 0;
     }
+
+    this.setState(() => ({
+      currentSlide: this.state.slides[newSlidePosition],
+      currentPosition: newSlidePosition
+    }));
   }
 
   showGoogleSlides() {
