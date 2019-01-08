@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './next-jamah-time.css';
-import data from '../../_assets/data/elm-prayer-times-2018.json';
+import data from '../../_assets/data/elm-prayer-times-2019.json';
 import moment from 'moment/moment';
 
 class NextJamahTime extends Component {

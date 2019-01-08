@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import config from '../../config.json';
-import data from '../../_assets/data/elm-prayer-times-2018.json';
+import data from '../../_assets/data/elm-prayer-times-2019.json';
 import moment from 'moment/moment';
 import View5 from '../../View 5/View5';
 

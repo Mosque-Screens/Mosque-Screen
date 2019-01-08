@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import './prayer-times.css';
-import data from '../../_assets/data/elm-prayer-times-2018.json';
+import data from '../../_assets/data/elm-prayer-times-2019.json';
 
 class PrayerTimes extends Component {
   constructor(props) {
