@@ -55,7 +55,7 @@ class Slider extends Component {
       this.setState(() => ({
         currentPosition: 0
       }));
-      this.showGoogleSlides();
+      //this.showGoogleSlides();
     } else {
       this.setState(() => ({
         currentSlide: this.state.slides[newSlidePosition],
