@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './logo.css';
-import logo from './assets/ELM-logo-notext-white.gif';
+import logo from './assets/btm-logo-white-web.png';
 
 class Logo extends Component {
   render() {
