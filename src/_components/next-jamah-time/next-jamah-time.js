@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './next-jamah-time.css';
-import data from '../../_assets/data/elm-prayer-times-2019.json';
 import moment from 'moment/moment';
+import PrayerData from '../prayer-data/prayer-data';
 
 class NextJamahTime extends Component {
   constructor(props) {
@@ -13,14 +13,16 @@ class NextJamahTime extends Component {
 
   getTodaysPrayerTime() {
     var date = moment().format('DD/MM/YYYY');
-    return data[date];
+    var _data = new PrayerData();
+    return _data.getPrayerTimes(date);
   }
 
   getTomorrowsPrayerTime() {
     var date = moment()
       .add(1, 'days')
       .format('DD/MM/YYYY');
-    return data[date];
+    var _data = new PrayerData();
+    return _data.getPrayerTimes(date);
   }
 
   getCurrentTime() {

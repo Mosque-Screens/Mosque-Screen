@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import './prayer-times-week-ahead.css';
-import data from '../../_assets/data/elm-prayer-times-2019.json';
+import PrayerData from '../prayer-data/prayer-data';
 
 class PrayerTimesWeekAhead extends Component {
   constructor(props) {
@@ -15,7 +15,8 @@ class PrayerTimesWeekAhead extends Component {
     var date = moment()
       .add(additional_days, 'days')
       .format('DD/MM/YYYY');
-    return data[date];
+    var _data = new PrayerData();
+    return _data.getPrayerTimes(date);
   }
 
   getNext7daysTableRows() {

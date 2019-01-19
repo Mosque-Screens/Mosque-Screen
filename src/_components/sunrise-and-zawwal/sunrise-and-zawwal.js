@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './sunrise-and-zawwal.css';
-import data from '../../_assets/data/elm-prayer-times-2019.json';
 import moment from 'moment/moment';
+import PrayerData from '../prayer-data/prayer-data';
 
 class SunriseAndZawwal extends Component {
   constructor(props) {
@@ -14,7 +14,8 @@ class SunriseAndZawwal extends Component {
 
   getTodaysDate() {
     var date = moment().format('DD/MM/YYYY');
-    return data[date];
+    var _data = new PrayerData();
+    return _data.getPrayerTimes(date);
   }
 
   getSunrise() {

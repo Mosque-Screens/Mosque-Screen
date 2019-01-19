@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import config from '../../config.json';
-import data from '../../_assets/data/elm-prayer-times-2019.json';
+import PrayerData from '../prayer-data/prayer-data';
 import moment from 'moment/moment';
 import View5 from '../../View 5/View5';
 
@@ -15,7 +15,8 @@ class BlackoutPeriods extends Component {
 
   getPrayerTimes() {
     var date = moment().format('DD/MM/YYYY');
-    var currentDay = data[date];
+    var _data = new PrayerData();
+    var currentDay = _data.getPrayerTimes(date);
     var prayerTimes = {
       fajr: `${currentDay['Fajr Jama‘ah']} AM`,
       zuhr: `${currentDay['Zuhr Jama‘ah']} PM`,
