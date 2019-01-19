@@ -32,7 +32,7 @@ class PrayerData {
       formatted_data[day.Date] = day;
     });
     window.localStorage.setItem('prayerData', JSON.stringify(formatted_data));
-    window.localStorage.setItem('lastUpdated', moment().unix());
+    window.localStorage.setItem('prayerData_lastUpdated', moment().unix());
   }
 
   getPrayerData() {
@@ -41,7 +41,7 @@ class PrayerData {
   }
 
   getLastUpdatedTime() {
-    return window.localStorage.getItem('lastUpdated');
+    return window.localStorage.getItem('prayerData_lastUpdated');
   }
 
   updateData() {
@@ -51,7 +51,7 @@ class PrayerData {
       !this.getPrayerData()
     ) {
       this.getPrayerTimesFromGoogleSheets();
-      console.info('Updating Data....');
+      console.info('Updating Prayer Data....');
     }
   }
 }

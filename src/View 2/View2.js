@@ -7,8 +7,22 @@ import Date from '../_components/date/date';
 import BuildNumber from '../_components/build-number/build-number';
 import JummahTimes from '../_components/jummah-times/jummah-times';
 import AdditionalMessage from '../_components/additional-message/additional-message';
+import AppConfig from '../_components/app-config/app-config';
 
 class View2 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      _appConfig: new AppConfig()
+    };
+  }
+
+  componentWillUnmount() {
+    this.setState(() => ({
+      _appConfig: null
+    }));
+  }
+
   render() {
     return (
       <div className="View2">
@@ -25,11 +39,9 @@ class View2 extends Component {
             </div>
             <div className="row">
               <AdditionalMessage
-                message="
-                <p><i>You can donate by</i></p>
-                <p><i>contactless</i></p>
-                <p><i>cards and phones</i></p>
-              "
+                message={this.state._appConfig.get(
+                  'Alternative_Donate_Message'
+                )}
               />
             </div>
           </div>
