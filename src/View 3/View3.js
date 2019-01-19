@@ -6,8 +6,22 @@ import Date from '../_components/date/date';
 import BuildNumber from '../_components/build-number/build-number';
 import NextJamahTime from '../_components/next-jamah-time/next-jamah-time';
 import AdditionalMessage from '../_components/additional-message/additional-message';
+import AppConfig from '../_components/app-config/app-config';
 
 class View3 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      _appConfig: new AppConfig()
+    };
+  }
+
+  componentWillUnmount() {
+    this.setState(() => ({
+      _appConfig: null
+    }));
+  }
+
   render() {
     return (
       <div className="View3">
@@ -24,11 +38,7 @@ class View3 extends Component {
             </div>
             <div className="row">
               <AdditionalMessage
-                message="
-                                    <p><i>Please ensure your</i></p>
-                                    <p><i>mobile phone is silent</i></p>
-                                    <p><i>in the prayer hall</i></p>
-                                "
+                message={this.state._appConfig.get('Mobile_Use_Notification')}
               />
             </div>
           </div>

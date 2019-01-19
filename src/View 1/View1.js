@@ -7,8 +7,22 @@ import Date from '../_components/date/date';
 import BuildNumber from '../_components/build-number/build-number';
 import SunriseAndZawwal from '../_components/sunrise-and-zawwal/sunrise-and-zawwal';
 import AdditionalMessage from '../_components/additional-message/additional-message';
+import AppConfig from '../_components/app-config/app-config';
 
 class View1 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      _appConfig: new AppConfig()
+    };
+  }
+
+  componentWillUnmount() {
+    this.setState(() => ({
+      _appConfig: null
+    }));
+  }
+
   render() {
     return (
       <div className="View1">
@@ -25,11 +39,7 @@ class View1 extends Component {
             </div>
             <div className="row">
               <AdditionalMessage
-                message="
-                <p class='top'><i>You can donate by texting</i></p>
-                <p class='middle'>ELMT12 &pound;5 to 70070</p>
-                <p class='bottom'><i>or &pound;1, &pound;2, &pound;3, &pound;4 or &pound;10</i></p>
-              "
+                message={this.state._appConfig.get('Text_Donate_Message')}
               />
             </div>
           </div>
