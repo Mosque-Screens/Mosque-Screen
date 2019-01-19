@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import moment from 'moment';
 import './prayer-times.css';
-import data from '../../_assets/data/elm-prayer-times-2019.json';
+import PrayerData from '../prayer-data/prayer-data';
 
 class PrayerTimes extends Component {
   constructor(props) {
@@ -12,8 +11,8 @@ class PrayerTimes extends Component {
   }
 
   getPrayerTimes() {
-    var date = moment().format('DD/MM/YYYY');
-    return data[date];
+    var _data = new PrayerData();
+    return _data.getPrayerTimes();
   }
 
   render() {
