@@ -6,6 +6,10 @@
     "url": "https://docs.google.com/presentation/d/e/2PACX-1vSSB03g_s9gl75eiKZJPtfa2czRlBorDVFpYFbMOPqGEGD-06jxJP3wRRfNzeWCkGcKmE81U1OtvTkZ/embed?start=true&loop=false&delayms=8000",
     "numberOfSlides": 5
   },
+  "googleSheets": {
+    "prayerData": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRWK9YCwBUgb3i0YKqycvq5TxSiep3-IzTHWhy82D-zocfpYzlUxAEKwAmjUCPcZIRYksxo36yDkJC/pub?output=csv",
+    "refreshRate": 1
+  },
   "blackOutPeriods": {
     "fajr": 10,
     "zuhr": 10,
