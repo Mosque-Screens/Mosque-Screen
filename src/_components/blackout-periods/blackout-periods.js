@@ -7,30 +7,17 @@ import AppConfig from '../app-config/app-config';
 class BlackoutPeriods extends Component {
   constructor(props) {
     super(props);
+    var _appConfig = new AppConfig();
     this.state = {
       blackOutSlide: <View5 />,
-      _appConfig: new AppConfig()
+      blackOutPeriods: {
+        fajr: _appConfig.get('blackOutPeriod_fajr'),
+        zuhr: _appConfig.get('blackOutPeriod_zuhr'),
+        asr: _appConfig.get('blackOutPeriod_asr'),
+        maghrib: _appConfig.get('blackOutPeriod_maghrib'),
+        isha: _appConfig.get('blackOutPeriod_isha')
+      }
     };
-  }
-
-  componentDidMount() {
-    this.getBlackoutPeriods();
-  }
-
-  getBlackoutPeriods() {
-    var periods = {
-      fajr: this.state._appConfig.get('blackOutPeriod_fajr'),
-      zuhr: this.state._appConfig.get('blackOutPeriod_zuhr'),
-      asr: this.state._appConfig.get('blackOutPeriod_asr'),
-      maghrib: this.state._appConfig.get('blackOutPeriod_maghrib'),
-      isha: this.state._appConfig.get('blackOutPeriod_isha')
-    };
-
-    this.setState(() => ({
-      blackOutPeriods: periods
-    }));
-
-    return periods;
   }
 
   getPrayerTimes() {
