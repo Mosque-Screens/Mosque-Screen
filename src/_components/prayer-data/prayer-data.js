@@ -20,7 +20,11 @@ class PrayerData {
     }
 
     return csvtojson()
-      .fromStream(request.get(config.googleSheets.prayerData))
+      .fromStream(
+        request.get(
+          `${config.googleSheets.prayerData}&_cacheBust=${Math.random()}`
+        )
+      )
       .then(json => {
         this.storePrayerData(json);
       });

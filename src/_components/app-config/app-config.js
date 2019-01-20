@@ -20,7 +20,11 @@ class AppConfig {
     }
 
     return csvtojson()
-      .fromStream(request.get(config.googleSheets.appConfig))
+      .fromStream(
+        request.get(
+          `${config.googleSheets.appConfig}&_cacheBust=${Math.random()}`
+        )
+      )
       .then(json => {
         this.storeAppConfig(json);
       });
