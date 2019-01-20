@@ -52,5 +52,11 @@
     "electron": "^2.0.4",
     "electron-builder": "^20.19.1",
     "wait-on": "^2.1.0"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
