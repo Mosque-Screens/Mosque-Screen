@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './jummah-times.css';
-import config from '../../config.json';
 import moment from 'moment/moment';
+import AppConfig from '../app-config/app-config';
 
 class JummahTimes extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      jummahTimes: this.getJummahTimes()
+      _appConfig: new AppConfig()
     };
   }
 
@@ -28,9 +28,16 @@ class JummahTimes extends Component {
   }
 
   getJummahTimes() {
-    return this.getDST()
-      ? config['jummahTimes']['summer']
-      : config['jummahTimes']['winter'];
+    var summerTimes = {
+      slot_1: this.state._appConfig.get('Jummah_slot_1_summer'),
+      slot_2: this.state._appConfig.get('Jummah_slot_2_summer')
+    };
+
+    var winterTimes = {
+      slot_1: this.state._appConfig.get('Jummah_slot_1_winter'),
+      slot_2: this.state._appConfig.get('Jummah_slot_2_winter')
+    };
+    return this.getDST() ? summerTimes : winterTimes;
   }
 
   render() {
@@ -40,15 +47,15 @@ class JummahTimes extends Component {
           <thead>
             <tr>
               <th />
-              <th>Khutbah</th>
-              <th>Jama‘ah</th>
+              <th>{this.state._appConfig.get('Jummah_slot_1_label')}</th>
+              <th>{this.state._appConfig.get('Jummah_slot_2_label')}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Jumu‘ah</td>
-              <td>{this.state.jummahTimes['khutbah']}</td>
-              <td>{this.state.jummahTimes["jama'ah"]}</td>
+              <td>{this.getJummahTimes()['slot_1']}</td>
+              <td>{this.getJummahTimes()['slot_2']}</td>
             </tr>
           </tbody>
         </table>

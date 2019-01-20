@@ -1,5 +1,5 @@
 {
-  "buildNumber": "v0.5",
+  "buildNumber": "v0.6",
   "sliderMode": "slider",
   "slideTimeout": 8000,
   "googleSlides": {
@@ -17,15 +17,5 @@
     "asr": 10,
     "maghrib": 10,
     "isha": 10
-  },
-  "jummahTimes": {
-    "winter": {
-      "khutbah": "12:30",
-      "jama'ah": "1:00"
-    },
-    "summer": {
-      "khutbah": "1:15",
-      "jama'ah": "1:45"
-    }
   }
 }
