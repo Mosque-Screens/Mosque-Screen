@@ -1,22 +1,22 @@
 # Mosque Screen
 
 ## Easy one click deployment
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamCAAP/Charity-Information-Screen)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/teamCAAP/Charity-Information-Screen)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
 
 
 ## Screenshots of prototype
 
-![BTM-slide-1](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-slide-1.png "BTM-slide-1")
-![BTM-slide-2](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-slide-2.png "BTM-slide-2")
-![BTM-Next-Salaah](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-Next-Salaah.png "BTM-Next-Salaah")
-![BTM-Black-Screen](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
-![BTM-7days](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
+![BTM-slide-1](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-slide-1.png "BTM-slide-1")
+![BTM-slide-2](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-slide-2.png "BTM-slide-2")
+![BTM-Next-Salaah](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Next-Salaah.png "BTM-Next-Salaah")
+![BTM-Black-Screen](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
+![BTM-7days](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
 
 ## Folder Structure
 
 ```
-charity-information-screen/
+Mosque-Screen/
   README.md
   node_modules/
   package.json
