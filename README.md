@@ -1,5 +1,7 @@
 # Mosque Screen
 
+Build in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
+
 ## Easy one click deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
