@@ -1,6 +1,10 @@
+.blackout-logo img {
+  width: 300px;
+}
+
 .blackout-mobile-message {
   font-size: 5em;
-  margin-top: 17vh;
+  margin-top: 35vh;
 }
 
 .blackout-mobile-message i {

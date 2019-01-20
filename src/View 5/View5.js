@@ -16,7 +16,7 @@ class View5 extends Component {
   render() {
     return (
       <div className="View5 BlackoutWrapper">
-        <div className="row">
+        <div className="row blackout-logo">
           <Logo />
         </div>
         <div className="row">
