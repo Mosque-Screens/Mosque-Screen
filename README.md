@@ -1,4 +1,4 @@
-# Charity Informatin Screen
+# Mosque Screen
 
 ## Easy one click deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamCAAP/Charity-Information-Screen)
