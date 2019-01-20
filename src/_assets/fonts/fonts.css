@@ -29,3 +29,19 @@
   font-weight: bold;
   font-style: italic;
 }
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: url('PTSans-Narrow-Web-Bold.woff2') format('woff2'),
+    url('PTSans-Narrow-Web-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: url('PTSans-Narrow-Web-Regular.woff2') format('woff2'),
+    url('PTSans-Narrow-Web-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

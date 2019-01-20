@@ -30,7 +30,7 @@ class PrayerTimesWeekAhead extends Component {
       var times = this.getPrayerTimes(i);
       var date = moment(times['Date'], 'DD/MM/YYYY').format('ddd D MMM');
       rows.push(
-        <tr key={i}>
+        <tr key={i} className="PrayerTimesWeekAhead-row">
           <td>{date}</td>
           {/* FAJR */}
           <td>{times['Fajr Begins']}</td>
