@@ -50,11 +50,18 @@ class PrayerData {
 
   updateData() {
     var lastUpdatedDiff = moment().unix() - parseInt(this.getLastUpdatedTime());
+    var alreadyHasPrayerData = this.getPrayerData() ? true : false;
     if (
       lastUpdatedDiff > config.googleSheets.refreshRate * 60 ||
-      !this.getPrayerData()
+      !alreadyHasPrayerData
     ) {
-      this.getPrayerTimesFromGoogleSheets();
+      this.getPrayerTimesFromGoogleSheets().then(() => {
+        if (!alreadyHasPrayerData) {
+          setTimeout(function() {
+            window.location.reload();
+          }, 2000);
+        }
+      });
       console.info('Updating Prayer Data....');
     }
   }
