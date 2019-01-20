@@ -1,3 +1,5 @@
+![Mosque Screen Logo](https://github.com/DilwoarH/Mosque-Screen/raw/master/mosque-screens-logo.png "Mosque Screen Logo")
+
 # Mosque Screen
 
 Build in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
