@@ -7,10 +7,11 @@
 
 ## Screenshots of prototype
 
-![Slide1](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-01.jpg "Slide 1")
-![Slide2](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-02.jpg "Slide 2")
-![Slide3](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-03.jpg "Slide 3")
-![Slide4](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/Prayer%20Display%20slides-04.jpg "Slide 4")
+![BTM-slide-1](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-slide-1.png "BTM-slide-1")
+![BTM-slide-2](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-slide-2.png "BTM-slide-2")
+![BTM-Next-Salaah](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-Next-Salaah.png "BTM-Next-Salaah")
+![BTM-Black-Screen](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
+![BTM-7days](https://github.com/teamCAAP/Charity-Information-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
 
 ## Folder Structure
 
