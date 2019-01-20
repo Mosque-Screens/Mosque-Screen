@@ -1,4 +1,6 @@
-![Mosque Screen Logo](https://github.com/DilwoarH/Mosque-Screen/raw/master/mosque-screens-logo.png "Mosque Screen Logo")
+<p align="center">
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/mosque-screens-logo.png" alt="Mosque Screen Logo" />
+</p>
 
 # Mosque Screen
 
