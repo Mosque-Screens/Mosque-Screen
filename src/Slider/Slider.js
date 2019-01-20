@@ -91,7 +91,9 @@ class Slider extends Component {
   }
 
   componentWillUnmount() {
-    this.stopInterval();
+    if (this.state.sliderMode === 'slider') {
+      this.stopInterval();
+    }
   }
 
   render() {

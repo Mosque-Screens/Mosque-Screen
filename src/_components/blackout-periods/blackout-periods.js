@@ -1,16 +1,36 @@
 import React, { Component } from 'react';
-import config from '../../config.json';
 import PrayerData from '../prayer-data/prayer-data';
 import moment from 'moment/moment';
 import View5 from '../../View 5/View5';
+import AppConfig from '../app-config/app-config';
 
 class BlackoutPeriods extends Component {
   constructor(props) {
     super(props);
     this.state = {
       blackOutSlide: <View5 />,
-      blackOutPeriods: config.blackOutPeriods
+      _appConfig: new AppConfig()
     };
+  }
+
+  componentDidMount() {
+    this.getBlackoutPeriods();
+  }
+
+  getBlackoutPeriods() {
+    var periods = {
+      fajr: this.state._appConfig.get('blackOutPeriod_fajr'),
+      zuhr: this.state._appConfig.get('blackOutPeriod_zuhr'),
+      asr: this.state._appConfig.get('blackOutPeriod_asr'),
+      maghrib: this.state._appConfig.get('blackOutPeriod_maghrib'),
+      isha: this.state._appConfig.get('blackOutPeriod_isha')
+    };
+
+    this.setState(() => ({
+      blackOutPeriods: periods
+    }));
+
+    return periods;
   }
 
   getPrayerTimes() {
@@ -42,12 +62,10 @@ class BlackoutPeriods extends Component {
   }
 
   isBlackout(prayerName) {
+    // return true; // for testing
     var todaysPrayerTime = this.getPrayerTimes();
     var durations = this.state.blackOutPeriods;
     var currentTime = this.getCurrentTime();
-
-    /* todaysPrayerTime[prayerName] = '15:27'; // for testing
-    durations[prayerName] = '100'; // for testing */
 
     if (
       currentTime >= this.stringToTime(todaysPrayerTime[prayerName]) &&
