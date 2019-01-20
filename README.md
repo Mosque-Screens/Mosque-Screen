@@ -10,8 +10,8 @@
 ![BTM-slide-1](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-slide-1.png "BTM-slide-1")
 ![BTM-slide-2](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-slide-2.png "BTM-slide-2")
 ![BTM-Next-Salaah](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Next-Salaah.png "BTM-Next-Salaah")
-![BTM-Black-Screen](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
 ![BTM-7days](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
+![BTM-Black-Screen](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
 
 ## Folder Structure
 
