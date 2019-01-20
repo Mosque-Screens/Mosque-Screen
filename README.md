@@ -2,6 +2,14 @@
 
 Build in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
 
+## Need help?
+Join our discord channel here: https://discord.gg/CG7frj2
+
+## Current customers / examples
+- Demo (https://mosque-screen.netlify.com/)
+- Beacon Tree Masjid (https://beacontree-masjid.netlify.com/)
+- East London Mosque (https://elm-screen.netlify.com/)
+
 ## Easy one click deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
