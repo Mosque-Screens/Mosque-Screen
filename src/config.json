@@ -1,14 +1,17 @@
 {
-  "buildNumber": "v0.8",
+  "buildNumber": "v0.9",
   "sliderMode": "slider",
   "slideTimeout": 8000,
   "googleSlides": {
-    "url": "https://docs.google.com/presentation/d/e/2PACX-1vSSB03g_s9gl75eiKZJPtfa2czRlBorDVFpYFbMOPqGEGD-06jxJP3wRRfNzeWCkGcKmE81U1OtvTkZ/embed?start=true&loop=false&delayms=8000",
+    "url":
+      "https://docs.google.com/presentation/d/e/2PACX-1vSSB03g_s9gl75eiKZJPtfa2czRlBorDVFpYFbMOPqGEGD-06jxJP3wRRfNzeWCkGcKmE81U1OtvTkZ/embed?start=true&loop=false&delayms=8000",
     "numberOfSlides": 5
   },
   "googleSheets": {
-    "prayerData": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRWK9YCwBUgb3i0YKqycvq5TxSiep3-IzTHWhy82D-zocfpYzlUxAEKwAmjUCPcZIRYksxo36yDkJC/pub?gid=2084513295&single=true&output=csv",
-    "appConfig": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRWK9YCwBUgb3i0YKqycvq5TxSiep3-IzTHWhy82D-zocfpYzlUxAEKwAmjUCPcZIRYksxo36yDkJC/pub?gid=2071841746&single=true&output=csv",
+    "prayerData":
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRWK9YCwBUgb3i0YKqycvq5TxSiep3-IzTHWhy82D-zocfpYzlUxAEKwAmjUCPcZIRYksxo36yDkJC/pub?gid=2084513295&single=true&output=csv",
+    "appConfig":
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRWK9YCwBUgb3i0YKqycvq5TxSiep3-IzTHWhy82D-zocfpYzlUxAEKwAmjUCPcZIRYksxo36yDkJC/pub?gid=2071841746&single=true&output=csv",
     "refreshRate": 1
   }
 }
