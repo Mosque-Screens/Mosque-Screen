@@ -7,16 +7,18 @@ import View4 from '../View 4/View4';
 import GoogleSlides from '../GoogleSlides/GoogleSlides';
 import config from '../config.json';
 import BlackoutPeriods from '../_components/blackout-periods/blackout-periods';
+import AppConfig from '../_components/app-config/app-config';
 
 class Slider extends Component {
   constructor(props) {
     super(props);
+    var _appConfig = new AppConfig();
     this.state = {
       currentSlide: this.getInitialSlide(),
       slides: this.getSlides(),
       currentPosition: 0,
       sliderMode: config.sliderMode || 'slider',
-      slideTimeout: config.slideTimeout,
+      slideTimeout: _appConfig.get('sliderTimeout'),
       googleSlides: {
         slide: <GoogleSlides />,
         totalCount:
