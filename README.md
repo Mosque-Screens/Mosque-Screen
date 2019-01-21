@@ -19,19 +19,37 @@ Join our discord channel here: https://discord.gg/CG7frj2
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
 
 
+## Demo Data
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pubhtml
+
 ## Use your own data
-1. Make a copy of the following spreadsheet: https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/edit?usp=sharing
-2. Publish the spreadsheet on Google Sheet: File > publish to the web > Publish entire document as a CSV
+
+### 1. Make a copy of the following spreadsheet: 
+
+`https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/edit?usp=sharing`
+
+---
+
+### 2. Publish the spreadsheet on Google Sheet: File > publish to the web > Publish entire document as a CSV
+
 <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/file-publish.png" width="300px" />
 <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-entire-doc.png" width="500px" />
 
-3. Copy CSV share link for `Prayer times`
+---
+
+### 3. Copy CSV share link for `Prayer times`
+
 <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-prayer-times.png" width="500px" />
 
-4. Copy CSV share link for `App config`
+---
+
+### 4. Copy CSV share link for `App config`
+
 <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-app-config.png" width="500px" />
 
-5. Add the following ENV variables in the application
+---
+
+### 5. Add the following ENV variables in the application
 
 | KEY | VALUE |
 | --- | ----- |
@@ -41,8 +59,8 @@ Join our discord channel here: https://discord.gg/CG7frj2
 
 <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/setting-env-variables.png" width="500px" />
 
-
-6. Test the app
+---
+### 6. Test the app
 
 **IMPORTANT: Make sure you use CSV**
 
