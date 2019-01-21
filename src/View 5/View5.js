@@ -3,6 +3,7 @@ import './View5.css';
 import Logo from '../_components/logo/logo';
 import Clock from '../_components/clock/clock';
 import BuildNumber from '../_components/build-number/build-number';
+import Branding from '../_components/branding/branding';
 
 class View5 extends Component {
   componentWillMount() {
@@ -30,6 +31,7 @@ class View5 extends Component {
           </div>
         </div>
         <BuildNumber />
+        <Branding />
       </div>
     );
   }

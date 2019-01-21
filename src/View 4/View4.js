@@ -4,6 +4,7 @@ import Logo from '../_components/logo/logo';
 import Clock from '../_components/clock/clock';
 import BuildNumber from '../_components/build-number/build-number';
 import PrayerTimesWeekAhead from '../_components/prayer-times-week-ahead/prayer-times-week-ahead';
+import Branding from '../_components/branding/branding';
 
 class View4 extends Component {
   render() {
@@ -23,6 +24,7 @@ class View4 extends Component {
           </div>
         </div>
         <BuildNumber />
+        <Branding />
       </div>
     );
   }

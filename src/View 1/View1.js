@@ -8,6 +8,7 @@ import BuildNumber from '../_components/build-number/build-number';
 import SunriseAndZawwal from '../_components/sunrise-and-zawwal/sunrise-and-zawwal';
 import AdditionalMessage from '../_components/additional-message/additional-message';
 import AppConfig from '../_components/app-config/app-config';
+import Branding from '../_components/branding/branding';
 
 class View1 extends Component {
   constructor(props) {
@@ -53,6 +54,7 @@ class View1 extends Component {
           </div>
         </div>
         <BuildNumber />
+        <Branding />
       </div>
     );
   }
