@@ -19,6 +19,9 @@ Join our discord channel here: https://discord.gg/CG7frj2
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
 
 
+## Demo Data
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pubhtml
+
 ## Use your own data
 
 ### 1. Make a copy of the following spreadsheet: 
