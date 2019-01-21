@@ -1,6 +1,6 @@
 {
-  "name": "Beacon-Tree-Masjid-Screen",
-  "version": "0.1.0",
+  "name": "Mosque-Screen",
+  "version": "0.8",
   "private": true,
   "main": "public/electron.js",
   "homepage": "./",
