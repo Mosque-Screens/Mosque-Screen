@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import './logo.css';
-import logo from './assets/btm-logo-white-web.png';
+import AppConfig from '../app-config/app-config';
 
 class Logo extends Component {
+  constructor(props) {
+    super(props);
+    var _appConfig = new AppConfig();
+    this.state = {
+      logo: _appConfig.get('Logo_URL')
+    };
+  }
+
   render() {
     return (
       <div className="LogoWrapper d-none d-lg-block">
-        <img src={logo} alt="logo" />
+        <img src={this.state.logo} alt="logo" />
       </div>
     );
   }
