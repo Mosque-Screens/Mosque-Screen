@@ -18,7 +18,7 @@ class Slider extends Component {
       slides: this.getSlides(),
       currentPosition: 0,
       sliderMode: config.sliderMode || 'slider',
-      slideTimeout: _appConfig.get('sliderTimeout'),
+      slideTimeout: _appConfig.get('sliderTimeout') || 8000,
       googleSlides: {
         slide: <GoogleSlides />,
         totalCount:
