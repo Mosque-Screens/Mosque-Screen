@@ -14,17 +14,21 @@ class AppConfig {
     return data ? data[key] : '';
   }
 
+  getSpeadsheetUrl() {
+    return process.env.REACT_APP_APP_CONFIG_SPREADSHEET_URL
+      ? process.env.REACT_APP_APP_CONFIG_SPREADSHEET_URL
+      : config.googleSheets.appConfig;
+  }
+
   getAppConfigFromGoogleSheets() {
-    if (!config.googleSheets.appConfig) {
+    var spreadsheetUrl = this.getSpeadsheetUrl();
+
+    if (!spreadsheetUrl) {
       alert('CSV not set');
     }
 
     return csvtojson()
-      .fromStream(
-        request.get(
-          `${config.googleSheets.appConfig}&_cacheBust=${Math.random()}`
-        )
-      )
+      .fromStream(request.get(`${spreadsheetUrl}&_cacheBust=${Math.random()}`))
       .then(json => {
         this.storeAppConfig(json);
       });

@@ -19,6 +19,26 @@ Join our discord channel here: https://discord.gg/CG7frj2
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
 
 
+## Use your own data
+1. Make a copy of the following spreadsheet: https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/edit?usp=sharing
+2. Publish the spreadsheet on Google Sheet: File > publish to the web > Publish entire document as a CSV
+![Publish](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/file-publish.png "Publish")
+![Publish](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-entire-doc.png "Publish")
+3. Copy CSV share link for `Prayer times`
+![Publish](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-prayer-times.png "Publish")
+4. Copy CSV share link for `App config`
+![Publish](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-app-config.png "Publish")
+5. Add the following ENV variables in the application
+| KEY | VALUE
+| REACT_APP_APP_CONFIG_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2071841746&single=true&output=csv
+| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2084513295&single=true&output=csv
+![Publish](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/setting-env-variables.png "Publish")
+
+6. Test the app
+
+**IMPORTANT: Make sure you use CSV**
+
+
 ## Screenshots of prototype
 
 ![BTM-slide-1](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-slide-1.png "BTM-slide-1")

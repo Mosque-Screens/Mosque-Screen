@@ -14,17 +14,21 @@ class PrayerData {
     return data ? data[date] : [];
   }
 
+  getSpeadsheetUrl() {
+    return process.env.REACT_APP_PRAYER_DATA_SPREADSHEET_URL
+      ? process.env.REACT_APP_PRAYER_DATA_SPREADSHEET_URL
+      : config.googleSheets.prayerData;
+  }
+
   getPrayerTimesFromGoogleSheets() {
-    if (!config.googleSheets.prayerData) {
+    var spreadsheetUrl = this.getSpeadsheetUrl();
+
+    if (!spreadsheetUrl) {
       alert('CSV not set');
     }
 
     return csvtojson()
-      .fromStream(
-        request.get(
-          `${config.googleSheets.prayerData}&_cacheBust=${Math.random()}`
-        )
-      )
+      .fromStream(request.get(`${spreadsheetUrl}&_cacheBust=${Math.random()}`))
       .then(json => {
         this.storePrayerData(json);
       });
