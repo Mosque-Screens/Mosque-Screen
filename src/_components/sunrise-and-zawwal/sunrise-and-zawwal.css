@@ -29,3 +29,14 @@
     padding-left: 0;
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .SunriseAndZawwalWrapper {
+    font-size: 2em;
+  }
+
+  .SunriseAndZawwalTable th,
+  .SunriseAndZawwalTable td {
+    padding-left: 100px;
+  }
+}

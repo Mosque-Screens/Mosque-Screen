@@ -28,3 +28,20 @@
 .NextJamahTime td:last-child {
   font-weight: bolder;
 }
+
+@media only screen and (max-width: 600px) {
+  .NextJamahTime {
+    font-size: 2em;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+
+  .NextJamahTime td {
+    min-width: 0;
+  }
+
+  .NextJamahTime td,
+  .NextJamahTime th {
+    margin: 0;
+  }
+}

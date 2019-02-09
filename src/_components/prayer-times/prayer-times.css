@@ -65,3 +65,20 @@
     min-width: 10px;
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .PrayerTimes {
+    font-size: 2em;
+    margin-left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .PrayerTimes th:last-child {
+    padding-left: 0;
+  }
+
+  .PrayerTimes td {
+    min-width: 10px;
+  }
+}

@@ -9,3 +9,9 @@
     font-size: 2em;
   }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .DateWrapper {
+    font-size: 2.5em;
+  }
+}

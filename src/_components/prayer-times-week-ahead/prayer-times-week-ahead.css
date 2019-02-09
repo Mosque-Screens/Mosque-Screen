@@ -32,3 +32,27 @@
   color: white;
   font-weight: bolder;
 }
+
+@media only screen and (max-width: 600px) {
+  .PrayerTimesWeekAhead thead tr th {
+    font-size: 1em;
+  }
+
+  .PrayerTimesWeekAhead td {
+    font-size: 0.5em;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .PrayerTimesWeekAhead thead tr th {
+    font-size: 2em;
+  }
+
+  .PrayerTimesWeekAhead td {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 4px;
+  }
+}
