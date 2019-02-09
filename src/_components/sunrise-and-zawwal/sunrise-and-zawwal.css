@@ -18,3 +18,14 @@
   text-align: right;
   padding-left: 115px;
 }
+
+@media only screen and (max-width: 600px) {
+  .SunriseAndZawwalWrapper {
+    font-size: 1em;
+  }
+
+  .SunriseAndZawwalTable th,
+  .SunriseAndZawwalTable td {
+    padding-left: 0;
+  }
+}

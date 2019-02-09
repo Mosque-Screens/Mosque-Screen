@@ -31,7 +31,7 @@ class ResponsiveView1 extends Component {
           <Logo />
         </div>
         <div className="row">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 col-sm-12">
             <div className="row">
               <Clock />
             </div>
@@ -44,7 +44,7 @@ class ResponsiveView1 extends Component {
               />
             </div>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 col-sm-12">
             <div className="row">
               <PrayerTimes />
             </div>
