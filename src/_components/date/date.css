@@ -3,3 +3,9 @@
   font-size: 4em;
   margin-left: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+  .DateWrapper {
+    font-size: 2em;
+  }
+}
