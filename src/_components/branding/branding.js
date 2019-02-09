@@ -23,6 +23,14 @@ class Branding extends Component {
         } 50%, ${this.state.secondary_colour} 50%);
         color: ${this.state.primary_text_colour};
       }
+
+      @media only screen and (max-width: 992px) {
+        body {
+          background: linear-gradient(to right, ${
+            this.state.primary_colour
+          } 50%, ${this.state.primary_colour} 50%);
+        }
+      }
       
       /* CLOCK BRANDING */
       .ClockWrapper {

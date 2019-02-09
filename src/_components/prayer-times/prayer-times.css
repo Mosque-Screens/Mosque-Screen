@@ -49,3 +49,36 @@
 .PrayerTimes td:last-child.normal-text {
   font-weight: normal;
 }
+
+@media only screen and (max-width: 600px) {
+  .PrayerTimes {
+    font-size: 1em;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .PrayerTimes th:last-child {
+    padding-left: 0;
+  }
+
+  .PrayerTimes td {
+    min-width: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .PrayerTimes {
+    font-size: 2em;
+    margin-left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .PrayerTimes th:last-child {
+    padding-left: 0;
+  }
+
+  .PrayerTimes td {
+    min-width: 10px;
+  }
+}
