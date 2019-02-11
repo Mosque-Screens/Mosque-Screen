@@ -64,20 +64,28 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhz
 
 **IMPORTANT: Make sure you use CSV**
 
+---
+
 ## Using Chromium to start browser on load
 
 ### How to get chromium on raspberry pi
 https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 
-### Mac script
+### Ubuntu Script
+`start-mosque-screen.sh`
 ```
+#!/bin/bash
+chromium --app=https://mosque-screen.netlify.com/ --start-fullscreen
+```
+
+### Mac script - (with normal chrome browser installed)
+`start-mosque-screen.sh`
+```
+#!/bin/bash
 chrome-debug --app=https://mosque-screen.netlify.com/ --start-fullscreen
 ```
 
-### Ubuntu Script
-```
-chromium --app=https://mosque-screen.netlify.com/ --start-fullscreen
-```
+---
 
 ## Screenshots of prototype
 
