@@ -72,11 +72,14 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhz
 https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 
 ### Ubuntu Script
-`start-mosque-screen.sh`
+1. Install [chromium-browser](https://www.chromium.org/getting-involved/download-chromium)
+2. Create a file called on the desktop: `start-mosque-screen.sh`
 ```
 #!/bin/bash
 chromium --app=https://mosque-screen.netlify.com/ --start-fullscreen
 ```
+3. `chmod +x start-mosque-screen.sh`
+
 
 ### Mac script - (with normal chrome browser installed)
 `start-mosque-screen.sh`
