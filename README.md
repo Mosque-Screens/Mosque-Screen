@@ -71,15 +71,21 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhz
 ### How to get chromium on raspberry pi
 https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 
-### Ubuntu Script
+**Helpful guide to start on start up:**
+https://github.com/OpenLabTools/OpenLabTools/wiki/Launching-bash-scripts-at-startup
+
+### Ubuntu/Linux/Raspberry Pi Instructions
 1. Install [chromium-browser](https://www.chromium.org/getting-involved/download-chromium)
-2. Create a file called on the desktop: `start-mosque-screen.sh`
+2. Create a file in `Desktop` called: `start-mosque-screen.sh`
 ```
 #!/bin/bash
 chromium --app=https://mosque-screen.netlify.com/ --start-fullscreen
 ```
 3. `chmod +x start-mosque-screen.sh`
-
+4. Add the following line to the end of your `~/.profile` file:
+```
+sh ~/Desktop/start-mosque-screen.sh
+```
 
 ### Mac script - (with normal chrome browser installed)
 `start-mosque-screen.sh`
