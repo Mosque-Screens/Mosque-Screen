@@ -71,8 +71,9 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhz
 ### How to get chromium on raspberry pi
 https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 
-**Helpful guide to start on start up:**
-https://github.com/OpenLabTools/OpenLabTools/wiki/Launching-bash-scripts-at-startup
+**Helpful guides to start on start up:**
+- https://github.com/OpenLabTools/OpenLabTools/wiki/Launching-bash-scripts-at-startup
+- https://linux.tips/tutorials/how-to-auto-start-chromium-in-full-screen-mode-to-a-website-url-on-ubuntu-os
 
 ### Ubuntu/Linux/Raspberry Pi Instructions
 1. Install [chromium-browser](https://www.chromium.org/getting-involved/download-chromium)
