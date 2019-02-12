@@ -82,10 +82,7 @@ https://github.com/OpenLabTools/OpenLabTools/wiki/Launching-bash-scripts-at-star
 chromium --app=https://mosque-screen.netlify.com/ --start-fullscreen
 ```
 3. `chmod +x start-mosque-screen.sh`
-4. Add the following line to the end of your `~/.profile` file:
-```
-sh ~/Desktop/start-mosque-screen.sh
-```
+
 
 ### Mac script - (with normal chrome browser installed)
 `start-mosque-screen.sh`
