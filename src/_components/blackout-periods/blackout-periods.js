@@ -15,7 +15,8 @@ class BlackoutPeriods extends Component {
         zuhr: _appConfig.get('blackOutPeriod_zuhr'),
         asr: _appConfig.get('blackOutPeriod_asr'),
         maghrib: _appConfig.get('blackOutPeriod_maghrib'),
-        isha: _appConfig.get('blackOutPeriod_isha')
+        isha: _appConfig.get('blackOutPeriod_isha'),
+        jummah: _appConfig.get('blackOutPeriod_jummah')
       }
     };
   }
@@ -48,18 +49,23 @@ class BlackoutPeriods extends Component {
       .format('HH:mm');
   }
 
+  isJummahPeriod(prayerName) {
+    return moment().day() === 5 && prayerName === 'zuhr';
+  }
+
   isBlackout(prayerName) {
     // return true; // for testing
     var todaysPrayerTime = this.getPrayerTimes();
     var durations = this.state.blackOutPeriods;
     var currentTime = this.getCurrentTime();
+    var isJummahPeriod = this.isJummahPeriod(prayerName);
 
     if (
       currentTime >= this.stringToTime(todaysPrayerTime[prayerName]) &&
       currentTime <=
         this.getBlackoutEndTime(
           this.stringToTime(todaysPrayerTime[prayerName]),
-          durations[prayerName]
+          isJummahPeriod ? durations['jummah'] : durations[prayerName]
         )
     ) {
       return true;
