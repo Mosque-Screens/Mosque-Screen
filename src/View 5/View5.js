@@ -23,7 +23,7 @@ class View5 extends Component {
         <div className="row">
           <div className="col-12 col-md-12">
             <div className="row blackout-mobile-message">
-              <i>Mobile silent please!</i>
+              <i>Salaat has begun, silent phones.</i>
             </div>
             <div className="row blackout-clock">
               <Clock />
