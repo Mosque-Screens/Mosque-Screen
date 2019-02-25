@@ -10,7 +10,7 @@ Build in association with [East London Mosque](https://www.eastlondonmosque.org.
 Join our discord channel here: https://discord.gg/CG7frj2
 
 ## Current customers / examples
-- Demo (https://mosque-screen.netlify.com/)
+- Demo (https://screen.mosque.tech/)
 - Beacon Tree Masjid (https://beacontree-masjid.netlify.com/)
 - East London Mosque (https://elm-screen.netlify.com/)
 
