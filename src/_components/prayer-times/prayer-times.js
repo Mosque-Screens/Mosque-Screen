@@ -47,11 +47,8 @@ class PrayerTimes extends Component {
               <td>{this.state.prayerTimes['Asr Jama‘ah']}</td>
             </tr>
             <tr>
-<<<<<<< HEAD
               <th>Maghribمغرب</th>
-=======
               <th>Maghrib&nbspمغرب</th>
->>>>>>> 89c0b7c72c03a2233c670a8b34e59d7e3c91363f
               <td />
               <td>{this.state.prayerTimes['Maghrib Begins']}</td>
               <td>{this.state.prayerTimes['Maghrib Jama‘ah']}</td>
