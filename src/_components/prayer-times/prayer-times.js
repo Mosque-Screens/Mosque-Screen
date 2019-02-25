@@ -35,25 +35,25 @@ class PrayerTimes extends Component {
               <td>{this.state.prayerTimes['Fajr Jama‘ah']}</td>
             </tr>
             <tr>
-              <th>Zuhr</th>
+              <th>Duhr ظهر</th>
               <td />
-              <td>{this.state.prayerTimes['Zuhr Begins']}</td>
-              <td>{this.state.prayerTimes['Zuhr Jama‘ah']}</td>
+              <td>{this.state.prayerTimes['Duhr Begins']}</td>
+              <td>{this.state.prayerTimes['Duhr Jama‘ah']}</td>
             </tr>
             <tr>
-              <th>Asr</th>
+              <th>Asr عصر</th>
               <td />
               <td>{this.state.prayerTimes['Asr Begins']}</td>
               <td>{this.state.prayerTimes['Asr Jama‘ah']}</td>
             </tr>
             <tr>
-              <th>Maghrib</th>
+              <th>Maghrib مغرب</th>
               <td />
               <td>{this.state.prayerTimes['Maghrib Begins']}</td>
               <td>{this.state.prayerTimes['Maghrib Jama‘ah']}</td>
             </tr>
             <tr>
-              <th>Isha</th>
+              <th>Isha عشاء</th>
               <td />
               <td>{this.state.prayerTimes['Isha Begins']}</td>
               <td>{this.state.prayerTimes['Isha Jama‘ah']}</td>
