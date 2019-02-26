@@ -78,21 +78,21 @@ https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 - https://github.com/OpenLabTools/OpenLabTools/wiki/Launching-bash-scripts-at-startup
 - https://linux.tips/tutorials/how-to-auto-start-chromium-in-full-screen-mode-to-a-website-url-on-ubuntu-os
 
-### Ubuntu/Linux/Raspberry Pi Instructions
+### Raspberry Pi Instructions
 1. Install [chromium-browser](https://www.chromium.org/getting-involved/download-chromium)
-2. Create a file in `Desktop` called: `start-mosque-screen.sh`
+2. Open Terminal
+3. type `sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart`
+4. Add the following line at the end of the file
 ```
-#!/bin/bash
-chromium --app=https://mosque-screen.netlify.com/ --start-fullscreen
+@chromium-browser --app=https://screen.mosque.tech/ --start-fullscreen
 ```
-3. `chmod +x start-mosque-screen.sh`
 
 
 ### Mac script - (with normal chrome browser installed)
 `start-mosque-screen.sh`
 ```
 #!/bin/bash
-chrome-debug --app=https://mosque-screen.netlify.com/ --start-fullscreen
+chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 ```
 
 ---
