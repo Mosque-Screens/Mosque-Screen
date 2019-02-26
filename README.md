@@ -11,9 +11,11 @@ Join our discord channel here: https://discord.gg/CG7frj2
 
 ## Current customers / examples
 - Demo (https://screen.mosque.tech/)
-- Beacon Tree Masjid (UK 🇬🇧) (https://beacontree-masjid.netlify.com/)
+- Beacon Tree Masjid (UK 🇬🇧) (https://beacontree-masjid.mosque.tech/)
 - East London Mosque (UK 🇬🇧) (https://elm.mosque.tech/)
 - Masjid Al-Rahman (USA 🇺🇸) (https://iswccc.herokuapp.com/)
+
+(If you want a *your-mosque.mosque.tech* domain, please contact the team via the support channel)
 
 ## Easy one click deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
