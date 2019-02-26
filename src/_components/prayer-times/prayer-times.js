@@ -63,8 +63,18 @@ class PrayerTimes extends Component {
             <tr>
               <th>Jumu'ah</th>
               <td />
-              <td>{this.state.prayerTimes['Fajr Begins']}</td>
-              <td>{this.state.prayerTimes['Fajr Jama‘ah']}</td>
+              getJummahTimes() {
+    var summerTimes = {
+      slot_1: this.state._appConfig.get('Jummah_slot_1_summer'),
+      slot_2: this.state._appConfig.get('Jummah_slot_2_summer')
+    };
+
+    var winterTimes = {
+      slot_1: this.state._appConfig.get('Jummah_slot_1_winter'),
+      slot_2: this.state._appConfig.get('Jummah_slot_2_winter')
+    };
+    return this.getDST() ? summerTimes : winterTimes;
+  }
             </tr>
           </tbody>          
         </table>

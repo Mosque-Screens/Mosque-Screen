@@ -37,7 +37,7 @@ class PrayerTimesWeekAhead extends Component {
           <td>{times['Fajr Jama‘ah']}</td>
           <td>{times['Sunrise']}</td>
 
-          {/* ZUHR */}
+          {/* DUHR */}
           <td>{times['Duhr Begins']}</td>
           <td>{times['Duhr Jama‘ah']}</td>
 
@@ -68,7 +68,7 @@ class PrayerTimesWeekAhead extends Component {
             <tr>
               <th>Week ahead</th>
               <th colSpan="3">Fajr</th>
-              <th colSpan="2">Zuhr</th>
+              <th colSpan="2">Duhr</th>
               <th colSpan="3">Asr</th>
               <th colSpan="2">Maghrib</th>
               <th colSpan="2">Isha</th>
