@@ -86,6 +86,7 @@ https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 ```
 @chromium-browser --app=https://screen.mosque.tech/ --start-fullscreen
 ```
+5. Reboot
 
 
 ### Mac script - (with normal chrome browser installed)
