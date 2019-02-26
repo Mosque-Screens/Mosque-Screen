@@ -12,7 +12,7 @@ Join our discord channel here: https://discord.gg/CG7frj2
 ## Current customers / examples
 - Demo (https://screen.mosque.tech/)
 - Beacon Tree Masjid (https://beacontree-masjid.netlify.com/)
-- East London Mosque (https://elm-screen.netlify.com/)
+- East London Mosque (https://elm.mosque.tech/)
 
 ## Easy one click deployment
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
