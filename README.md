@@ -79,7 +79,7 @@ https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 - https://linux.tips/tutorials/how-to-auto-start-chromium-in-full-screen-mode-to-a-website-url-on-ubuntu-os
 
 ### Raspberry Pi Instructions
-1. Install [chromium-browser](https://www.chromium.org/getting-involved/download-chromium)
+1. Install [chromium-browser](https://www.chromium.org/getting-involved/download-chromium) - **Do this step only if you do not have Chromium**
 2. Open Terminal
 3. type `sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart`
 4. Add the following line at the end of the file
