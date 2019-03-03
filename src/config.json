@@ -8,6 +8,7 @@
   },
   "googleSheets": {
     "prayerData": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2084513295&single=true&output=csv",
+    "hadithData": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTsgMl_3cSEFmx1gGuRJHx8hZQUxA9VOZNf_1xhq4HA1NobDr5mVx9BXRAdJIx4uQh83x5FkYXpIuhU/pub?output=csv",
     "appConfig": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2071841746&single=true&output=csv",
     "refreshRate": 1
   }
