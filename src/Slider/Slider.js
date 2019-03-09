@@ -4,10 +4,12 @@ import View1 from '../View 1/View1';
 import View2 from '../View 2/View2';
 import View3 from '../View 3/View3';
 import View4 from '../View 4/View4';
+import View6 from '../View 6/View6';
 import GoogleSlides from '../GoogleSlides/GoogleSlides';
 import config from '../config.json';
 import BlackoutPeriods from '../_components/blackout-periods/blackout-periods';
 import AppConfig from '../_components/app-config/app-config';
+import HadithData from '../_components/hadith-data/hadith-data';
 
 class Slider extends Component {
   constructor(props) {
@@ -27,6 +29,7 @@ class Slider extends Component {
             : 0
       }
     };
+    this.hadithData = new HadithData();
   }
 
   getInitialSlide() {
@@ -34,7 +37,7 @@ class Slider extends Component {
   }
 
   getSlides() {
-    return [<View1 />, <View2 />, <View3 />, <View4 />];
+    return [<View1 />, <View2 />, <View3 />, <View4 />, <View6 />];
   }
 
   next() {
