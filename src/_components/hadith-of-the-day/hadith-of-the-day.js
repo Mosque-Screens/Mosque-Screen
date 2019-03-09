@@ -18,8 +18,8 @@ export default class HadithOfTheDay extends Component {
         </div>
 
         <blockquote className="blockquote">
-          <p class="mb-0 Hadith">{this.state.hadith.hadith}</p>
-          <footer class="blockquote-footer HadithSource">
+          <p className="mb-0 Hadith">{this.state.hadith.hadith}</p>
+          <footer className="blockquote-footer HadithSource">
             <cite title="Source Title">{this.state.hadith.source}</cite>
           </footer>
         </blockquote>
