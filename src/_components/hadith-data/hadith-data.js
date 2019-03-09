@@ -70,9 +70,9 @@ export default class HadithData {
 
     let currentHadith = {
       hadith:
-        "If you can see this, then the hadith haven't been loaded properly.",
+        "If you can see this, then the hadith haven't been loaded properly. Try refreshing.",
       source:
-        'Check if the hadith source URL is correct in your ENV variables or config file.'
+        'Or check if the hadith source URL is correct in your ENV variables or config file.'
     };
 
     if (oneDayHasPassed) {
