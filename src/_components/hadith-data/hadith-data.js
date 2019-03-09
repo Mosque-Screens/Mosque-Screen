@@ -3,7 +3,7 @@ import config from '../../config.json';
 import csvtojson from 'csvtojson';
 import request from 'request';
 
-class HadithData {
+export default class HadithData {
   constructor() {
     this.getHadithFromGoogleSheets().then(() => {
       this.getCurrentDayHadith();
@@ -47,15 +47,23 @@ class HadithData {
   }
 
   getCurrentDayHadith() {
-    // If last change set, the use, else fallback to current time.
-    let lastHadithChanged =
-      window.localStorage.getItem('hadithData_lastChangedHadith') ||
-      moment().unix();
-    let oneDayHasPassed =
-      (moment().unix() - lastHadithChanged) / 60 / 60 / 24 > 1 ? true : false;
+    let lastHadithChanged = window.localStorage.getItem(
+      'hadithData_lastChangedHadith'
+    );
 
-    let currentHadithIndex =
-      JSON.parse(window.localStorage.getItem('hadithData_currentIndex')) || 0;
+    if (!lastHadithChanged) {
+      // If last change wasn't set then set it and set current index to 0, as this is the first (re)run.
+      lastHadithChanged = moment().unix();
+      let currentHadithIndex = 0;
+      this._updateHadithMetadata(lastHadithChanged, currentHadithIndex);
+    }
+
+    let daysPassed = (moment().unix() - lastHadithChanged) / 60 / 60 / 24;
+    let oneDayHasPassed = daysPassed > 1 ? true : false;
+
+    let currentHadithIndex = JSON.parse(
+      window.localStorage.getItem('hadithData_currentIndex')
+    );
     let hadith = JSON.parse(window.localStorage.getItem('hadithData'));
     let currentHadith = {};
 
@@ -64,32 +72,18 @@ class HadithData {
         ? (currentHadithIndex = 0)
         : ++currentHadithIndex;
 
-      window.localStorage.setItem(
-        'hadithData_currentIndex',
-        currentHadithIndex
-      );
-      window.localStorage.setItem(
-        'hadithData_lastChangedHadith',
-        moment().unix()
-      );
-    }
-
-    if (currentHadithIndex === 0) {
-      // We are still at the first index so must mean that we haven't accessed hadith before.
-      // Therefore, we must log the first access time.
-      window.localStorage.setItem(
-        'hadithData_lastChangedHadith',
-        moment().unix()
-      );
-      window.localStorage.setItem(
-        'hadithData_currentIndex',
-        currentHadithIndex
-      );
+      this._updateHadithMetadata(moment().unix(), currentHadithIndex);
     }
 
     currentHadith = hadith[currentHadithIndex];
-    console.log(currentHadith);
     return currentHadith;
+  }
+
+  _updateHadithMetadata(lastChanged, currentIndex) {
+    if (lastChanged && currentIndex >= 0) {
+      window.localStorage.setItem('hadithData_lastChangedHadith', lastChanged);
+      window.localStorage.setItem('hadithData_currentIndex', currentIndex);
+    }
   }
 
   storeHadithData(hadithData = []) {
@@ -111,5 +105,3 @@ class HadithData {
     }
   }
 }
-
-export default HadithData;
