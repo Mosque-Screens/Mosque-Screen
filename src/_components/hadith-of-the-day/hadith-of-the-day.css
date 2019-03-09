@@ -1,0 +1,17 @@
+.HadithOfTheDayWrapper {
+  width: auto;
+  display: block;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.Hadith {
+  font-size: 30px;
+}
+
+.HadithSource {
+  font-size: 22px;
+  margin: inherit;
+}
