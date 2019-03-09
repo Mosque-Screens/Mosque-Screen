@@ -9,7 +9,6 @@ import GoogleSlides from '../GoogleSlides/GoogleSlides';
 import config from '../config.json';
 import BlackoutPeriods from '../_components/blackout-periods/blackout-periods';
 import AppConfig from '../_components/app-config/app-config';
-import HadithData from '../_components/hadith-data/hadith-data';
 
 class Slider extends Component {
   constructor(props) {
@@ -29,7 +28,6 @@ class Slider extends Component {
             : 0
       }
     };
-    this.hadithData = new HadithData();
   }
 
   getInitialSlide() {
