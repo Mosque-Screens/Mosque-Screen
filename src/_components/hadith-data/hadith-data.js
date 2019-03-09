@@ -30,6 +30,7 @@ export default class HadithData {
       )
       .then(json => {
         this.storeHadithData(json);
+        return json;
       });
   }
 
@@ -39,18 +40,21 @@ export default class HadithData {
   }
 
   getLastUpdatedTime() {
-    return window.localStorage.getItem('hadithData_lastUpdated');
+    return JSON.parse(window.localStorage.getItem('hadithData_lastUpdated'));
   }
 
   getLastChangedTime() {
-    return window.localStorage.getItem('hadithData_lastChangedHadith');
+    return JSON.parse(
+      window.localStorage.getItem('hadithData_lastChangedHadith')
+    );
+  }
+
+  getHadithCurrentIndex() {
+    return JSON.parse(window.localStorage.getItem('hadithData_currentIndex'));
   }
 
   getCurrentDayHadith() {
-    let lastHadithChanged = window.localStorage.getItem(
-      'hadithData_lastChangedHadith'
-    );
-
+    let lastHadithChanged = this.getLastChangedTime();
     if (!lastHadithChanged) {
       // If last change wasn't set then set it and set current index to 0, as this is the first (re)run.
       lastHadithChanged = moment().unix();
@@ -61,11 +65,15 @@ export default class HadithData {
     let daysPassed = (moment().unix() - lastHadithChanged) / 60 / 60 / 24;
     let oneDayHasPassed = daysPassed > 1 ? true : false;
 
-    let currentHadithIndex = JSON.parse(
-      window.localStorage.getItem('hadithData_currentIndex')
-    );
-    let hadith = JSON.parse(window.localStorage.getItem('hadithData'));
-    let currentHadith = {};
+    let currentHadithIndex = this.getHadithCurrentIndex();
+    let hadith = this.getAllHadithData();
+
+    let currentHadith = {
+      hadith:
+        "If you can see this, then the hadith haven't been loaded properly.",
+      source:
+        'Check if the hadith source URL is correct in your ENV variables or config file.'
+    };
 
     if (oneDayHasPassed) {
       currentHadithIndex + 1 >= Object.keys(hadith).length
@@ -75,7 +83,10 @@ export default class HadithData {
       this._updateHadithMetadata(moment().unix(), currentHadithIndex);
     }
 
-    currentHadith = hadith[currentHadithIndex];
+    if (hadith) {
+      currentHadith = hadith[currentHadithIndex];
+    }
+
     return currentHadith;
   }
 
