@@ -5,9 +5,7 @@ import request from 'request';
 
 export default class HadithData {
   constructor() {
-    this.getHadithFromGoogleSheets().then(() => {
-      this.getCurrentDayHadith();
-    });
+    this.updateData();
   }
 
   getHadithSpreadsheetUrl() {
@@ -103,12 +101,10 @@ export default class HadithData {
   }
 
   updateData() {
-    var lastHadithUpdate = window.localStorage.getItem(
-      'hadithData_lastUpdated'
-    );
+    var lastHadithUpdateDiff = moment().unix() - this.getLastUpdatedTime();
     var alreadyHasHadithData = this.getAllHadithData() ? true : false;
     if (
-      lastHadithUpdate > config.googleSheets.refreshRate * 60 ||
+      lastHadithUpdateDiff > config.googleSheets.refreshRate * 60 ||
       !alreadyHasHadithData
     ) {
       this.getHadithFromGoogleSheets();
