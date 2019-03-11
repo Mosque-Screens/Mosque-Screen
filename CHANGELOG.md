@@ -8,8 +8,8 @@
 
 ## 4.0.0
 - Introduces a new view containing the Hadith of the day
-- List of hadith to show is retrieved from a Google sheets -- the default sheet is set in `config.json`
-- Provide your custom list by setting the env variable to point to your data source, as show in the README.
+- List of hadith to show is retrieved from a Google sheets document -- the default sheet is set in `config.json`
+- Provide your custom list by setting the env variable `REACT_APP_HADITH_DATA_SPREADSHEET_URL` to point to your data source, as show in the README.
 
 ## 3.0.0
 - BREAKING: Adds blackout periods for jummah - need to add in `blackOutPeriod_jummah` into Google Sheets App config.
