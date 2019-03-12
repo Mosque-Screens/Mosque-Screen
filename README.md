@@ -110,6 +110,7 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 ![BTM-Next-Salaah](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Next-Salaah.png "BTM-Next-Salaah")
 ![BTM-7days](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
 ![BTM-Black-Screen](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
+![HadithOfTheDay](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/HadithOfTheDayView.png "HadithOfTheDay")
 
 ### Single view mode
 ![SingleView](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/SingleViewScreenshot.png "Single-View")
