@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PrayerData from '../prayer-data/prayer-data';
 import moment from 'moment/moment';
-import View5 from '../../View 5/View5';
+import View5 from '../../Views/View 5/View5';
 import AppConfig from '../app-config/app-config';
 
 class BlackoutPeriods extends Component {
