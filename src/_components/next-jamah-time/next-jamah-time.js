@@ -7,7 +7,7 @@ class NextJamahTime extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      nextJamahTime: this.getNextJamahTime()
+      nextJammahTime: this.getNextJammahTime()
     };
   }
 
@@ -33,7 +33,7 @@ class NextJamahTime extends Component {
     return moment(stringTime, 'HH:mm a').format('HH:mm');
   }
 
-  getNextJamahTime() {
+  getNextJammahTime() {
     var currentDate = this.getTodaysPrayerTime();
     var tomorrowsPrayerTime = this.getTomorrowsPrayerTime();
     var currentTime = this.getCurrentTime();
@@ -92,10 +92,10 @@ class NextJamahTime extends Component {
           </thead>
           <tbody>
             <tr>
-              <td>{this.state.nextJamahTime.name}</td>
+              <td>{this.state.nextJammahTime.name}</td>
             </tr>
             <tr>
-              <td>{this.state.nextJamahTime.time}</td>
+              <td>{this.state.nextJammahTime.time}</td>
             </tr>
           </tbody>
         </table>
