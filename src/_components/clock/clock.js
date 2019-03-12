@@ -12,7 +12,8 @@ class Clock extends Component {
       : 'h:mm A';
 
     this.state = {
-      time: this.getTime(format)
+      time: this.getTime(format),
+      format: format
     };
   }
 
@@ -22,7 +23,7 @@ class Clock extends Component {
 
   tick() {
     this.setState(() => ({
-      time: this.getTime()
+      time: this.getTime(this.state.format)
     }));
   }
 
