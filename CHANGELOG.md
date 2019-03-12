@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.1.0
+- Adds the ability to add time formats.
+
 ## 5.0.0
 - Adds Single View mode for mosques which do not want changing views.
 
