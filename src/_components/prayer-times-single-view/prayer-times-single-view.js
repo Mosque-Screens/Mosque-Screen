@@ -10,7 +10,8 @@ class PrayerTimesSingleView extends Component {
     this.state = {
       prayerTimes: this.getPrayerTimes(),
       tomorrowsPrayerTimes: this.getTomorrowsPrayerTimes(),
-      nextJamah: this.getNextJammah()
+      nextJammah: this.getNextJammah(),
+      jammahCheckingInterval: 60000
     };
   }
 
@@ -28,8 +29,28 @@ class PrayerTimesSingleView extends Component {
   }
 
   getNextJammah() {
-    var nextJamah = new NextJamahTime();
-    return nextJamah.getNextJamahTime();
+    var nextJammah = new NextJamahTime();
+    return nextJammah.getNextJamahTime();
+  }
+
+  startInterval() {
+    this.interval = setInterval(() => {
+      this.setState(() => ({
+        nextJammah: this.getNextJammah()
+      }));
+    }, this.state.jammahCheckingInterval);
+  }
+
+  stopInterval() {
+    clearInterval(this.interval);
+  }
+
+  componentDidMount() {
+    this.startInterval();
+  }
+
+  componentWillUnmount() {
+    this.stopInterval();
   }
 
   render() {

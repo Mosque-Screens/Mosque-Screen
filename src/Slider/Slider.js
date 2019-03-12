@@ -15,14 +15,15 @@ class Slider extends Component {
   constructor(props) {
     super(props);
     var _appConfig = new AppConfig();
+    var sliderMode = _appConfig.get('sliderMode');
     this.state = {
       currentSlide:
-        _appConfig.get('sliderMode') === 'single-view'
+        sliderMode === 'single-view'
           ? this.getSingleView()
           : this.getInitialSlide(),
       slides: this.getSlides(),
       currentPosition: 0,
-      sliderMode: _appConfig.get('sliderMode') || 'slider',
+      sliderMode: sliderMode || 'slider',
       slideTimeout: _appConfig.get('sliderTimeout') || 8000,
       googleSlides: {
         slide: <GoogleSlides />,
