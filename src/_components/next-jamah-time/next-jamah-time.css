@@ -1,8 +1,8 @@
-.NextJamahTimeWrapper {
+.NextJammahTimeWrapper {
   width: 100%;
 }
 
-.NextJamahTime {
+.NextJammahTime {
   font-size: 4em;
   text-align: center;
   color: white;
@@ -11,37 +11,37 @@
   padding-left: 50px;
 }
 
-.NextJamahTime td,
-.NextJamahTime th {
+.NextJammahTime td,
+.NextJammahTime th {
   margin: 150px;
 }
 
-.NextJamahTime th:first-child {
+.NextJammahTime th:first-child {
   font-weight: lighter;
 }
 
-.NextJamahTime td {
+.NextJammahTime td {
   min-width: 100px;
   font-size: 1.6em;
 }
 
-.NextJamahTime td:last-child {
+.NextJammahTime td:last-child {
   font-weight: bolder;
 }
 
 @media only screen and (max-width: 600px) {
-  .NextJamahTime {
+  .NextJammahTime {
     font-size: 2em;
     margin-top: 10px;
     padding-left: 0;
   }
 
-  .NextJamahTime td {
+  .NextJammahTime td {
     min-width: 0;
   }
 
-  .NextJamahTime td,
-  .NextJamahTime th {
+  .NextJammahTime td,
+  .NextJammahTime th {
     margin: 0;
   }
 }

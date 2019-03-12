@@ -3,11 +3,11 @@ import './next-jamah-time.css';
 import moment from 'moment/moment';
 import PrayerData from '../prayer-data/prayer-data';
 
-class NextJamahTime extends Component {
+class NextJammahTime extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      nextJamahTime: this.getNextJamahTime()
+      nextJammahTime: this.getNextJammahTime()
     };
   }
 
@@ -33,7 +33,7 @@ class NextJamahTime extends Component {
     return moment(stringTime, 'HH:mm a').format('HH:mm');
   }
 
-  getNextJamahTime() {
+  getNextJammahTime() {
     var currentDate = this.getTodaysPrayerTime();
     var tomorrowsPrayerTime = this.getTomorrowsPrayerTime();
     var currentTime = this.getCurrentTime();
@@ -83,8 +83,8 @@ class NextJamahTime extends Component {
 
   render() {
     return (
-      <div className="NextJamahTimeWrapper">
-        <table className="NextJamahTime">
+      <div className="NextJammahTimeWrapper">
+        <table className="NextJammahTime">
           <thead>
             <tr>
               <th>Next Jama'ah</th>
@@ -92,10 +92,10 @@ class NextJamahTime extends Component {
           </thead>
           <tbody>
             <tr>
-              <td>{this.state.nextJamahTime.name}</td>
+              <td>{this.state.nextJammahTime.name}</td>
             </tr>
             <tr>
-              <td>{this.state.nextJamahTime.time}</td>
+              <td>{this.state.nextJammahTime.time}</td>
             </tr>
           </tbody>
         </table>
@@ -104,4 +104,4 @@ class NextJamahTime extends Component {
   }
 }
 
-export default NextJamahTime;
+export default NextJammahTime;

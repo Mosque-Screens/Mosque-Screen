@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import './prayer-times-single-view.css';
 import PrayerData from '../prayer-data/prayer-data';
-import NextJamahTime from '../next-jamah-time/next-jamah-time';
+import nextJammahTime from '../next-jamah-time/next-jamah-time';
 
 class PrayerTimesSingleView extends Component {
   constructor(props) {
@@ -29,8 +29,8 @@ class PrayerTimesSingleView extends Component {
   }
 
   getNextJammah() {
-    var nextJammah = new NextJamahTime();
-    return nextJammah.getNextJamahTime();
+    var nextJammah = new nextJammahTime();
+    return nextJammah.getNextJammahTime();
   }
 
   startInterval() {
@@ -71,8 +71,8 @@ class PrayerTimesSingleView extends Component {
               <td>{this.state.prayerTimes['Fajr Begins']}</td>
               <td
                 className={
-                  this.state.nextJamah.name === 'Fajr'
-                    ? 'nextJamahHighlight'
+                  this.state.nextJammah.name === 'Fajr'
+                    ? 'nextJammahHighlight'
                     : null
                 }
               >
@@ -85,8 +85,8 @@ class PrayerTimesSingleView extends Component {
               <td>{this.state.prayerTimes['Zuhr Begins']}</td>
               <td
                 className={
-                  this.state.nextJamah.name === 'Zuhr'
-                    ? 'nextJamahHighlight'
+                  this.state.nextJammah.name === 'Zuhr'
+                    ? 'nextJammahHighlight'
                     : null
                 }
               >
@@ -99,8 +99,8 @@ class PrayerTimesSingleView extends Component {
               <td>{this.state.prayerTimes['Asr Mithl 2']}</td>
               <td
                 className={
-                  this.state.nextJamah.name === 'Asr'
-                    ? 'nextJamahHighlight'
+                  this.state.nextJammah.name === 'Asr'
+                    ? 'nextJammahHighlight'
                     : null
                 }
               >
@@ -113,8 +113,8 @@ class PrayerTimesSingleView extends Component {
               <td>{this.state.prayerTimes['Maghrib Begins']}</td>
               <td
                 className={
-                  this.state.nextJamah.name === 'Maghrib'
-                    ? 'nextJamahHighlight'
+                  this.state.nextJammah.name === 'Maghrib'
+                    ? 'nextJammahHighlight'
                     : null
                 }
               >
@@ -127,8 +127,8 @@ class PrayerTimesSingleView extends Component {
               <td>{this.state.prayerTimes['Isha Begins']}</td>
               <td
                 className={
-                  this.state.nextJamah.name === 'Isha'
-                    ? 'nextJamahHighlight'
+                  this.state.nextJammah.name === 'Isha'
+                    ? 'nextJammahHighlight'
                     : null
                 }
               >
