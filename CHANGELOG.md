@@ -6,6 +6,10 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 4.0.1
+- Adds background to hadith of the day text.
+- Removes alt text for logo so that it does not show the text "logo" when there is no internet.
+
 ## 4.0.0
 - Introduces a new view containing the Hadith of the day
 - List of hadith to show is retrieved from a Google sheets document -- the default sheet is set in `config.json`
