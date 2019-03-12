@@ -14,7 +14,7 @@ class Logo extends Component {
   render() {
     return (
       <div className="LogoWrapper d-none d-lg-block">
-        <img src={this.state.logo} alt="logo" />
+        <img src={this.state.logo} alt="" />
       </div>
     );
   }
