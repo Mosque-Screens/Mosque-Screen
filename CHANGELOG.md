@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.2.0
+- Fixes an issue where next jammah highlighting would not change if not refreshed.
+
 ## 5.1.0
 - Adds the ability to add time formats.
 
