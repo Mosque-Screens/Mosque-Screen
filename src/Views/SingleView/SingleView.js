@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import './SingleView.css';
 import Logo from '../../_components/logo/logo';
 import Clock from '../../_components/clock/clock';
-import PrayerTimes from '../../_components/prayer-times/prayer-times';
 import Date from '../../_components/date/date';
 import BuildNumber from '../../_components/build-number/build-number';
 import SunriseAndZawwal from '../../_components/sunrise-and-zawwal/sunrise-and-zawwal';
 import AdditionalMessage from '../../_components/additional-message/additional-message';
 import AppConfig from '../../_components/app-config/app-config';
 import Branding from '../../_components/branding/branding';
+import PrayerTimesSingleView from '../../_components/prayer-times-single-view/prayer-times-single-view';
+import JummahTimes from '../../_components/jummah-times/jummah-times';
 
 class SingleView extends Component {
   constructor(props) {
@@ -46,10 +47,13 @@ class SingleView extends Component {
           </div>
           <div className="col-12 col-md-6">
             <div className="row">
-              <PrayerTimes />
+              <PrayerTimesSingleView />
             </div>
             <div className="row">
               <SunriseAndZawwal />
+            </div>
+            <div className="row">
+              <JummahTimes />
             </div>
           </div>
         </div>

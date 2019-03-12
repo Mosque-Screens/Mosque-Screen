@@ -17,7 +17,7 @@ class PrayerTimes extends Component {
 
   render() {
     return (
-      <div className="NextJamahTimeWrapper">
+      <div className="PrayerTimeWrapper">
         <table className="PrayerTimes">
           <thead>
             <tr>
