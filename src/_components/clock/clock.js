@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import './clock.css';
+import AppConfig from '../app-config/app-config';
 
 class Clock extends Component {
   constructor(props) {
     super(props);
-    this.state = { time: this.getTime() };
+    var _appConfig = new AppConfig();
+    var format = _appConfig.get('time_format')
+      ? _appConfig.get('time_format')
+      : 'h:mm A';
+
+    this.state = {
+      time: this.getTime(format)
+    };
   }
 
-  getTime() {
-    return moment().format('h:mm A');
+  getTime(format = 'h:mm A') {
+    return moment().format(format);
   }
 
   tick() {
