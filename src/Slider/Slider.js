@@ -54,6 +54,10 @@ class Slider extends Component {
         currentSlide: blackoutPeriods.state.blackOutSlide,
         currentPosition: 0
       }));
+    } else if (this.state.sliderMode === 'single-view') {
+      this.setState(() => ({
+        currentSlide: this.getSingleView()
+      }));
     } else {
       this.nextSlide();
     }
@@ -97,15 +101,11 @@ class Slider extends Component {
   }
 
   componentDidMount() {
-    if (this.state.sliderMode === 'slider') {
-      this.startInterval();
-    }
+    this.startInterval();
   }
 
   componentWillUnmount() {
-    if (this.state.sliderMode === 'slider') {
-      this.stopInterval();
-    }
+    this.stopInterval();
   }
 
   render() {
