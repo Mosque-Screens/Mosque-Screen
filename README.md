@@ -111,6 +111,9 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 ![BTM-7days](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
 ![BTM-Black-Screen](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
 
+### Single view mode
+![SingleView](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/SingleViewScreenshot.png "Single-View")
+
 ## Folder Structure
 
 ```
