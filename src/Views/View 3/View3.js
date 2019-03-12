@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './View3.css';
-import Logo from '../_components/logo/logo';
-import Clock from '../_components/clock/clock';
-import Date from '../_components/date/date';
-import BuildNumber from '../_components/build-number/build-number';
-import NextJamahTime from '../_components/next-jamah-time/next-jamah-time';
-import AdditionalMessage from '../_components/additional-message/additional-message';
-import AppConfig from '../_components/app-config/app-config';
-import Branding from '../_components/branding/branding';
+import Logo from '../../_components/logo/logo';
+import Clock from '../../_components/clock/clock';
+import Date from '../../_components/date/date';
+import BuildNumber from '../../_components/build-number/build-number';
+import NextJamahTime from '../../_components/next-jamah-time/next-jamah-time';
+import AdditionalMessage from '../../_components/additional-message/additional-message';
+import AppConfig from '../../_components/app-config/app-config';
+import Branding from '../../_components/branding/branding';
 
 class View3 extends Component {
   constructor(props) {
