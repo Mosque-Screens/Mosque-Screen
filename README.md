@@ -57,6 +57,7 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhz
 | KEY | VALUE |
 | --- | ----- |
 | REACT_APP_PRAYER_DATA_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2084513295&single=true&output=csv |
+| REACT_APP_HADITH_DATA_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=223779376&single=true&output=csv |
 | REACT_APP_APP_CONFIG_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2071841746&single=true&output=csv |
 
 
