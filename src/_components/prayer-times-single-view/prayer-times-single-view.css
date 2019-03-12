@@ -42,7 +42,7 @@
   font-size: 1.3em;
 }
 
-.PrayerTimesSingleView td:last-child {
+.PrayerTimesSingleView td:nth-child(3) {
   font-weight: bolder;
 }
 
