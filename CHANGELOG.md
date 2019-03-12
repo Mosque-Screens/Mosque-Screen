@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.3.0
+- Fixes an issue where blackout periods were not working on single view mode.
+
 ## 5.2.0
 - Fixes an issue where next jammah highlighting would not change if not refreshed.
 
