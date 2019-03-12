@@ -3,7 +3,7 @@ import './next-jamah-time.css';
 import moment from 'moment/moment';
 import PrayerData from '../prayer-data/prayer-data';
 
-class NextJamahTime extends Component {
+class NextJammahTime extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -83,8 +83,8 @@ class NextJamahTime extends Component {
 
   render() {
     return (
-      <div className="NextJamahTimeWrapper">
-        <table className="NextJamahTime">
+      <div className="NextJammahTimeWrapper">
+        <table className="NextJammahTime">
           <thead>
             <tr>
               <th>Next Jama'ah</th>
@@ -104,4 +104,4 @@ class NextJamahTime extends Component {
   }
 }
 
-export default NextJamahTime;
+export default NextJammahTime;

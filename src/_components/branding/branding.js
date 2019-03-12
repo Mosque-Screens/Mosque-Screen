@@ -45,7 +45,7 @@ class Branding extends Component {
 
       /* PRIMARY TEXT COLOURS */
       .DateWrapper,
-      .NextJamahTime,
+      .NextJammahTime,
       .PrayerTimes,
       .App-header,
       .blackout-clock .ClockWrapper .Clock,
@@ -65,7 +65,7 @@ class Branding extends Component {
       }
 
       /* SINGLE VIEW PRAYER TIMES */
-      .PrayerTimesSingleView .nextJamahHighlight {
+      .PrayerTimesSingleView .nextJammahHighlight {
         color: ${this.state.prayer_time_highlight_colour};
       }
     `;
