@@ -22,9 +22,10 @@ Join our discord channel here: https://discord.gg/CG7frj2
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
 ## Easy one click deployment
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
 
+### Other unsupported deployments
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
 
 ## Demo Data
 https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pubhtml
