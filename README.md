@@ -18,6 +18,7 @@ Join our discord channel here: https://discord.gg/CG7frj2
 ### Projects in progress
 - Redbridge Islamic Centre (UK 🇬🇧) (https://redbridge.mosque.tech/)
 - Westferry Mosque (UK 🇬🇧) (https://westferry.mosque.tech/)
+- Jami Masjid & Islamic Centre (UK 🇬🇧) (https://jmic.mosque.tech/)
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
