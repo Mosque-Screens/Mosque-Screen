@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.4.0
+- Adds admin route and placeholder view for admin
+
 ## 5.3.0
 - Fixes an issue where blackout periods were not working on single view mode.
 
