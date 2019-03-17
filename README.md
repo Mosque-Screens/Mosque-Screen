@@ -15,7 +15,7 @@ Join our discord channel here: https://discord.gg/CG7frj2
 - Demo (https://screen.mosque.tech/)
 - Beacon Tree Masjid (UK 🇬🇧) (https://beacontree-masjid.mosque.tech/)
 - East London Mosque (UK 🇬🇧) (https://elm.mosque.tech/)
-- Masjid Al-Rahman (USA 🇺🇸) (https://iswccc.herokuapp.com/)
+- Masjid Al-Rahman (USA 🇺🇸) (https://display.masjidalrahman.com/)
 - Redbridge Islamic Centre (UK 🇬🇧) (https://redbridge.mosque.tech/)
 - Jami Masjid & Islamic Centre (UK 🇬🇧) (https://jmic.mosque.tech/)
 
