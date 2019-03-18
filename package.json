@@ -8,6 +8,7 @@
     "bootstrap-4-grid": "^2.3.0",
     "csvtojson": "^2.0.8",
     "electron-is-dev": "^0.3.0",
+    "gapi-client": "0.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^8.0.5",
     "moment": "^2.20.1",
