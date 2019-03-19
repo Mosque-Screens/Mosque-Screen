@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Admin.css';
-import GoogleAuth from '../_components/google-auth/google-auth';
+import GoogleData from '../_components/google-data/google-data';
 
 class Admin extends Component {
   render() {
@@ -8,8 +8,7 @@ class Admin extends Component {
       <div className="AdminWrapper">
         <h1>Admin</h1>
         <div className="AdminContent">
-          <h2>Admin interface coming soon.</h2>
-          <GoogleAuth />
+          <GoogleData />
         </div>
       </div>
     );
