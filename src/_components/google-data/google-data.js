@@ -15,13 +15,30 @@ class GoogleData extends Component {
       scopes: 'https://www.googleapis.com/auth/spreadsheets',
       userName: null,
       isSignedIn: false,
-      spreadsheetId: '1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s',
+      spreadsheetId: '17I6PybF41qf-QTo48wdpUp8liUgowVI0oP9AmJWv034',
       sheetRanges: [
         "'Prayer times'!A:M",
         "'App config'!A:F",
         "'Hadith of the day'!A:B"
       ],
-      spreadsheetData: null
+      spreadsheetData: null,
+      transformedData: {
+        prayerData: {
+          title: null,
+          table: null,
+          data: null
+        },
+        appConfig: {
+          title: null,
+          table: null,
+          data: null
+        },
+        hadithOfTheDayData: {
+          title: null,
+          table: null,
+          data: null
+        }
+      }
     };
 
     this.state.gapi.load('client:auth2', this.initClient);
@@ -96,7 +113,7 @@ class GoogleData extends Component {
       });
   }
 
-  transformValueList(valueList) {
+  transformValueListToTable(valueList) {
     var rows = [];
 
     for (var i = 1; i < valueList.length; i++) {
@@ -123,21 +140,27 @@ class GoogleData extends Component {
     );
   }
 
+  transformValueListToObject(sheetName, valueList) {
+    var data = [];
+    for (var i = 1; i < valueList.length; i++) {
+      var row = {};
+      row['__cellIndex'] = {
+        row: i
+      };
+      for (var x = 0; x < valueList[i].length; x++) {
+        var columnName = valueList[0][x] ? valueList[0][x] : x;
+        row[columnName] = valueList[i][x];
+        row['__cellIndex'][columnName] = `'${sheetName}'!${String.fromCharCode(
+          65 + x
+        )}${i}`;
+      }
+      data.push(row);
+    }
+    return data;
+  }
+
   render() {
     var AuthenticatedMessage = null;
-    var PrayerData = {
-      title: null,
-      table: null
-    };
-    var AppConfig = {
-      title: null,
-      table: null
-    };
-
-    var HadithOfTheDayData = {
-      title: null,
-      table: null
-    };
 
     if (this.state.isSignedIn) {
       AuthenticatedMessage = (
@@ -146,25 +169,44 @@ class GoogleData extends Component {
           <button onClick={this.handleSignoutClick}>Sign out</button>
         </div>
       );
-      if (this.state.spreadsheetData) {
-        PrayerData = {
-          title: <h2>Prayer data</h2>,
-          table: this.transformValueList(
-            this.state.spreadsheetData.valueRanges[0].values
-          )
-        };
-        AppConfig = {
-          title: <h2>App config</h2>,
-          table: this.transformValueList(
-            this.state.spreadsheetData.valueRanges[1].values
-          )
-        };
-        HadithOfTheDayData = {
-          title: <h2>App config</h2>,
-          table: this.transformValueList(
-            this.state.spreadsheetData.valueRanges[2].values
-          )
-        };
+      if (
+        this.state.spreadsheetData &&
+        !this.state.transformedData.prayerData.title
+      ) {
+        this.setState(() => ({
+          transformedData: {
+            prayerData: {
+              title: <h2>Prayer data</h2>,
+              table: this.transformValueListToTable(
+                this.state.spreadsheetData.valueRanges[0].values
+              ),
+              data: this.transformValueListToObject(
+                'Prayer times',
+                this.state.spreadsheetData.valueRanges[0].values
+              )
+            },
+            appConfig: {
+              title: <h2>App config</h2>,
+              table: this.transformValueListToTable(
+                this.state.spreadsheetData.valueRanges[1].values
+              ),
+              data: this.transformValueListToObject(
+                'App config',
+                this.state.spreadsheetData.valueRanges[1].values
+              )
+            },
+            hadithOfTheDayData: {
+              title: <h2>Hadith of the day</h2>,
+              table: this.transformValueListToTable(
+                this.state.spreadsheetData.valueRanges[2].values
+              ),
+              data: this.transformValueListToObject(
+                'Hadith of the day',
+                this.state.spreadsheetData.valueRanges[2].values
+              )
+            }
+          }
+        }));
       }
     } else {
       AuthenticatedMessage = (
@@ -172,15 +214,17 @@ class GoogleData extends Component {
       );
     }
 
+    console.log(this.state.transformedData);
+
     return (
       <div className="GoogleDataWrapper">
         {AuthenticatedMessage}
-        {AppConfig.title}
-        {AppConfig.table}
-        {PrayerData.title}
-        {PrayerData.table}
-        {HadithOfTheDayData.title}
-        {HadithOfTheDayData.table}
+        {this.state.transformedData.appConfig.title}
+        {this.state.transformedData.appConfig.table}
+        {this.state.transformedData.prayerData.title}
+        {this.state.transformedData.prayerData.table}
+        {this.state.transformedData.hadithOfTheDayData.title}
+        {this.state.transformedData.hadithOfTheDayData.table}
       </div>
     );
   }
