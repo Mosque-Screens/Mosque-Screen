@@ -17,28 +17,12 @@ class GoogleData extends Component {
       isSignedIn: false,
       spreadsheetId: '17I6PybF41qf-QTo48wdpUp8liUgowVI0oP9AmJWv034',
       sheetRanges: [
-        "'Prayer times'!A:M",
-        "'App config'!A:F",
-        "'Hadith of the day'!A:B"
+        //"'Prayer times'!A:M",
+        "'App config'!A:F"
+        //"'Hadith of the day'!A:B"
       ],
       spreadsheetData: null,
-      transformedData: {
-        prayerData: {
-          title: null,
-          table: null,
-          data: null
-        },
-        appConfig: {
-          title: null,
-          table: null,
-          data: null
-        },
-        hadithOfTheDayData: {
-          title: null,
-          table: null,
-          data: null
-        }
-      }
+      transformedData: null
     };
 
     this.state.gapi.load('client:auth2', this.initClient);
@@ -154,7 +138,7 @@ class GoogleData extends Component {
           65 + x
         )}${i}`;
       }
-      data.push(row);
+      data[row.Key] = row;
     }
     return data;
   }
@@ -169,40 +153,15 @@ class GoogleData extends Component {
           <button onClick={this.handleSignoutClick}>Sign out</button>
         </div>
       );
-      if (
-        this.state.spreadsheetData &&
-        !this.state.transformedData.prayerData.title
-      ) {
+
+      if (this.state.spreadsheetData && !this.state.transformedData) {
         this.setState(() => ({
           transformedData: {
-            prayerData: {
-              title: <h2>Prayer data</h2>,
-              table: this.transformValueListToTable(
-                this.state.spreadsheetData.valueRanges[0].values
-              ),
-              data: this.transformValueListToObject(
-                'Prayer times',
-                this.state.spreadsheetData.valueRanges[0].values
-              )
-            },
             appConfig: {
               title: <h2>App config</h2>,
-              table: this.transformValueListToTable(
-                this.state.spreadsheetData.valueRanges[1].values
-              ),
               data: this.transformValueListToObject(
                 'App config',
-                this.state.spreadsheetData.valueRanges[1].values
-              )
-            },
-            hadithOfTheDayData: {
-              title: <h2>Hadith of the day</h2>,
-              table: this.transformValueListToTable(
-                this.state.spreadsheetData.valueRanges[2].values
-              ),
-              data: this.transformValueListToObject(
-                'Hadith of the day',
-                this.state.spreadsheetData.valueRanges[2].values
+                this.state.spreadsheetData.valueRanges[0].values
               )
             }
           }
@@ -219,12 +178,9 @@ class GoogleData extends Component {
     return (
       <div className="GoogleDataWrapper">
         {AuthenticatedMessage}
-        {this.state.transformedData.appConfig.title}
-        {this.state.transformedData.appConfig.table}
-        {this.state.transformedData.prayerData.title}
-        {this.state.transformedData.prayerData.table}
-        {this.state.transformedData.hadithOfTheDayData.title}
-        {this.state.transformedData.hadithOfTheDayData.table}
+        {this.state.transformedData
+          ? this.state.transformedData.appConfig.title
+          : null}
       </div>
     );
   }
