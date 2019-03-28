@@ -89,12 +89,21 @@ class GoogleData extends Component {
         spreadsheetId: this.state.spreadsheetId,
         ranges: this.state.sheetRanges
       })
-      .then(response => {
-        _this.setState(() => ({
-          spreadsheetData: response.result
-        }));
-        console.log(response.result);
-      });
+      .then(
+        response => {
+          _this.setState(() => ({
+            spreadsheetData: response.result
+          }));
+        },
+        error => {
+          _this.setState(() => ({
+            spreadsheetDataError:
+              error.result.error.code === 403
+                ? `This user does not have permission to spreadsheet, please give the signed in user permissions.`
+                : error.result.error.message
+          }));
+        }
+      );
   }
 
   transformValueListToTable(valueList) {
@@ -145,6 +154,7 @@ class GoogleData extends Component {
 
   render() {
     var AuthenticatedMessage = null;
+    var ErrorMessage = null;
 
     if (this.state.isSignedIn) {
       AuthenticatedMessage = (
@@ -154,7 +164,11 @@ class GoogleData extends Component {
         </div>
       );
 
-      if (this.state.spreadsheetData && !this.state.transformedData) {
+      if (
+        this.state.spreadsheetData &&
+        !this.state.transformedData &&
+        !this.state.spreadsheetDataError
+      ) {
         this.setState(() => ({
           transformedData: {
             appConfig: {
@@ -166,6 +180,8 @@ class GoogleData extends Component {
             }
           }
         }));
+      } else if (this.state.spreadsheetDataError) {
+        ErrorMessage = <p>{this.state.spreadsheetDataError}</p>;
       }
     } else {
       AuthenticatedMessage = (
@@ -178,6 +194,7 @@ class GoogleData extends Component {
     return (
       <div className="GoogleDataWrapper">
         {AuthenticatedMessage}
+        {ErrorMessage}
         {this.state.transformedData
           ? this.state.transformedData.appConfig.title
           : null}
