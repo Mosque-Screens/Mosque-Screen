@@ -106,33 +106,6 @@ class GoogleData extends Component {
       );
   }
 
-  transformValueListToTable(valueList) {
-    var rows = [];
-
-    for (var i = 1; i < valueList.length; i++) {
-      var columns = [];
-      for (var x = 0; x < valueList[i].length; x++) {
-        columns.push(<td key={`${i}-${x}`}>{valueList[i][x]}</td>);
-      }
-      rows.push(<tr key={i}>{columns}</tr>);
-    }
-
-    var headings = [];
-
-    for (var y = 0; y < valueList[0].length; y++) {
-      headings.push(<th key={`0-${y}`}>{valueList[0][y]}</th>);
-    }
-
-    return (
-      <table>
-        <thead>
-          <tr key={Math.random().toString()}>{headings}</tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </table>
-    );
-  }
-
   transformValueListToObject(sheetName, valueList) {
     var data = [];
     for (var i = 1; i < valueList.length; i++) {
