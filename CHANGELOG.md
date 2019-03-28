@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.4.1
+- Update to font size for hadith of the day to allow people to read from further distances
+
 ## 5.4.0
 - Adds admin route and placeholder view for admin
 
