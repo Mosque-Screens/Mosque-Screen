@@ -13,7 +13,7 @@ Join our discord channel here: https://discord.gg/CG7frj2
 
 ## Current customers / examples
 - Demo (https://screen.mosque.tech/)
-- Beacon Tree Masjid (UK 🇬🇧) (https://beacontree-masjid.mosque.tech/)
+- Beacon Tree Masjid (UK 🇬🇧) (https://btm.mosque.tech/)
 - East London Mosque (UK 🇬🇧) (https://elm.mosque.tech/)
 - Masjid Al-Rahman (USA 🇺🇸) (https://display.masjidalrahman.com/)
 - Redbridge Islamic Centre (UK 🇬🇧) (https://redbridge.mosque.tech/)
@@ -21,6 +21,7 @@ Join our discord channel here: https://discord.gg/CG7frj2
 
 ### Projects in progress
 - Westferry Mosque (UK 🇬🇧) (https://westferry.mosque.tech/)
+- East London Markazi (UK 🇬🇧) (https://markazi.mosque.tech/)
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
