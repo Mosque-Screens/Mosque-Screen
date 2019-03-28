@@ -99,7 +99,7 @@ class GoogleData extends Component {
           _this.setState(() => ({
             spreadsheetDataError:
               error.result.error.code === 403
-                ? `This user does not have permission to spreadsheet, please give the signed in user permissions.`
+                ? `This user does not have permission to the spreadsheet, please give the currently signed in user permissions or switch users.`
                 : error.result.error.message
           }));
         }
