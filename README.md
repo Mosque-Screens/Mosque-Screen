@@ -31,14 +31,11 @@ Join our discord channel here: https://discord.gg/CG7frj2
 ### Other unsupported deployments
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
 
-## Demo Data
-https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pubhtml
-
 ## Use your own data
 
 ### 1. Make a copy of the following spreadsheet: 
 
-`https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/edit?usp=sharing`
+https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/edit?usp=sharing
 
 ---
 
@@ -61,19 +58,24 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhz
 
 ---
 
-### 5. Add the following ENV variables in the application
+### 5. Copy CSV share link for `Hadith config`
+
+<img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-hadith-config.png" width="500px" />
+
+
+### 6. Add the following ENV variables in the application
 
 | KEY | VALUE |
 | --- | ----- |
-| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2084513295&single=true&output=csv |
-| REACT_APP_HADITH_DATA_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=223779376&single=true&output=csv |
-| REACT_APP_APP_CONFIG_SPREADSHEET_URL | https://docs.google.com/spreadsheets/d/e/2PACX-1vRHjHMDmua4IqpnSiAsLVUJEPtZDcJhziBHivD1fmWJu-StuxpPv-VRzBqX8bcC5499pZ9vBUeD_K5G/pub?gid=2071841746&single=true&output=csv |
+| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | {link_from_step_3} |
+| REACT_APP_APP_CONFIG_SPREADSHEET_URL  | {link_from_step_4} |
+| REACT_APP_HADITH_DATA_SPREADSHEET_URL | {link_from_step_5} |
 
 
 <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/setting-env-variables.png" width="500px" />
 
 ---
-### 6. Test the app
+### 7. Test the app
 
 **IMPORTANT: Make sure you use CSV**
 
