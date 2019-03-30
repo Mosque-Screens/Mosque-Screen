@@ -127,6 +127,9 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 
 ### Colours
 
+- ![#6156a5](https://placehold.it/15/6156a5/000000?text=+) `#6156a5`
+- ![#a2469a](https://placehold.it/15/a2469a/000000?text=+) `#a2469a`
+
 <p align="center">
   <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/colours.jpg" />
 </p>
