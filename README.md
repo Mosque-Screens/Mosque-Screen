@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/mosque-screens-logo.png" alt="Mosque Screen Logo" />
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-full.png" alt="Mosque Screen Logo" />
 </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/374fbcfb-e2e9-451c-a970-310194e51027/deploy-status)](https://app.netlify.com/sites/mosque-screen/deploys)
