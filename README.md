@@ -122,6 +122,39 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 ### Single view mode
 ![SingleView](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/SingleViewScreenshot.png "Single-View")
 
+
+## Branding
+
+### Colours
+
+<p align="center">
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/colours.jpg" />
+</p>
+
+### Full Logo
+
+<p align="center">
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-full.png" />
+</p>
+
+### Icon only logo
+
+<p align="center">
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/icon-only-logo.png" />
+</p>
+
+### Logo Black
+
+<p align="center">
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-black.png" />
+</p>
+
+### Logo White
+
+<p align="center">
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-white.png" style="background-color: black" />
+</p>
+
 ## Folder Structure
 
 ```
