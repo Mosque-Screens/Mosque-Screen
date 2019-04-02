@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.5.0
+- Add Google Analytics tracking to track usage of screens
+
 ## 5.4.1
 - Update to font size for hadith of the day to allow people to read from further distances
 
