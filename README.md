@@ -11,6 +11,24 @@ Build in association with [East London Mosque](https://www.eastlondonmosque.org.
 ## Need help?
 Join our discord channel here: https://discord.gg/CG7frj2
 
+## Contributors wall of fame
+
+This is a list of everyone that has contributed to the project, please make dua for everyone for their efforts. May Allah reward everyone. Ameen.
+
+**If you want to be part of this amazing group of people, make your contribution to the project!**
+
+*(This list is ordered alphabetically)*
+
+| Name | Role | Github |
+| ---- | ---- | ------ |
+| Al Habib Hassan | Software Engineer | https://github.com/alhabibhasan |
+| Didar Hussain  | Designer | - |
+| Dilwoar Hussain | Software Engineer | https://github.com/DilwoarH |
+| Fokrul Amin | IT Engineer | - |
+| Mahmud Hussain | Software Engineer | https://github.com/MahmudH |
+| Ridhwaan-ur Rahman | Business Intelligence | - |
+| Usamah K Ward | Business Intelligence | - |
+
 ## Current customers / examples
 - Demo (https://screen.mosque.tech/)
 - Beacon Tree Masjid (UK 🇬🇧) (https://btm.mosque.tech/)
