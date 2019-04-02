@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Admin.css';
-import GoogleData from '../_components/google-data/google-data';
+import AdminData from '../_components/admin-data/admin-data';
 
 class Admin extends Component {
   render() {
@@ -8,7 +8,7 @@ class Admin extends Component {
       <div className="AdminWrapper">
         <h1>Admin</h1>
         <div className="AdminContent">
-          <GoogleData />
+          <AdminData />
         </div>
       </div>
     );

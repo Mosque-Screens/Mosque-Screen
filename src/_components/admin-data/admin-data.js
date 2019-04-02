@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class GoogleData extends Component {
+class AdminData extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -94,6 +94,7 @@ class GoogleData extends Component {
           _this.setState(() => ({
             spreadsheetData: response.result
           }));
+          _this.setTransformedData();
         },
         error => {
           _this.setState(() => ({
@@ -125,42 +126,57 @@ class GoogleData extends Component {
     return data;
   }
 
-  render() {
-    var AuthenticatedMessage = null;
-    var ErrorMessage = null;
-
+  getAuthMessage() {
     if (this.state.isSignedIn) {
-      AuthenticatedMessage = (
+      return (
         <div className="AuthenticatedMessage">
           <p>Hi {this.state.userName}.</p>
           <button onClick={this.handleSignoutClick}>Sign out</button>
         </div>
       );
-
-      if (
-        this.state.spreadsheetData &&
-        !this.state.transformedData &&
-        !this.state.spreadsheetDataError
-      ) {
-        this.setState(() => ({
-          transformedData: {
-            appConfig: {
-              title: <h2>App config</h2>,
-              data: this.transformValueListToObject(
-                'App config',
-                this.state.spreadsheetData.valueRanges[0].values
-              )
-            }
-          }
-        }));
-      } else if (this.state.spreadsheetDataError) {
-        ErrorMessage = <p>{this.state.spreadsheetDataError}</p>;
-      }
     } else {
-      AuthenticatedMessage = (
+      return (
         <button onClick={this.handleAuthClick}>Sign in with Google</button>
       );
     }
+  }
+
+  getErrorMessage() {
+    return this.state.isSignedIn && this.state.spreadsheetDataError ? (
+      <p>{this.state.spreadsheetDataError}</p>
+    ) : null;
+  }
+
+  setTransformedData() {
+    if (
+      this.state.isSignedIn &&
+      this.state.spreadsheetData &&
+      !this.state.transformedData &&
+      !this.state.spreadsheetDataError
+    ) {
+      this.setState(() => ({
+        transformedData: {
+          appConfig: this.transformValueListToObject(
+            'App config',
+            this.state.spreadsheetData.valueRanges[0].values
+          )
+        }
+      }));
+    }
+  }
+
+  getAdminView() {
+    return (
+      <div>
+        <hr />
+        <h2>App config</h2>
+      </div>
+    );
+  }
+
+  render() {
+    var AuthenticatedMessage = this.getAuthMessage();
+    var ErrorMessage = this.getErrorMessage();
 
     console.log(this.state.transformedData);
 
@@ -168,12 +184,10 @@ class GoogleData extends Component {
       <div className="GoogleDataWrapper">
         {AuthenticatedMessage}
         {ErrorMessage}
-        {this.state.transformedData
-          ? this.state.transformedData.appConfig.title
-          : null}
+        {this.state.isSignedIn ? this.getAdminView() : null}
       </div>
     );
   }
 }
 
-export default GoogleData;
+export default AdminData;
