@@ -8,6 +8,9 @@
 
 Build in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
 
+## Roadmap
+[View roadmap](https://github.com/DilwoarH/Mosque-Screen/projects/1?fullscreen=true)
+
 ## Need help?
 Join our discord channel here: https://discord.gg/CG7frj2
 
