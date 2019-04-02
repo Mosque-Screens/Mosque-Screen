@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.5.1
+- Add favicons with new logo designs (Generated using https://realfavicongenerator.net)
+
 ## 5.5.0
 - Add Google Analytics tracking to track usage of screens
 
