@@ -28,6 +28,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 | Didar Hussain  | Designer | - |
 | Dilwoar Hussain | Software Engineer | https://github.com/DilwoarH |
 | Fokrul Amin | IT Engineer | - |
+| Ikbal Hussain | Interaction Designer | - |
 | Mahmud Hussain | Software Engineer | https://github.com/MahmudH |
 | Moiz Qureshi | Software Engineer | https://github.com/moiz-qureshi |
 | Ridhwaan-ur Rahman | Business Intelligence | - |
