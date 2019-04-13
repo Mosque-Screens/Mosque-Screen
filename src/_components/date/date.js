@@ -22,7 +22,7 @@ class Date extends Component {
   }
 
   getHijriDate() {
-    return moment().format('iD iMMMM iYYYY');
+    return moment().add(-1,'days').format('iD iMMMM iYYYY');
   }
 
   render() {
