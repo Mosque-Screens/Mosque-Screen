@@ -43,7 +43,7 @@ class SunriseAndZawwal extends Component {
           <tbody>
             <tr>
               <td>{this.state.sunrise}</td>
-              <td>{this.state.zawwal}</td>
+//            <td>{this.state.zawwal}</td>
             </tr>
           </tbody>
         </table>
