@@ -13,17 +13,23 @@ class Branding extends Component {
       prayer_time_highlight_colour: _appConfig.get(
         'prayer_time_highlight_colour'
       ),
-      clock_background_colour: _appConfig.get('clock_background_colour')
+      clock_background_colour: _appConfig.get('clock_background_colour'),
+      slider_mode: _appConfig.get('sliderMode')
     };
   }
 
   getCustomCSS() {
+    var background_percentage = {
+      left: this.state.slider_mode === 'single-view' ? 30 : 50,
+      right: this.state.slider_mode === 'single-view' ? 30 : 50
+    };
+
     return `
       /* MAIN BRANDING */
       body {
-        background: linear-gradient(to right, ${
-          this.state.primary_colour
-        } 50%, ${this.state.secondary_colour} 50%);
+        background: linear-gradient(to right, ${this.state.primary_colour} ${
+      background_percentage.right
+    }%, ${this.state.secondary_colour} ${background_percentage.left}%);
         color: ${this.state.primary_text_colour};
       }
 
