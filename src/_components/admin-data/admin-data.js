@@ -22,7 +22,8 @@ class AdminData extends Component {
         //"'Hadith of the day'!A:B"
       ],
       spreadsheetData: null,
-      transformedData: null
+      transformedData: null,
+      adminView: null
     };
 
     this.state.gapi.load('client:auth2', this.initClient);
@@ -108,22 +109,28 @@ class AdminData extends Component {
   }
 
   transformValueListToObject(sheetName, valueList) {
-    var data = [];
-    for (var i = 1; i < valueList.length; i++) {
-      var row = {};
-      row['__cellIndex'] = {
-        row: i
-      };
-      for (var x = 0; x < valueList[i].length; x++) {
-        var columnName = valueList[0][x] ? valueList[0][x] : x;
-        row[columnName] = valueList[i][x];
-        row['__cellIndex'][columnName] = `'${sheetName}'!${String.fromCharCode(
-          65 + x
-        )}${i}`;
+    return new Promise(resolve => {
+      var data = [];
+      var i = 1;
+      while (i < valueList.length) {
+        var row = {};
+        row['__cellIndex'] = {
+          row: i
+        };
+        var x = 0;
+        while (x < valueList[i].length) {
+          var columnName = valueList[0][x] ? valueList[0][x] : x;
+          row[columnName] = valueList[i][x];
+          row['__cellIndex'][
+            columnName
+          ] = `'${sheetName}'!${String.fromCharCode(65 + x)}${i}`;
+          x++;
+        }
+        data[row.Key] = row;
+        i++;
       }
-      data[row.Key] = row;
-    }
-    return data;
+      resolve(data);
+    });
   }
 
   getAuthMessage() {
@@ -154,22 +161,131 @@ class AdminData extends Component {
       !this.state.transformedData &&
       !this.state.spreadsheetDataError
     ) {
-      this.setState(() => ({
-        transformedData: {
-          appConfig: this.transformValueListToObject(
-            'App config',
-            this.state.spreadsheetData.valueRanges[0].values
-          )
-        }
-      }));
+      var _this = this;
+
+      this.transformValueListToObject(
+        'App config',
+        this.state.spreadsheetData.valueRanges[0].values
+      ).then(transformedData => {
+        _this.setState(() => ({
+          transformedData: transformedData
+        }));
+      });
     }
   }
 
-  getAdminView() {
+  getAdminView(data = this.state.transformedData) {
+    if (!data) return null;
+
+    var col_left = 'col-md-6';
+    var col_right = 'col-md-6';
+
     return (
-      <div>
+      <div className="AdminView">
         <hr />
         <h2>App config</h2>
+
+        <h3>Branding</h3>
+
+        {/* LOGO URL */}
+        <div className="row">
+          <div className={col_left}>
+            <label>Logo URL</label>
+          </div>
+          <div className={col_right}>
+            <img
+              src={data['Logo_URL']['Value']}
+              style={{
+                backgroundColor: data['primary_colour']['Value'],
+                width: '100px'
+              }}
+              alt="logo"
+            />
+            <div className="row">
+              <input
+                type="text"
+                value={data['Logo_URL']['Value']}
+                readOnly
+                style={{ width: '100%' }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Primary Colour */}
+        <div className="row">
+          <div className={col_left}>
+            <label>Primary Colour</label>
+          </div>
+          <div className={col_right}>
+            <input
+              type="color"
+              value={data['primary_colour']['Value']}
+              readOnly
+            />
+            {data['primary_colour']['Value']}
+          </div>
+        </div>
+
+        {/* Secondary Colour */}
+        <div className="row">
+          <div className={col_left}>
+            <label>Secondary Colour</label>
+          </div>
+          <div className={col_right}>
+            <input
+              type="color"
+              value={data['secondary_colour']['Value']}
+              readOnly
+            />
+            {data['secondary_colour']['Value']}
+          </div>
+        </div>
+
+        {/* Primary Text Colour */}
+        <div className="row">
+          <div className={col_left}>
+            <label>Primary Text Colour</label>
+          </div>
+          <div className={col_right}>
+            <input
+              type="color"
+              value={data['primary_text_colour']['Value']}
+              readOnly
+            />
+            {data['primary_text_colour']['Value']}
+          </div>
+        </div>
+
+        {/* Secondary Text Colour */}
+        <div className="row">
+          <div className={col_left}>
+            <label>Secondary Text Colour</label>
+          </div>
+          <div className={col_right}>
+            <input
+              type="color"
+              value={data['secondary_text_colour']['Value']}
+              readOnly
+            />
+            {data['secondary_text_colour']['Value']}
+          </div>
+        </div>
+
+        {/* Prayer Time Highlight Colour */}
+        <div className="row">
+          <div className={col_left}>
+            <label>Prayer Time Highlight Colour</label>
+          </div>
+          <div className={col_right}>
+            <input
+              type="color"
+              value={data['prayer_time_highlight_colour']['Value']}
+              readOnly
+            />
+            {data['prayer_time_highlight_colour']['Value']}
+          </div>
+        </div>
       </div>
     );
   }
@@ -178,13 +294,11 @@ class AdminData extends Component {
     var AuthenticatedMessage = this.getAuthMessage();
     var ErrorMessage = this.getErrorMessage();
 
-    console.log(this.state.transformedData);
-
     return (
-      <div className="GoogleDataWrapper">
+      <div className="AdminDataWrapper">
         {AuthenticatedMessage}
         {ErrorMessage}
-        {this.state.isSignedIn ? this.getAdminView() : null}
+        {this.getAdminView(this.state.transformedData)}
       </div>
     );
   }
