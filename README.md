@@ -36,15 +36,14 @@ This is a list of everyone that has contributed to the project, please make dua 
 
 ## Current customers / examples
 - Demo (https://screen.mosque.tech/)
+- East London Markazi (UK 🇬🇧) (https://markazi.mosque.tech/)
 - Beacon Tree Masjid (UK 🇬🇧) (https://btm.mosque.tech/)
 - East London Mosque (UK 🇬🇧) (https://elm.mosque.tech/)
 - Masjid Al-Rahman (USA 🇺🇸) (https://display.masjidalrahman.com/)
-- Redbridge Islamic Centre (UK 🇬🇧) (https://redbridge.mosque.tech/)
+- Redbridge Islamic Centre (UK 🇬🇧) (https://redbridge.mosque.tech/) [Single View Mode]
 - Jami Masjid & Islamic Centre (UK 🇬🇧) (https://jmic.mosque.tech/)
-
-### Projects in progress
+- Essex Jamme Mosque (UK 🇬🇧) (https://essex.mosque.tech/)
 - Westferry Mosque (UK 🇬🇧) (https://westferry.mosque.tech/)
-- East London Markazi (UK 🇬🇧) (https://markazi.mosque.tech/)
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
