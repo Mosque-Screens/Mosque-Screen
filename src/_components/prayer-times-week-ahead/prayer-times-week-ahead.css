@@ -1,0 +1,58 @@
+.PrayerTimesWeekAheadWrapper {
+  width: 100%;
+  font-family: 'PT Sans Narrow';
+}
+
+.PrayerTimesWeekAhead {
+  margin: 0 auto;
+  color: #e4e4e4;
+}
+
+.PrayerTimesWeekAhead thead tr th {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.PrayerTimesWeekAhead td {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 15px 16px 5px;
+}
+
+.PrayerTimesWeekAhead th:first-child {
+  text-align: right;
+}
+
+.PrayerTimesWeekAhead td:first-child {
+  text-align: right;
+  color: #e4e4e4;
+}
+
+.PrayerTimesWeekAhead-row {
+  color: white;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .PrayerTimesWeekAhead thead tr th {
+    font-size: 1em;
+  }
+
+  .PrayerTimesWeekAhead td {
+    font-size: 0.5em;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .PrayerTimesWeekAhead thead tr th {
+    font-size: 2em;
+  }
+
+  .PrayerTimesWeekAhead td {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 4px;
+  }
+}

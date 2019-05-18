@@ -1,0 +1,40 @@
+.HadithOfTheDayWrapper {
+  min-width: 70%;
+  width: auto;
+  display: block;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 50px;
+}
+
+.Hadith {
+  font-size: 40px;
+  text-align: justify;
+  margin-top: 40px;
+}
+
+.HadithSource {
+  font-size: 22px;
+  margin: inherit;
+}
+
+@media only screen and (max-width: 991px) {
+  .HadithOfTheDayWrapper {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .HadithOfTheDayTitle h1 {
+    font-size: 30px;
+  }
+
+  .Hadith {
+    font-size: 25px;
+    text-align: center;
+  }
+}

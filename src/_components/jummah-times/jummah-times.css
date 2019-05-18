@@ -1,0 +1,72 @@
+.JummahTimesWrapper {
+  width: 100%;
+  font-size: 3em;
+  margin-top: 70px;
+}
+
+.JummahTimesTable {
+  float: right;
+  padding-right: 50px;
+  width: 890px;
+}
+
+.JummahTimesTable td {
+  min-width: 150px;
+}
+
+.JummahTimesTable th,
+.JummahTimesTable td {
+  font-weight: normal;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.JummahTimesTable td:first-child {
+  text-align: left;
+  padding-left: 0px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .JummahTimesWrapper {
+    font-size: 1em;
+  }
+
+  .JummahTimesTable {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+
+  .JummahTimesTable th,
+  .JummahTimesTable td {
+    padding-left: 0;
+    min-width: 0;
+  }
+
+  .JummahTimesTable td {
+    min-width: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .JummahTimesWrapper {
+    font-size: 2em;
+  }
+
+  .JummahTimesTable {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+
+  .JummahTimesTable th,
+  .JummahTimesTable td {
+    padding-left: 0;
+    min-width: 0;
+  }
+
+  .JummahTimesTable td {
+    min-width: 0;
+  }
+}

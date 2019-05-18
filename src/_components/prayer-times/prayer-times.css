@@ -1,0 +1,84 @@
+.PrayerTimesWrapper {
+  width: 100%;
+}
+
+.PrayerTimes {
+  font-size: 3.5em;
+  text-align: right;
+  color: white;
+  margin-left: 60px;
+  padding-top: 75px;
+  width: 850px;
+}
+
+.PrayerTimes th {
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: right;
+}
+
+.PrayerTimes th:last-child {
+  padding-left: 50px;
+}
+
+.PrayerTimes td,
+.PrayerTimes th {
+  margin: 150px;
+  padding-bottom: 10px;
+}
+
+.PrayerTimes th:first-child {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.PrayerTimes .mithl-text {
+  font-size: 0.5em;
+  max-width: 100px;
+}
+
+.PrayerTimes td {
+  min-width: 100px;
+  font-size: 1.3em;
+}
+
+.PrayerTimes td:last-child {
+  font-weight: bolder;
+}
+
+.PrayerTimes td:last-child.normal-text {
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .PrayerTimes {
+    font-size: 1em;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .PrayerTimes th:last-child {
+    padding-left: 0;
+  }
+
+  .PrayerTimes td {
+    min-width: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .PrayerTimes {
+    font-size: 2em;
+    margin-left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .PrayerTimes th:last-child {
+    padding-left: 0;
+  }
+
+  .PrayerTimes td {
+    min-width: 10px;
+  }
+}

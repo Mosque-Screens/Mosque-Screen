@@ -1,0 +1,47 @@
+.NextJammahTimeWrapper {
+  width: 100%;
+}
+
+.NextJammahTime {
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  margin-top: 25vh;
+  padding-left: 50px;
+}
+
+.NextJammahTime td,
+.NextJammahTime th {
+  margin: 150px;
+}
+
+.NextJammahTime th:first-child {
+  font-weight: lighter;
+}
+
+.NextJammahTime td {
+  min-width: 100px;
+  font-size: 1.6em;
+}
+
+.NextJammahTime td:last-child {
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .NextJammahTime {
+    font-size: 2em;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+
+  .NextJammahTime td {
+    min-width: 0;
+  }
+
+  .NextJammahTime td,
+  .NextJammahTime th {
+    margin: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.SingleView .ClockWrapper {
+  margin-top: 10px;
+}
+.SingleView .Clock {
+  font-size: 4.9em;
+}
+
+.SingleView .AdditionalMessageWrapper {
+  font-size: 3em;
+}
+
+.SingleView .PrayerTimeSingleViewWrapper {
+  width: 100%;
+}
+
+.SingleView .PrayerTimesSingleView {
+  float: right;
+  width: 85%;
+  padding-right: 50px;
+}
+
+.SingleView .PrayerTimesSingleView td {
+  padding-bottom: 20px;
+}
+
+.SingleView .SunriseAndZawwalWrapper,
+.SingleView .JummahTimesWrapper {
+  margin-top: 30px;
+}
+
+.SingleView .PrayerTimesSingleView,
+.SingleView .SunriseAndZawwalWrapper,
+.SingleView .JummahTimesWrapper {
+  font-size: 3.5em;
+}

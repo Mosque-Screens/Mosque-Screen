@@ -1,0 +1,30 @@
+.ClockWrapper {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
+  padding: 15px;
+  background-color: white;
+  font-weight: 900;
+}
+
+.Clock {
+  font-size: 8em;
+  min-height: 60px;
+  color: #0d6554;
+}
+
+@media only screen and (max-width: 600px) {
+  .ClockWrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Clock {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .Clock {
+    font-size: 5em;
+  }
+}
