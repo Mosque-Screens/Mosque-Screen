@@ -35,6 +35,18 @@ This is a list of everyone that has contributed to the project, please make dua 
 | Usamah K Ward | Business Intelligence | - |
 
 ## Current customers / examples
+<<<<<<< HEAD
+- Demo (https://screen.mosque.tech/)
+- Beacon Tree Masjid (UK 🇬🇧) (https://btm.mosque.tech/)
+- East London Mosque (UK 🇬🇧) (https://elm.mosque.tech/)
+- Masjid Al-Rahman (USA 🇺🇸) (https://display.masjidalrahman.com/)
+- Redbridge Islamic Centre (UK 🇬🇧) (https://redbridge.mosque.tech/)
+- Jami Masjid & Islamic Centre (UK 🇬🇧) (https://jmic.mosque.tech/)
+
+### Projects in progress
+- Westferry Mosque (UK 🇬🇧) (https://westferry.mosque.tech/)
+- East London Markazi (UK 🇬🇧) (https://markazi.mosque.tech/)
+=======
 1. Demo (https://screen.mosque.tech/)
 2. East London Markazi (UK 🇬🇧) (https://markazi.mosque.tech/)
 3. Beacon Tree Masjid (UK 🇬🇧) (https://btm.mosque.tech/)
@@ -44,6 +56,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 7. Jami Masjid & Islamic Centre (UK 🇬🇧) (https://jmic.mosque.tech/)
 8. Essex Jamme Mosque (UK 🇬🇧) (https://essex.mosque.tech/)
 9. Westferry Mosque (UK 🇬🇧) (https://westferry.mosque.tech/)
+>>>>>>> upstream/master
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 

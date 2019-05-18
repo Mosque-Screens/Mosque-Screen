@@ -32,7 +32,11 @@ class SingleView extends Component {
           <Logo />
         </div>
         <div className="row">
+<<<<<<< HEAD
+          <div className="col-12 col-md-6">
+=======
           <div className="col-12 col-md-3">
+>>>>>>> upstream/master
             <div className="row">
               <Clock />
             </div>
@@ -45,7 +49,11 @@ class SingleView extends Component {
               />
             </div>
           </div>
+<<<<<<< HEAD
+          <div className="col-12 col-md-6">
+=======
           <div className="col-12 col-md-9">
+>>>>>>> upstream/master
             <div className="row">
               <PrayerTimesSingleView />
             </div>

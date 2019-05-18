@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "buildNumber": "v5.5.1",
+=======
   "buildNumber": "v5.6.0",
+>>>>>>> upstream/master
   "sliderMode": "slider",
   "slideTimeout": 8000,
   "googleSlides": {

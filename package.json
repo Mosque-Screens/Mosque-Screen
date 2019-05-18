@@ -1,6 +1,10 @@
 {
   "name": "mosque-screen",
+<<<<<<< HEAD
+  "version": "5.5.1",
+=======
   "version": "5.6.0",
+>>>>>>> upstream/master
   "private": true,
   "main": "public/electron.js",
   "homepage": "https://mosque-screen.netlify.com",

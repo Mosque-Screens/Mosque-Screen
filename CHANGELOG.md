@@ -6,9 +6,12 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+<<<<<<< HEAD
+=======
 ## 5.6.0
 - Updates to single view to make it 30/70 split
 
+>>>>>>> upstream/master
 ## 5.5.1
 - Add favicons with new logo designs (Generated using https://realfavicongenerator.net)
 

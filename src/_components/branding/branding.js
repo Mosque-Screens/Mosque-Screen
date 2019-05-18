@@ -13,8 +13,12 @@ class Branding extends Component {
       prayer_time_highlight_colour: _appConfig.get(
         'prayer_time_highlight_colour'
       ),
+<<<<<<< HEAD
+      clock_background_colour: _appConfig.get('clock_background_colour')
+=======
       clock_background_colour: _appConfig.get('clock_background_colour'),
       slider_mode: _appConfig.get('sliderMode')
+>>>>>>> upstream/master
     };
   }
 
