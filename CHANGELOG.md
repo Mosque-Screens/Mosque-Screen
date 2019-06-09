@@ -6,6 +6,10 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 5.7.0
+- Remove Electron
+- Fixes vulnerbility issues by updating to react-script 3.0.1
+
 ## 5.6.0
 - Updates to single view to make it 30/70 split
 
