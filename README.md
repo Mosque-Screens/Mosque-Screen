@@ -4,9 +4,21 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/374fbcfb-e2e9-451c-a970-310194e51027/deploy-status)](https://app.netlify.com/sites/mosque-screen/deploys)
 
-# Mosque Screen
+# Mosque Screens
 
 Build in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
+
+## Help make Mosque Screens sustainable 
+
+The Mosque Screens project is a self funded project and does not have any financial income. As with all tech projects, there are costs which are incurred by the maintainers. These include: Servers, domains, databases etc.
+
+Please help by donating to the project via the following link [PayPal](https://paypal.me/pools/c/8ftiLlvQwo).
+
+You can donate as little or as much as you want, there is no obligation. Each penny will be used to pay for the running of these screens and keep it free for mosques around the world.
+
+<a href="https://paypal.me/pools/c/8ftiLlvQwo" align="center">
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/donate-with-paypal.png" alt="Donate with paypal" />
+</a>
 
 ## Roadmap
 [View roadmap](https://github.com/DilwoarH/Mosque-Screen/projects/1?fullscreen=true)
