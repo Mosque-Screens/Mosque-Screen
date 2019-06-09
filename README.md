@@ -17,7 +17,7 @@ Please help by donating to the project via the following link [PayPal](https://p
 You can donate as little or as much as you want, there is no obligation. Each penny will be used to pay for the running of these screens and keep it free for mosques around the world.
 
 <a href="https://paypal.me/pools/c/8ftiLlvQwo" align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/donate-with-paypal.png" alt="Donate with paypal" />
+  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/donate-with-paypal.png" alt="Donate with paypal" width="300" />
 </a>
 
 ## Roadmap
