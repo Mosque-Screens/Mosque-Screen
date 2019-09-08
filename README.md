@@ -12,12 +12,12 @@ Build in association with [East London Mosque](https://www.eastlondonmosque.org.
 
 The Mosque Screens project is a self funded project and does not have any financial income. As with all tech projects, there are costs which are incurred by the maintainers. These include: Servers, domains, databases etc.
 
-Please help by donating to the project via the following link [PayPal](https://paypal.me/pools/c/8ftiLlvQwo).
+Please help by donating to the project via the following [link](https://donate.mosque.tech).
 
 You can donate as little or as much as you want, there is no obligation. Each penny will be used to pay for the running of these screens and keep it free for mosques around the world.
 
-<a href="https://paypal.me/pools/c/8ftiLlvQwo" align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/donate-with-paypal.png" alt="Donate with paypal" width="300" />
+<a href="https://donate.mosque.tech" align="center">
+  Donate
 </a>
 
 ## Roadmap
