@@ -22,10 +22,25 @@
       "git add"
     ]
   },
+  "devDependencies": {
+    "lodash": "4.17.15",
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.6",
+    "webpack-dev-server": "3.8.0",
+    "babel-loader": "8.0.6",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-env": "7.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "style-loader": "1.0.0",
+    "css-loader": "3.2.0",
+    "sass-loader": "7.2.0",
+    "node-sass": "4.12.0",
+    "url-loader": "2.1.0"
+  },
   "scripts": {
     "precommit": "lint-staged",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --open",
+    "build": "webpack --mode production",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
