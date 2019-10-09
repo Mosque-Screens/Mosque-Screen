@@ -53,6 +53,14 @@ class PrayerTimesSingleView extends Component {
     this.stopInterval();
   }
 
+  getAsrTime() {
+    if (this.state.prayerTimes['Asr Mithl 1']) {
+      return this.state.prayerTimes['Asr Mithl 1'];
+    } else {
+      return this.state.prayerTimes['Asr Mithl 2'];
+    }
+  }
+
   render() {
     return (
       <div className="PrayerTimeSingleViewWrapper">
@@ -96,7 +104,7 @@ class PrayerTimesSingleView extends Component {
             </tr>
             <tr>
               <th>'Asr</th>
-              <td>{this.state.prayerTimes['Asr Mithl 2']}</td>
+              <td>{this.getAsrTime()}</td>
               <td
                 className={
                   this.state.nextJammah.name === 'Asr'

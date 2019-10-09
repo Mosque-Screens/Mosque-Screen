@@ -15,7 +15,52 @@ class PrayerTimes extends Component {
     return _data.getPrayerTimes();
   }
 
+  getAsrRows() {
+    if (
+      this.state.prayerTimes['Asr Mithl 1'] &&
+      !this.state.prayerTimes['Asr Mithl 2']
+    ) {
+      return (
+        <tr>
+          <th>Asr</th>
+          <td />
+          <td>{this.state.prayerTimes['Asr Mithl 1']}</td>
+          <td>{this.state.prayerTimes['Asr Jama‘ah']}</td>
+        </tr>
+      );
+    } else if (
+      this.state.prayerTimes['Asr Mithl 2'] &&
+      !this.state.prayerTimes['Asr Mithl 1']
+    ) {
+      return (
+        <tr>
+          <th>Asr</th>
+          <td />
+          <td>{this.state.prayerTimes['Asr Mithl 2']}</td>
+          <td>{this.state.prayerTimes['Asr Jama‘ah']}</td>
+        </tr>
+      );
+    } else {
+      return [
+        <tr key="asr1">
+          <th rowSpan="2">'Asr</th>
+          <td className="mithl-text">mithl 1</td>
+          <td>{this.state.prayerTimes['Asr Mithl 1']}</td>
+          <td rowSpan="2">{this.state.prayerTimes['Asr Jama‘ah']}</td>
+        </tr>,
+        <tr key="asr2">
+          <td className="mithl-text">mithl 2</td>
+          <td className="normal-text">
+            {this.state.prayerTimes['Asr Mithl 2']}
+          </td>
+        </tr>
+      ];
+    }
+  }
+
   render() {
+    var asrRows = this.getAsrRows();
+
     return (
       <div className="PrayerTimeWrapper">
         <table className="PrayerTimes">
@@ -40,18 +85,7 @@ class PrayerTimes extends Component {
               <td>{this.state.prayerTimes['Zuhr Begins']}</td>
               <td>{this.state.prayerTimes['Zuhr Jama‘ah']}</td>
             </tr>
-            <tr>
-              <th rowSpan="2">'Asr</th>
-              <td className="mithl-text">mithl 1</td>
-              <td>{this.state.prayerTimes['Asr Mithl 1']}</td>
-              <td rowSpan="2">{this.state.prayerTimes['Asr Jama‘ah']}</td>
-            </tr>
-            <tr>
-              <td className="mithl-text">mithl 2</td>
-              <td className="normal-text">
-                {this.state.prayerTimes['Asr Mithl 2']}
-              </td>
-            </tr>
+            {asrRows}
             <tr>
               <th>Maghrib</th>
               <td />
