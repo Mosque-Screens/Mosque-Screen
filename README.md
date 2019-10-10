@@ -45,10 +45,10 @@ This is a list of everyone that has contributed to the project, please make dua 
 | Fokrul Amin | IT Engineer | - |
 | Ikbal Hussain | Interaction Designer | - |
 | Mahmud Hussain | Software Engineer | https://github.com/MahmudH |
+| Mohamed Abdisalam | Product Management | - | 
 | Moiz Qureshi | Software Engineer | https://github.com/moiz-qureshi |
 | Ridhwaan-ur Rahman | Business Intelligence | - |
 | Usamah K Ward | Business Intelligence | - |
-| Mohamed Abdisalam | Product Management | - | 
 
 ## Current customers / examples
 1. Demo (https://screen.mosque.tech/)
