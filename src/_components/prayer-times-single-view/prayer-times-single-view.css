@@ -50,6 +50,12 @@
   font-weight: normal;
 }
 
+.PrayerTimesSingleView .bullet-list--no-decorations {
+  list-style-type: none;
+  font-size: 0.7em;
+  margin: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .PrayerTimesSingleView {
     font-size: 1em;

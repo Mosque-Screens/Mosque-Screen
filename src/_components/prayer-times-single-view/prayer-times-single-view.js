@@ -54,10 +54,23 @@ class PrayerTimesSingleView extends Component {
   }
 
   getAsrTime() {
-    if (this.state.prayerTimes['Asr Mithl 1']) {
+    if (
+      this.state.prayerTimes['Asr Mithl 1'] &&
+      !this.state.prayerTimes['Asr Mithl 2']
+    ) {
       return this.state.prayerTimes['Asr Mithl 1'];
-    } else {
+    } else if (
+      this.state.prayerTimes['Asr Mithl 2'] &&
+      !this.state.prayerTimes['Asr Mithl 1']
+    ) {
       return this.state.prayerTimes['Asr Mithl 2'];
+    } else {
+      return (
+        <ul className="bullet-list--no-decorations">
+          <li>{this.state.prayerTimes['Asr Mithl 1']}</li>
+          <li>{this.state.prayerTimes['Asr Mithl 2']}</li>
+        </ul>
+      );
     }
   }
 
