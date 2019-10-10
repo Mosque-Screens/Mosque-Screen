@@ -33,3 +33,34 @@
 .SingleView .JummahTimesWrapper {
   font-size: 3.5em;
 }
+
+@media only screen and (max-width: 600px) {
+  .SingleView .AdditionalMessageWrapper,
+  .SingleView .SunriseAndZawwalWrapper,
+  .SingleView .PrayerTimesSingleView,
+  .SingleView .JummahTimesWrapper,
+  .SingleView .DateWrapper {
+    font-size: 1em;
+  }
+
+  .SingleView .Clock {
+    font-size: 3em;
+  }
+
+  .SingleView .PrayerTimesSingleView {
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .SingleView .DateWrapper {
+    margin-top: 10px;
+  }
+
+  .SingleView .DateWrapper,
+  .SingleView .DateWrapper .row {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
