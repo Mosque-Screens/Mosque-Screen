@@ -33,3 +33,17 @@
 .SingleView .JummahTimesWrapper {
   font-size: 3.5em;
 }
+
+@media only screen and (max-width: 600px) {
+  .SingleView .PrayerTimesSingleView,
+  .SingleView .SunriseAndZawwalWrapper,
+  .SingleView .JummahTimesWrapper {
+    font-size: 1em;
+  }
+
+  .SingleView .PrayerTimesSingleView {
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
+}

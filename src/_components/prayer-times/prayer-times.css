@@ -51,6 +51,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .PrayerTimesWrapper {
+    width: 100%;
+  }
+
   .PrayerTimes {
     font-size: 1em;
     margin-left: 0;
