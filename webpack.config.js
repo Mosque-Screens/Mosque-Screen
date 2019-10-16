@@ -11,7 +11,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|ts)$/,
                 exclude: /node_modules/,
                 use: [
                     'babel-loader'
@@ -44,7 +44,7 @@ module.exports = {
         net: 'empty'
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx', '.ts']
     },
     output: {
         path: __dirname + '/dist',
