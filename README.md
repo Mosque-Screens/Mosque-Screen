@@ -65,10 +65,10 @@ This is a list of everyone that has contributed to the project, please make dua 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
 ## Easy one click deployment
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/DilwoarH/Mosque-Screen)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Mosque-Screens/Mosque-Screen)
 
 ### Other unsupported deployments
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DilwoarH/Mosque-Screen)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mosque-Screens/Mosque-Screen)
 
 ## Use your own data
 
