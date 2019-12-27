@@ -62,6 +62,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 9. Westferry Mosque (UK 🇬🇧) (https://westferry.mosque.tech/)
 10. Noor Al Hadi Mosque (UK 🇬🇧) (https://noor-al-hadi.mosque.tech/)
 11. Masjid Al Bayan Center (UK 🇬🇧) (https://albayan.mosque.tech/)
+12. Government Digital Service (UK 🇬🇧) (https://gds.mosque.tech/)
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
