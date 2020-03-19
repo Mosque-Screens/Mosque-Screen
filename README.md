@@ -200,6 +200,10 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
   <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-white.png" style="background-color: black" />
 </p>
 
+## Remove background of logo
+
+To remove background of logo without photoshop, you can use this website https://remove.bg
+
 ## Folder Structure
 
 ```
