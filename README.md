@@ -64,6 +64,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 11. Masjid Al Bayan Center (UK 🇬🇧) (https://albayan.mosque.tech/)
 12. Government Digital Service (UK 🇬🇧) (https://gds.mosque.tech/)
 13. Masjid as Salam (New Zealand 🇳🇿) (https://display.masjidassalam.co.nz/)
+14. Brixton Masjid (UK 🇬🇧) (https://brixton-masjid.mosque.tech/)
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
