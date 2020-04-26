@@ -4,6 +4,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/374fbcfb-e2e9-451c-a970-310194e51027/deploy-status)](https://app.netlify.com/sites/mosque-screen/deploys)
 
+<a href="https://www.producthunt.com/posts/mosque-screens?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mosque-screens" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=195453&theme=light" alt="Mosque Screens - World's first open source digital screen for Mosques 🕌 | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+
 # Mosque Screens
 
 Build in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
