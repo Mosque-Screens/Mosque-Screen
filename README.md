@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-full.png" alt="Mosque Screen Logo" />
+  <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/branding/logo-full.png" alt="Mosque Screen Logo" />
 </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/374fbcfb-e2e9-451c-a970-310194e51027/deploy-status)](https://app.netlify.com/sites/mosque-screen/deploys)
@@ -23,11 +23,11 @@ You can donate as little or as much as you want, there is no obligation. Each pe
 </a>
 
 ## Roadmap
-[View roadmap](https://github.com/DilwoarH/Mosque-Screen/projects/1?fullscreen=true)
+[View roadmap](https://github.com/Mosque-Screens/Mosque-Screen/projects/1?fullscreen=true)
 
 ## Need help?
 
-If you need support, contact us on: [mosque.screens786@gmail.com](mailto:mosque.screens786@gmail.com)
+If you need support, contact us on: [info@mosque.tech](mailto:info@mosque.tech)
 
 Join our discord channel here: https://discord.gg/CG7frj2
 
@@ -67,6 +67,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 12. Government Digital Service (UK 🇬🇧) (https://gds.mosque.tech/)
 13. Masjid as Salam (New Zealand 🇳🇿) (https://display.masjidassalam.co.nz/)
 14. Brixton Masjid (UK 🇬🇧) (https://brixton-masjid.mosque.tech/)
+14. Poplar Masjid (UK 🇬🇧) (https://poplar.mosque.tech/)
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
@@ -99,13 +100,13 @@ https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbF
 
 ### 4. Copy CSV share link for `App config`
 
-<img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-app-config.png" width="500px" />
+<img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/publish-app-config.png" width="500px" />
 
 ---
 
 ### 5. Copy CSV share link for `Hadith config`
 
-<img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-hadith-config.png" width="500px" />
+<img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/publish-hadith-config.png" width="500px" />
 
 
 ### 6. Add the following ENV variables in the application
@@ -117,7 +118,7 @@ https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbF
 | REACT_APP_HADITH_DATA_SPREADSHEET_URL | {link_from_step_5} |
 
 
-<img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/setting-env-variables.png" width="500px" />
+<img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/setting-env-variables.png" width="500px" />
 
 ---
 ### 7. Test the app
@@ -157,15 +158,15 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 
 ## Screenshots of prototype
 
-![BTM-slide-1](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-slide-1.png "BTM-slide-1")
-![BTM-slide-2](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-slide-2.png "BTM-slide-2")
-![BTM-Next-Salaah](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Next-Salaah.png "BTM-Next-Salaah")
-![BTM-7days](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
-![BTM-Black-Screen](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
-![HadithOfTheDay](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/HadithOfTheDayView.png "HadithOfTheDay")
+![BTM-slide-1](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/BTM-slide-1.png "BTM-slide-1")
+![BTM-slide-2](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/BTM-slide-2.png "BTM-slide-2")
+![BTM-Next-Salaah](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/BTM-Next-Salaah.png "BTM-Next-Salaah")
+![BTM-7days](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/BTM-7days.png "BTM-7days")
+![BTM-Black-Screen](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/BTM-Black-Screen.png "BTM-Black-Screen")
+![HadithOfTheDay](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/HadithOfTheDayView.png "HadithOfTheDay")
 
 ### Single view mode
-![SingleView](https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/SingleViewScreenshot.png "Single-View")
+![SingleView](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/SingleViewScreenshot.png "Single-View")
 
 
 ## Branding
@@ -176,31 +177,31 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 - ![#a2469a](https://placehold.it/15/a2469a/000000?text=+) `#a2469a`
 
 <p align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/colours.jpg" />
+  <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/branding/colours.jpg" />
 </p>
 
 ### Full Logo
 
 <p align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-full.png" />
+  <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/branding/logo-full.png" />
 </p>
 
 ### Icon only logo
 
 <p align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/icon-only-logo.png" />
+  <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/branding/icon-only-logo.png" />
 </p>
 
 ### Logo Black
 
 <p align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-black.png" />
+  <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/branding/logo-black.png" />
 </p>
 
 ### Logo White
 
 <p align="center">
-  <img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/branding/logo-white.png" style="background-color: black" />
+  <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/branding/logo-white.png" style="background-color: black" />
 </p>
 
 ## Remove background of logo
