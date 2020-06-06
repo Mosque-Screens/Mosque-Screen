@@ -81,7 +81,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 
 ### 1. Make a copy of the following spreadsheet: 
 
-https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/copy
 
 ---
 
