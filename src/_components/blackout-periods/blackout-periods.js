@@ -26,11 +26,11 @@ class BlackoutPeriods extends Component {
     var _data = new PrayerData();
     var currentDay = _data.getPrayerTimes(date);
     var prayerTimes = {
-      fajr: `${currentDay['Fajr Jama‘ah']} AM`,
-      zuhr: `${currentDay['Zuhr Jama‘ah']} PM`,
-      asr: `${currentDay['Asr Jama‘ah']} PM`,
-      maghrib: `${currentDay['Maghrib Jama‘ah']} PM`,
-      isha: `${currentDay['Isha Jama‘ah']} PM`
+      fajr: `${currentDay['fajr_jamaah']} AM`,
+      zuhr: `${currentDay['zuhr_jamaah']} PM`,
+      asr: `${currentDay['asr_jamaah']} PM`,
+      maghrib: `${currentDay['maghrib_jamaah']} PM`,
+      isha: `${currentDay['isha_jamaah']} PM`
     };
     return prayerTimes;
   }

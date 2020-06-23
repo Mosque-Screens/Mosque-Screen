@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 6.0.0
+- BREAKING: Changes CSV API to JSON API. Add JSON APIs
+
 ## 5.7.0
 - Remove Electron
 - Fixes vulnerbility issues by updating to react-script 3.0.1

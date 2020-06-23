@@ -37,47 +37,47 @@ class NextJammahTime extends Component {
     var currentDate = this.getTodaysPrayerTime();
     var tomorrowsPrayerTime = this.getTomorrowsPrayerTime();
     var currentTime = this.getCurrentTime();
-    if (this.stringToTime(`${currentDate['Fajr Jama‘ah']} AM`) > currentTime) {
+    if (this.stringToTime(`${currentDate['fajr_jamaah']} AM`) > currentTime) {
       return {
         name: 'Fajr',
-        time: `${currentDate['Fajr Jama‘ah']} AM`
+        time: `${currentDate['fajr_jamaah']} AM`
       };
     }
 
-    if (this.stringToTime(`${currentDate['Zuhr Jama‘ah']} PM`) > currentTime) {
+    if (this.stringToTime(`${currentDate['zuhr_jamaah']} PM`) > currentTime) {
       return {
         name: 'Zuhr',
-        time: `${currentDate['Zuhr Jama‘ah']} PM`
+        time: `${currentDate['zuhr_jamaah']} PM`
       };
     }
 
-    if (this.stringToTime(`${currentDate['Asr Jama‘ah']} PM`) > currentTime) {
+    if (this.stringToTime(`${currentDate['asr_jamaah']} PM`) > currentTime) {
       return {
         name: 'Asr',
-        time: `${currentDate['Asr Jama‘ah']} PM`
+        time: `${currentDate['asr_jamaah']} PM`
       };
     }
 
     if (
-      this.stringToTime(`${currentDate['Maghrib Jama‘ah']} PM`) > currentTime
+      this.stringToTime(`${currentDate['maghrib_jamaah']} PM`) > currentTime
     ) {
       return {
         name: 'Maghrib',
-        time: `${currentDate['Maghrib Jama‘ah']} PM`
+        time: `${currentDate['maghrib_jamaah']} PM`
       };
     }
 
-    if (this.stringToTime(`${currentDate['Isha Jama‘ah']} PM`) > currentTime) {
+    if (this.stringToTime(`${currentDate['isha_jamaah']} PM`) > currentTime) {
       return {
         name: 'Isha',
-        time: `${currentDate['Isha Jama‘ah']} PM`
+        time: `${currentDate['isha_jamaah']} PM`
       };
     }
 
     // if none return the next day fajr
     return {
       name: 'Fajr',
-      time: `${tomorrowsPrayerTime['Fajr Jama‘ah']} AM`
+      time: `${tomorrowsPrayerTime['fajr_jamaah']} AM`
     };
   }
 
