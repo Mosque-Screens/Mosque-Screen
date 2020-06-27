@@ -28,7 +28,7 @@ class PrayerTimesWeekAhead extends Component {
       // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
 
       var times = this.getPrayerTimes(i);
-      var date = moment(times['Date'], 'DD/MM/YYYY').format('ddd D MMM');
+      var date = moment(times['date'], 'DD/MM/YYYY').format('ddd D MMM');
       rows.push(
         <tr key={i} className="PrayerTimesWeekAhead-row">
           <td>{date}</td>
