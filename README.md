@@ -84,7 +84,7 @@ https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbF
 
 ### 2. Share access to spreadsheet with API script
 
-Share "view" access with mosquescreens786@gmail.com.
+Share "view" access with mosque.screens786@gmail.com.
 
 ---
 
