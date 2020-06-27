@@ -74,10 +74,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 ## Easy one click deployment
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Mosque-Screens/Mosque-Screen)
 
-### Other unsupported deployments
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mosque-Screens/Mosque-Screen)
-
-## Use your own data
+## Using Google Sheets to store your data
 
 ### 1. Make a copy of the following spreadsheet: 
 
@@ -85,47 +82,204 @@ https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbF
 
 ---
 
-### 2. Publish the spreadsheet on Google Sheet: File > publish to the web > Publish entire document as a CSV
+### 2. Share access to spreadsheet with API script
 
-<img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/file-publish.png" width="300px" />
-<img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-entire-doc.png" width="500px" />
-
----
-
-### 3. Copy CSV share link for `Prayer times`
-
-<img src="https://github.com/DilwoarH/Mosque-Screen/raw/master/screenshots/publish-prayer-times.png" width="500px" />
+Share "view" access with mosquescreens786@gmail.com.
 
 ---
 
-### 4. Copy CSV share link for `App config`
+### 3. Get Google Sheets ID
 
-<img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/publish-app-config.png" width="500px" />
+For example for the following Sheet URL:
+
+```
+https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/edit
+```
+
+The ID would be:
+
+```
+1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s
+```
 
 ---
 
-### 5. Copy CSV share link for `Hadith config`
-
-<img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/publish-hadith-config.png" width="500px" />
-
-
-### 6. Add the following ENV variables in the application
+### 4. Add the following ENV variables in the application
 
 | KEY | VALUE |
 | --- | ----- |
-| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | {link_from_step_3} |
-| REACT_APP_APP_CONFIG_SPREADSHEET_URL  | {link_from_step_4} |
-| REACT_APP_HADITH_DATA_SPREADSHEET_URL | {link_from_step_5} |
-
-
-<img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/setting-env-variables.png" width="500px" />
+| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | https://script.google.com/macros/s/AKfycbzG1PEjY3Gopuw9G59oNY2XYeKyZanQcXqYCXgw6Xo3mk5yqrE/exec?google_sheet_id={google_sheets_id} |
+| REACT_APP_APP_CONFIG_SPREADSHEET_URL  | https://script.google.com/macros/s/AKfycbxAG6RD-hfL-HzZ_YMBeiXa4mnkJBpt1QhrJmvHIU18KUUxPuU/exec?google_sheet_id={google_sheets_id} |
+| REACT_APP_HADITH_DATA_SPREADSHEET_URL | https://script.google.com/macros/s/AKfycby6jZBf7sKGLte5mdxbqeENeRfZsX_XZqntI-6n8-9Z3-8mYUio/exec?google_sheet_id={google_sheets_id} |
 
 ---
 ### 7. Test the app
 
-**IMPORTANT: Make sure you use CSV**
+If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel.
 
 ---
+
+## Using your own API backend
+
+You can use your own backend APIs rather than Google sheets. You will need to send the data in the following formats.
+
+### Prayer Data API
+
+```json
+
+{
+  "DD/MM/YYYY": {
+    "date": "DD/MM/YYYY | STRING",
+    "fajr_begins":"H:MM | STRING",
+    "fajr_jamaah":"H:MM | STRING",
+    "sunrise":"H:MM | STRING",
+    "zuhr_begins":"H:MM | STRING",
+    "zuhr_jamaah":"H:MM | STRING",
+    "asr_1_begins":"H:MM | STRING",
+    "asr_2_begins":"H:MM | STRING",
+    "asr_jamaah":"H:MM | STRING",
+    "maghrib_begins":"H:MM | STRING",
+    "maghrib_jamaah":"H:MM | STRING",
+    "isha_begins":"H:MM | STRING",
+    "isha_jamaah":"H:MM | STRING"
+  }
+  ...
+}
+
+```
+
+Example
+
+```json
+
+{
+  "01/01/2020": {
+    "date": "01/01/2020",
+    "fajr_begins":"6:26",
+    "fajr_jamaah":"6:56",
+    "sunrise":"8:03",
+    "zuhr_begins":"12:09",
+    "zuhr_jamaah":"12:45",
+    "asr_1_begins":"1:46",
+    "asr_2_begins":"2:16",
+    "asr_jamaah":"2:45",
+    "maghrib_begins":"4:05",
+    "maghrib_jamaah":"4:12",
+    "isha_begins":"5:42",
+    "isha_jamaah":"7:30"
+  }
+  ...
+}
+
+```
+
+### App Config Data API
+
+
+```json
+
+{
+  "Logo_URL": "URL | STRING",
+  "primary_colour": "HEX | STRING",
+  "secondary_colour": "HEX | STRING",
+  "primary_text_colour": "HEX | STRING",
+  "secondary_text_colour": "HEX | STRING",
+  "prayer_time_highlight_colour": "HEX | STRING",
+  "clock_background_colour": "HEX | STRING",
+  "time_format": "TIME | STRING",
+  "sliderMode": "slider | single-view | STRING",
+  "sliderTimeout": "milliseconds | STRING",
+  "Text_Donate_Message": "HTML | STRING",
+  "Alternative_Donate_Message": "HTML | STRING",
+  "Mobile_Use_Notification": "HTML | STRING",
+  "SingleView_Message": "HTML | STRING",
+  "Jummah_slot_1_label": "STRING",
+  "Jummah_slot_1_winter": "STRING",
+  "Jummah_slot_1_summer": "STRING",
+  "Jummah_slot_2_label": "STRING",
+  "Jummah_slot_2_winter": "STRING",
+  "Jummah_slot_2_summer": "STRING",
+  "blackOutPeriod_fajr": "integer | STRING",
+  "blackOutPeriod_zuhr": "integer | STRING",
+  "blackOutPeriod_asr": "integer | STRING",
+  "blackOutPeriod_maghrib": "integer | STRING",
+  "blackOutPeriod_isha": "integer | STRING",
+  "blackOutPeriod_jummah": "integer | STRING"
+}
+
+```
+
+Example:
+
+```json
+
+{
+  "Logo_URL": "https://raw.githubusercontent.com/DilwoarH/Mosque-Screen/master/src/_components/logo/assets/ELM-logo-notext-white.gif",
+  "primary_colour": "#0f715d",
+  "secondary_colour": "#0c5a4b",
+  "primary_text_colour": "#fff",
+  "secondary_text_colour": "#e4e4e4",
+  "prayer_time_highlight_colour": "#ff3995",
+  "clock_background_colour": "#fff",
+  "time_format": "h:mm A",
+  "sliderMode": "slider",
+  "sliderTimeout": "8000",
+  "Text_Donate_Message": "<p class='top'><i>You can donate by texting</i></p>\n<p class='middle'>DONATE &pound;5 to 70070</p>\n<p class='bottom'><i>or &pound;1, &pound;2, &pound;3, &pound;4 or &pound;10</i></p>",
+  "Alternative_Donate_Message": "<p><i>You can donate by</i></p>\n<p><i>contactless</i></p>\n<p><i>cards and phones</i></p>",
+  "Mobile_Use_Notification": "<p><i>Please ensure your</i></p>\n<p><i>mobile phone is silent</i></p>\n<p><i>in the prayer hall</i></p>",
+  "SingleView_Message": "<p><i>Please ensure your</i></p>\n<p><i>mobile phone is silent</i></p>\n<p><i>in the prayer hall</i></p>",
+  "Jummah_slot_1_label": "Khutbah",
+  "Jummah_slot_1_winter": "12:30",
+  "Jummah_slot_1_summer": "1:15",
+  "Jummah_slot_2_label": "Jammah",
+  "Jummah_slot_2_winter": "1:00",
+  "Jummah_slot_2_summer": "1:45",
+  "blackOutPeriod_fajr": "10",
+  "blackOutPeriod_zuhr": "10",
+  "blackOutPeriod_asr": "10",
+  "blackOutPeriod_maghrib": "10",
+  "blackOutPeriod_isha": "10",
+  "blackOutPeriod_jummah": "60"
+}
+
+```
+
+### Hadith Data API
+
+```json
+
+[
+  {
+    "hadith": "STRING",
+    "source": "STRING"
+  }
+  ...
+]
+
+```
+
+Example:
+
+```json
+
+[
+  {
+    "hadith": "The Messenger of Allah (pbuh) said, “The person who goes about with calumnies will never enter Jannah.”",
+    "source": "Bukhari and Muslim"
+  }
+  ...
+]
+
+```
+
+### Adding your APIs to ENV
+
+| KEY | VALUE |
+| --- | ----- |
+| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | https://api.your-mosque.com/prayer-data |
+| REACT_APP_APP_CONFIG_SPREADSHEET_URL  | https://api.your-mosque.com/app-config-data |
+| REACT_APP_HADITH_DATA_SPREADSHEET_URL | https://api.your-mosque.com/hadith-data |
+
 
 ## Using Chromium to start browser on load
 

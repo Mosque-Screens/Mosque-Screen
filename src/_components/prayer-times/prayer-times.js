@@ -17,27 +17,27 @@ class PrayerTimes extends Component {
 
   getAsrRows() {
     if (
-      this.state.prayerTimes['Asr Mithl 1'] &&
-      !this.state.prayerTimes['Asr Mithl 2']
+      this.state.prayerTimes['asr_1_begins'] &&
+      !this.state.prayerTimes['asr_2_begins']
     ) {
       return (
         <tr>
           <th>Asr</th>
           <td />
-          <td>{this.state.prayerTimes['Asr Mithl 1']}</td>
-          <td>{this.state.prayerTimes['Asr Jama‘ah']}</td>
+          <td>{this.state.prayerTimes['asr_1_begins']}</td>
+          <td>{this.state.prayerTimes['asr_Jamaah']}</td>
         </tr>
       );
     } else if (
-      this.state.prayerTimes['Asr Mithl 2'] &&
-      !this.state.prayerTimes['Asr Mithl 1']
+      this.state.prayerTimes['asr_2_begins'] &&
+      !this.state.prayerTimes['asr_1_begins']
     ) {
       return (
         <tr>
           <th>Asr</th>
           <td />
-          <td>{this.state.prayerTimes['Asr Mithl 2']}</td>
-          <td>{this.state.prayerTimes['Asr Jama‘ah']}</td>
+          <td>{this.state.prayerTimes['asr_2_begins']}</td>
+          <td>{this.state.prayerTimes['asr_jamaah']}</td>
         </tr>
       );
     } else {
@@ -45,13 +45,13 @@ class PrayerTimes extends Component {
         <tr key="asr1">
           <th rowSpan="2">'Asr</th>
           <td className="mithl-text">mithl 1</td>
-          <td>{this.state.prayerTimes['Asr Mithl 1']}</td>
-          <td rowSpan="2">{this.state.prayerTimes['Asr Jama‘ah']}</td>
+          <td>{this.state.prayerTimes['asr_1_begins']}</td>
+          <td rowSpan="2">{this.state.prayerTimes['asr_jamaah']}</td>
         </tr>,
         <tr key="asr2">
           <td className="mithl-text">mithl 2</td>
           <td className="normal-text">
-            {this.state.prayerTimes['Asr Mithl 2']}
+            {this.state.prayerTimes['asr_2_begins']}
           </td>
         </tr>
       ];
@@ -59,6 +59,13 @@ class PrayerTimes extends Component {
   }
 
   render() {
+    if (!this.state.prayerTimes)
+      return (
+        <>
+          <h1>Loading</h1>
+        </>
+      );
+
     var asrRows = this.getAsrRows();
 
     return (
@@ -76,27 +83,27 @@ class PrayerTimes extends Component {
             <tr>
               <th>Fajr</th>
               <td />
-              <td>{this.state.prayerTimes['Fajr Begins']}</td>
-              <td>{this.state.prayerTimes['Fajr Jama‘ah']}</td>
+              <td>{this.state.prayerTimes['fajr_begins']}</td>
+              <td>{this.state.prayerTimes['fajr_jamaah']}</td>
             </tr>
             <tr>
               <th>Zuhr</th>
               <td />
-              <td>{this.state.prayerTimes['Zuhr Begins']}</td>
-              <td>{this.state.prayerTimes['Zuhr Jama‘ah']}</td>
+              <td>{this.state.prayerTimes['zuhr_begins']}</td>
+              <td>{this.state.prayerTimes['zuhr_jamaah']}</td>
             </tr>
             {asrRows}
             <tr>
               <th>Maghrib</th>
               <td />
-              <td>{this.state.prayerTimes['Maghrib Begins']}</td>
-              <td>{this.state.prayerTimes['Maghrib Jama‘ah']}</td>
+              <td>{this.state.prayerTimes['maghrib_begins']}</td>
+              <td>{this.state.prayerTimes['maghrib_jamaah']}</td>
             </tr>
             <tr>
               <th>Isha</th>
               <td />
-              <td>{this.state.prayerTimes['Isha Begins']}</td>
-              <td>{this.state.prayerTimes['Isha Jama‘ah']}</td>
+              <td>{this.state.prayerTimes['isha_begins']}</td>
+              <td>{this.state.prayerTimes['isha_jamaah']}</td>
             </tr>
           </tbody>
         </table>

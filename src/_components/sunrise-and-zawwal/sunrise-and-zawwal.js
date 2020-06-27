@@ -19,11 +19,11 @@ class SunriseAndZawwal extends Component {
   }
 
   getSunrise() {
-    return this.getTodaysDate()['Sunrise'];
+    return this.getTodaysDate()['sunrise'];
   }
 
   getZawwal() {
-    var zuhrTime = this.getTodaysDate()['Zuhr Begins'];
+    var zuhrTime = this.getTodaysDate()['zuhr_begins'];
     var zuhrTimeToMoment = moment(zuhrTime, 'h:mm')
       .subtract(10, 'minutes')
       .format('h:mm');

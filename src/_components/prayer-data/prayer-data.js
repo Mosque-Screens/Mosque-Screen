@@ -1,7 +1,6 @@
 import moment from 'moment';
 import config from '../../config.json';
-import csvtojson from 'csvtojson';
-import request from 'request';
+import axios from 'axios';
 
 class PrayerData {
   constructor() {
@@ -24,22 +23,18 @@ class PrayerData {
     var spreadsheetUrl = this.getSpeadsheetUrl();
 
     if (!spreadsheetUrl) {
-      alert('CSV not set');
+      alert('REACT_APP_PRAYER_DATA_SPREADSHEET_URL env not set');
     }
 
-    return csvtojson()
-      .fromStream(request.get(`${spreadsheetUrl}&_cacheBust=${Math.random()}`))
+    return axios
+      .get(`${spreadsheetUrl}&_cacheBust=${Math.random()}`)
       .then(json => {
-        this.storePrayerData(json);
+        this.storePrayerData(json.data);
       });
   }
 
   storePrayerData(prayerData = []) {
-    var formatted_data = {};
-    prayerData.forEach(day => {
-      formatted_data[day.Date] = day;
-    });
-    window.localStorage.setItem('prayerData', JSON.stringify(formatted_data));
+    window.localStorage.setItem('prayerData', JSON.stringify(prayerData));
     window.localStorage.setItem('prayerData_lastUpdated', moment().unix());
   }
 

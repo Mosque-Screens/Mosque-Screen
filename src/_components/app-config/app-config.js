@@ -1,7 +1,6 @@
 import moment from 'moment';
 import config from '../../config.json';
-import csvtojson from 'csvtojson';
-import request from 'request';
+import axios from 'axios';
 
 class AppConfig {
   constructor() {
@@ -24,22 +23,18 @@ class AppConfig {
     var spreadsheetUrl = this.getSpeadsheetUrl();
 
     if (!spreadsheetUrl) {
-      alert('CSV not set');
+      alert('REACT_APP_APP_CONFIG_SPREADSHEET_URL env not set');
     }
 
-    return csvtojson()
-      .fromStream(request.get(`${spreadsheetUrl}&_cacheBust=${Math.random()}`))
+    return axios
+      .get(`${spreadsheetUrl}&_cacheBust=${Math.random()}`)
       .then(json => {
-        this.storeAppConfig(json);
+        this.storeAppConfig(json.data);
       });
   }
 
   storeAppConfig(_appConfig = []) {
-    var formatted_data = {};
-    _appConfig.forEach(conf => {
-      formatted_data[conf.Key] = conf.Value;
-    });
-    window.localStorage.setItem('appConfig', JSON.stringify(formatted_data));
+    window.localStorage.setItem('appConfig', JSON.stringify(_appConfig));
     window.localStorage.setItem('appConfig_lastUpdated', moment().unix());
   }
 

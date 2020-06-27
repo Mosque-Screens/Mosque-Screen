@@ -1,7 +1,6 @@
 import moment from 'moment';
 import config from '../../config.json';
-import csvtojson from 'csvtojson';
-import request from 'request';
+import axios from 'axios';
 
 export default class HadithData {
   constructor() {
@@ -19,15 +18,13 @@ export default class HadithData {
     let hadithSpreadsheetUrl = this.getHadithSpreadsheetUrl();
 
     if (!hadithSpreadsheetUrl) {
-      alert('Hadith CSV not set');
+      alert('REACT_APP_HADITH_DATA_SPREADSHEET_URL env not set');
     }
 
-    return csvtojson()
-      .fromStream(
-        request.get(`${hadithSpreadsheetUrl}&_cacheBust=${Math.random()}`)
-      )
+    return axios
+      .get(`${hadithSpreadsheetUrl}&_cacheBust=${Math.random()}`)
       .then(json => {
-        this.storeHadithData(json);
+        this.storeHadithData(json.data);
         return json;
       });
   }

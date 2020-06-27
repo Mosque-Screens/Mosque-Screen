@@ -33,26 +33,26 @@ class PrayerTimesWeekAhead extends Component {
         <tr key={i} className="PrayerTimesWeekAhead-row">
           <td>{date}</td>
           {/* FAJR */}
-          <td>{times['Fajr Begins']}</td>
-          <td>{times['Fajr Jama‘ah']}</td>
-          <td>{times['Sunrise']}</td>
+          <td>{times['fajr_begins']}</td>
+          <td>{times['fajr_jamaah']}</td>
+          <td>{times['sunrise']}</td>
 
           {/* ZUHR */}
-          <td>{times['Zuhr Begins']}</td>
-          <td>{times['Zuhr Jama‘ah']}</td>
+          <td>{times['zuhr_begins']}</td>
+          <td>{times['zuhr_jamaah']}</td>
 
           {/* ASR */}
-          <td>{times['Asr Mithl 1']}</td>
-          <td>{times['Asr Mithl 2']}</td>
-          <td>{times['Asr Jama‘ah']}</td>
+          <td>{times['asr_1_begins']}</td>
+          <td>{times['asr_2_begins']}</td>
+          <td>{times['asr_jamaah']}</td>
 
           {/* MAGHRIB */}
-          <td>{times['Maghrib Begins']}</td>
-          <td>{times['Maghrib Jama‘ah']}</td>
+          <td>{times['maghrib_begins']}</td>
+          <td>{times['maghrib_jamaah']}</td>
 
           {/* ISHA */}
-          <td>{times['Isha Begins']}</td>
-          <td>{times['Isha Jama‘ah']}</td>
+          <td>{times['isha_begins']}</td>
+          <td>{times['isha_jamaah']}</td>
         </tr>
       );
     }
