@@ -68,6 +68,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 13. Masjid as Salam (New Zealand 🇳🇿) (https://display.masjidassalam.co.nz/)
 14. Brixton Masjid (UK 🇬🇧) (https://brixton-masjid.mosque.tech/)
 14. Poplar Masjid (UK 🇬🇧) (https://poplar.mosque.tech/)
+15. Dulwich Islamic Centre (UK 🇬🇧) (https://dulwich.mosque.tech/)
 
 (If you want a **your-mosque.mosque.tech** domain, please contact the team via the support channel)
 
