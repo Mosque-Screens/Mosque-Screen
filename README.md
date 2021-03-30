@@ -305,7 +305,7 @@ https://tutorials-raspberrypi.com/google-chrome-for-raspberry-pi/
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
 point-rpi
-@chromium-browser --start-fullscreen --start-maximized https://elm.mosque.tech
+@chromium-browser --noerrdialogs --disable-session-crashed-bubble --disable-infobars --start-fullscreen --start-maximized https://elm.mosque.tech
 ```
 5. `sudo reboot`
 
