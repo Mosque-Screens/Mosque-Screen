@@ -27,9 +27,9 @@ You can donate as little or as much as you want, there is no obligation. Each pe
 
 ## Need help?
 
-If you need support, contact us on: [info@mosque.tech](mailto:info@mosque.tech)
+Chat to the community on: https://discord.gg/CG7frj2
 
-Join our discord channel here: https://discord.gg/CG7frj2
+Unfortunately, as this is a volunteer-led project we are unable to provide any support to resolve any issues for you. The code is all published in this repo, please look at error messages and speak to the community to see if anyone can help.
 
 ## Contributors wall of fame
 
