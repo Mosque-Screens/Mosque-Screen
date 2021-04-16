@@ -25,7 +25,7 @@ class PrayerTimes extends Component {
           <th>Asr</th>
           <td />
           <td>{this.state.prayerTimes['asr_1_begins']}</td>
-          <td>{this.state.prayerTimes['asr_Jamaah']}</td>
+          <td>{this.state.prayerTimes['asr_jamaah']}</td>
         </tr>
       );
     } else if (
