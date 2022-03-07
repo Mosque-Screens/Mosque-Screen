@@ -1,6 +1,7 @@
 import moment from 'moment';
 import config from '../../config.json';
 import axios from 'axios';
+import { find } from 'lodash';
 
 class PrayerData {
   constructor() {
@@ -10,7 +11,10 @@ class PrayerData {
   getPrayerTimes(date = null) {
     date = date === null ? moment().format('DD/MM/YYYY') : date;
     var data = this.getPrayerData();
-    return data ? data[date] : [];
+    return find(data, {
+      day: moment(date, 'DD/MM/YYYY').format('DD'),
+      month: moment(date, 'DD/MM/YYYY').format('MM')
+    });
   }
 
   getSpeadsheetUrl() {
