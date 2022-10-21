@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 7.1.2
+- Replace `_redirects` file with `netlify.toml`
+
 ## 7.1.1
 - Adds `_redirects` file
 
