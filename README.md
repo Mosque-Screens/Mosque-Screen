@@ -109,9 +109,9 @@ The ID would be:
 
 | KEY | VALUE |
 | --- | ----- |
-| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | https://script.google.com/macros/s/AKfycbzG1PEjY3Gopuw9G59oNY2XYeKyZanQcXqYCXgw6Xo3mk5yqrE/exec?google_sheet_id={google_sheets_id} |
-| REACT_APP_APP_CONFIG_SPREADSHEET_URL  | https://script.google.com/macros/s/AKfycbxAG6RD-hfL-HzZ_YMBeiXa4mnkJBpt1QhrJmvHIU18KUUxPuU/exec?google_sheet_id={google_sheets_id} |
-| REACT_APP_HADITH_DATA_SPREADSHEET_URL | https://script.google.com/macros/s/AKfycby6jZBf7sKGLte5mdxbqeENeRfZsX_XZqntI-6n8-9Z3-8mYUio/exec?google_sheet_id={google_sheets_id} |
+| REACT_APP_PRAYER_DATA_SPREADSHEET_URL | https://api.mosque.tech/prayer-times/{google_sheets_id} |
+| REACT_APP_APP_CONFIG_SPREADSHEET_URL  | https://api.mosque.tech/prayer-screen-config/{google_sheets_id} |
+| REACT_APP_HADITH_DATA_SPREADSHEET_URL | https://api.mosque.tech/hadith-data/{google_sheets_id} |
 
 You can easily generate this using the following service: https://codepen.io/DilwoarH/full/WNrEEmx
 
