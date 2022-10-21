@@ -336,7 +336,7 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 ## Add to website
 
 ```html
-<iframe src="https://screen.mosque.tech/widget" width="300" height="350" style="border:none;"></iframe>
+<iframe src="https://screen.mosque.tech/widget" width="500" height="100" style="border:none;"></iframe>
 ```
 
 You can make it bigger or smaller by updating the `width` or `height`.
