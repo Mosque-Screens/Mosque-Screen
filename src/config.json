@@ -1,19 +1,15 @@
 {
-  "buildNumber": "v7.0.0",
+  "buildNumber": "v7.1.0",
   "sliderMode": "slider",
   "slideTimeout": 8000,
   "googleSlides": {
-    "url":
-      "https://docs.google.com/presentation/d/e/2PACX-1vSSB03g_s9gl75eiKZJPtfa2czRlBorDVFpYFbMOPqGEGD-06jxJP3wRRfNzeWCkGcKmE81U1OtvTkZ/embed?start=true&loop=false&delayms=8000",
+    "url": "https://docs.google.com/presentation/d/e/2PACX-1vSSB03g_s9gl75eiKZJPtfa2czRlBorDVFpYFbMOPqGEGD-06jxJP3wRRfNzeWCkGcKmE81U1OtvTkZ/embed?start=true&loop=false&delayms=8000",
     "numberOfSlides": 5
   },
   "googleSheets": {
-    "prayerData":
-      "https://script.google.com/macros/s/AKfycbzG1PEjY3Gopuw9G59oNY2XYeKyZanQcXqYCXgw6Xo3mk5yqrE/exec?google_sheet_id=1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s",
-    "hadithData":
-      "https://script.google.com/macros/s/AKfycby6jZBf7sKGLte5mdxbqeENeRfZsX_XZqntI-6n8-9Z3-8mYUio/exec?google_sheet_id=1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s",
-    "appConfig":
-      "https://script.google.com/macros/s/AKfycbxAG6RD-hfL-HzZ_YMBeiXa4mnkJBpt1QhrJmvHIU18KUUxPuU/exec?google_sheet_id=1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s",
+    "prayerData": "https://script.google.com/macros/s/AKfycbzG1PEjY3Gopuw9G59oNY2XYeKyZanQcXqYCXgw6Xo3mk5yqrE/exec?google_sheet_id=1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s",
+    "hadithData": "https://script.google.com/macros/s/AKfycby6jZBf7sKGLte5mdxbqeENeRfZsX_XZqntI-6n8-9Z3-8mYUio/exec?google_sheet_id=1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s",
+    "appConfig": "https://script.google.com/macros/s/AKfycbxAG6RD-hfL-HzZ_YMBeiXa4mnkJBpt1QhrJmvHIU18KUUxPuU/exec?google_sheet_id=1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s",
     "refreshRate": 1
   }
 }

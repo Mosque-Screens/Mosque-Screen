@@ -10,7 +10,7 @@
 
 Build in association with [East London Mosque](https://www.eastlondonmosque.org.uk/).
 
-## Help make Mosque Screens sustainable 
+## Help make Mosque Screens sustainable
 
 The Mosque Screens project is a self funded project and does not have any financial income. As with all tech projects, there are costs which are incurred by the maintainers. These include: Servers, domains, databases etc.
 
@@ -47,7 +47,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 | Fokrul Amin | IT Engineer | - |
 | Ikbal Hussain | Interaction Designer | - |
 | Mahmud Hussain | Software Engineer | https://github.com/MahmudH |
-| Mohamed Abdisalam | Product Management | - | 
+| Mohamed Abdisalam | Product Management | - |
 | Moiz Qureshi | Software Engineer | https://github.com/moiz-qureshi |
 | Ridhwaan-ur Rahman | Business Intelligence | - |
 | Usamah K Ward | Business Intelligence | - |
@@ -77,7 +77,7 @@ This is a list of everyone that has contributed to the project, please make dua 
 
 ## Using Google Sheets to store your data
 
-### 1. Make a copy of the following spreadsheet: 
+### 1. Make a copy of the following spreadsheet:
 
 https://docs.google.com/spreadsheets/d/1yVlGjnEhKLi5DSOuJMm7-ec5-iFvuiR7WkbzMdbFP9s/copy
 
@@ -331,6 +331,13 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 ### Single view mode
 ![SingleView](https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/SingleViewScreenshot.png "Single-View")
 
+---
+
+## Add to website
+
+```html
+<iframe src="https://screen.mosque.tech/widget" width="300" height="400"></iframe>
+```
 
 ## Branding
 
@@ -529,7 +536,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1904,7 +1911,7 @@ Use the following [`launch.json`](https://code.visualstudio.com/docs/editor/debu
       "name": "Debug CRA Tests",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",      
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",
       "args": [
         "test",
         "--runInBand",
@@ -2218,7 +2225,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -2648,7 +2655,7 @@ To resolve this:
 1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.
   * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
 
-2. Fork the package and publish a corrected version yourself. 
+2. Fork the package and publish a corrected version yourself.
 
 3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.
 

@@ -1,6 +1,6 @@
 {
   "name": "mosque-screen",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.26.0",
