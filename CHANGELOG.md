@@ -6,6 +6,9 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## 7.2.0
+- Makes widget horizontal
+
 ## 7.1.2
 - Replace `_redirects` file with `netlify.toml`
 

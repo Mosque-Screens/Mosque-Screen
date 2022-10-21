@@ -1,0 +1,40 @@
+.PrayerTimesWidget {
+  font-size: 1em;
+  text-align: center;
+  color: #0b0c0c;
+  width: 850px;
+}
+
+.PrayerTimesWidget th {
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: left;
+}
+
+.PrayerTimesWidget th:first-child {
+  font-size: 1em;
+  text-align: right;
+  padding-right: 25px;
+  font-weight: normal;
+  color: #b1b4b6;
+}
+
+.PrayerTimesWidget td {
+  min-width: 100px;
+  font-size: 1em;
+  text-align: left;
+}
+
+.PrayerTimesWidget {
+  font-size: 1em;
+  margin-left: 0;
+  width: 100%;
+}
+
+.PrayerTimesWidget th:last-child {
+  padding-left: 0;
+}
+
+.PrayerTimesWidget td {
+  min-width: 10px;
+}
