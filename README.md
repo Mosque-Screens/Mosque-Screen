@@ -335,6 +335,10 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 
 ## Add to website
 
+<p align="center">
+  <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/screenshots/widget.png" style="background-color: white" />
+</p>
+
 ```html
 <iframe src="https://screen.mosque.tech/widget" width="500" height="100" style="border:none;"></iframe>
 ```
