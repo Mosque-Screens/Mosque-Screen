@@ -336,7 +336,7 @@ chrome-debug --app=https://screen.mosque.tech/ --start-fullscreen
 ## Add to website
 
 ```html
-<iframe src="https://screen.mosque.tech/widget" width="300" height="400"></iframe>
+<iframe src="https://screen.mosque.tech/widget" width="300" height="350"></iframe>
 ```
 
 ## Branding
