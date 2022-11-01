@@ -1,9 +1,16 @@
 .LogoWrapper img {
-  width: 150px;
   display: block;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.LogoWrapper--vertical img {
+  width: 150px;
+}
+
+.LogoWrapper--horizontal img {
+  max-height: 50px;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
