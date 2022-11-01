@@ -27,39 +27,47 @@ class Branding extends Component {
     return `
       /* MAIN BRANDING */
       body {
-        background: linear-gradient(to right, ${this.state.primary_colour} ${
-      background_percentage.right
-    }%, ${this.state.secondary_colour} ${background_percentage.left}%);
+        background: linear-gradient(to right, ${this.state.primary_colour} ${background_percentage.right}%, ${this.state.secondary_colour} ${background_percentage.left}%);
         color: ${this.state.primary_text_colour};
       }
 
       @media only screen and (max-width: 992px) {
         body {
-          background: linear-gradient(to right, ${
-            this.state.primary_colour
-          } 50%, ${this.state.primary_colour} 50%);
+          background: linear-gradient(to right, ${this.state.primary_colour} 50%, ${this.state.primary_colour} 50%);
         }
       }
-      
+
       /* CLOCK BRANDING */
       .ClockWrapper {
         background-color: ${this.state.clock_background_colour};
       }
-      .Clock { 
+      .Clock {
         color: ${this.state.primary_colour};
       }
 
       /* PRIMARY TEXT COLOURS */
-      .DateWrapper,
       .NextJammahTime,
       .PrayerTimes,
       .App-header,
       .blackout-clock .ClockWrapper .Clock,
+      .PrayerTimesSingleView th,
+      .PrayerTimesSingleView td,
       .PrayerTimesWeekAhead-row {
         color: ${this.state.primary_text_colour};
       }
 
+      @media only screen and (max-width: 600px) {
+        .NextJammahTime,
+        .PrayerTimesSingleView .nextJammahHighlight,
+        .PrayerTimesSingleView th,
+        .PrayerTimesSingleView td {
+          color: ${this.state.secondary_text_colour};
+        }
+      }
+
       /* SECONDARY TEXT COLOURS */
+      .DateWrapper,
+      .SingleView .AdditionalMessageWrapper,
       .PrayerTimesWeekAhead,
       .PrayerTimesWeekAhead td:first-child {
         color: ${this.state.secondary_text_colour};
