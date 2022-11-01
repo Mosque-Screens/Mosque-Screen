@@ -6,6 +6,11 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+
+## 8.0.0
+- Add support for horizontal logos
+- Fixes issues with branding colours not being applied correctly
+
 ## 7.2.0
 - Makes widget horizontal
 
