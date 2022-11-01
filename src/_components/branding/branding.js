@@ -56,6 +56,15 @@ class Branding extends Component {
         color: ${this.state.primary_text_colour};
       }
 
+      @media only screen and (max-width: 600px) {
+        .NextJammahTime,
+        .PrayerTimesSingleView .nextJammahHighlight,
+        .PrayerTimesSingleView th,
+        .PrayerTimesSingleView td {
+          color: ${this.state.secondary_text_colour};
+        }
+      }
+
       /* SECONDARY TEXT COLOURS */
       .DateWrapper,
       .SingleView .AdditionalMessageWrapper,
