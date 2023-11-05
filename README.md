@@ -1,4 +1,9 @@
 <p align="center">
+<strong>⚠️ Deprecation warning</strong>: This project has been superseded by <a href="https://github.com/MosqueOS/Mosque-Prayer-Display-Screen">Mosque Screen v2 by the MosqueOS Project</a>.<br/>
+This version will no longer receive any updates or be supported.
+</p>
+
+<p align="center">
   <img src="https://github.com/Mosque-Screens/Mosque-Screen/raw/master/branding/logo-full.png" alt="Mosque Screen Logo" />
 </p>
 
